@@ -1,0 +1,13 @@
+filename = 'gliders-forge-1.1.6.jar'
+name = 'Gliders'
+side = 'both'
+
+[download]
+hash = '97f29aaec75570fd8ec47c99e742a314be50b58ebdb5d5da9f6bda67d938bad17768c6699ea1a27f5da16d3da3ad91d13846e763e7387ba174da8f1d8da44ea5'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/XiC6HzoU/versions/5V8JfBma/gliders-forge-1.1.6.jar'
+
+[update.modrinth]
+mod-id = 'XiC6HzoU'
+version = '5V8JfBma'

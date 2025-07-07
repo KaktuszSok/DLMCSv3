@@ -1,0 +1,13 @@
+filename = 'stellarity-lite-1.20.1.jar'
+name = 'Stellarity ~ Lite'
+side = 'both'
+
+[download]
+hash = 'e288167f7758bc3e5056ce1dece6cb2d9637ba75157d599f5ce44a7e7ffdbd0df4e7a19e03070c6054ba6904062a5a98e3a5b647372895db2075f376b2ecd42b'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/NsYxnUJm/versions/RhA8KiYU/stellarity-lite-1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'NsYxnUJm'
+version = 'RhA8KiYU'

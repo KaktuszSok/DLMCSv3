@@ -1,0 +1,13 @@
+filename = 'holdmyitems-1.20.1-4.jar'
+name = 'Hold My Items - Reforged'
+side = 'client'
+
+[download]
+hash = 'cb9440b3a6ce9407bb9e2c52e2a0b4da016a7a710b2331a6eeae0a97e8512b6305dbc7b631346e74c542bd7ee529116a7d307fadfdc83c4bb356b0df8fa90c48'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/VPPMiyrF/versions/ViRE2Z2Q/holdmyitems-1.20.1-4.jar'
+
+[update.modrinth]
+mod-id = 'VPPMiyrF'
+version = 'ViRE2Z2Q'

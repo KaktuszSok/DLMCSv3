@@ -1,0 +1,13 @@
+filename = 'wab-1.20.1-1.2.0.jar'
+name = "Wan's Ancient Beasts"
+side = 'both'
+
+[download]
+hash = '172e2d59374fd8d223535ca1b797444f4a4b4966da098ab0b09329c58dc1ca5200d812ea86a581f306f00fb43a819f64e26af1daa9c53d7ed45e32fe05472493'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/nWC3kyL3/versions/pupKzvZF/wab-1.20.1-1.2.0.jar'
+
+[update.modrinth]
+mod-id = 'nWC3kyL3'
+version = 'pupKzvZF'

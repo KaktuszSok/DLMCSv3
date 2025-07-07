@@ -1,0 +1,13 @@
+filename = 'TalkBalloons-Forge-1.20.1-1.1.6.jar'
+name = 'Talk Balloons'
+side = 'client'
+
+[download]
+hash = 'df8f5ff4a78a23d2c3bc757b33471a93d0871880862191ea682507f13fd7e35240b1aac38263f300e1f4adbcd2f6b95b0c952f97eb7ff860d28d2fc145069756'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/l3tS9WUS/versions/ThduOiXW/TalkBalloons-Forge-1.20.1-1.1.6.jar'
+
+[update.modrinth]
+mod-id = 'l3tS9WUS'
+version = 'ThduOiXW'

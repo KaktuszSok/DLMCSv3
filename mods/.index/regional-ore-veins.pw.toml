@@ -1,0 +1,13 @@
+filename = 'regionaloreveins-1.20.1-1.0.0.jar'
+name = 'Regional Ore Veins'
+side = 'both'
+
+[download]
+hash = 'e7c91eb34a0af9f754b541596b5aab26bd1e6ab1'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4953105
+project-id = 949533

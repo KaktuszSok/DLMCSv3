@@ -1,0 +1,13 @@
+filename = 'Truly-Modular-armory-armory-forge-1.11-1.20.1.jar'
+name = 'Truly Modular: Armory'
+side = 'both'
+
+[download]
+hash = '3f230b7526f27e4d9fea86f9f70dd39a4851c4e008b8243ebcc83ea1d219dddb049ebaa80cf669bf3025efcdc2e8206526eb8474633160c91a7c254bd26266fc'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/6mUV27DN/versions/Vsr6VwpJ/Truly-Modular-armory-armory-forge-1.11-1.20.1.jar'
+
+[update.modrinth]
+mod-id = '6mUV27DN'
+version = 'Vsr6VwpJ'

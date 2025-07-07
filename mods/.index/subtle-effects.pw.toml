@@ -1,0 +1,13 @@
+filename = 'SubtleEffects-forge-1.20.1-1.9.4-hotfix.1.jar'
+name = 'Subtle Effects'
+side = 'client'
+
+[download]
+hash = 'bbd01271dfaef3c5c3640e7e5754bf4be2537093dba0a184f4e4981eeb49ab1d72a02c80f3f56d3e0187af4803de5c55a87580a498b6e1cc647339f88c0e0760'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/4q8UOK1d/versions/lCMnqufi/SubtleEffects-forge-1.20.1-1.9.4-hotfix.1.jar'
+
+[update.modrinth]
+mod-id = '4q8UOK1d'
+version = 'lCMnqufi'

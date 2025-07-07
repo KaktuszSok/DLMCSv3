@@ -1,0 +1,13 @@
+filename = 'ControllerX-20.1.5.jar'
+name = 'ControllerX'
+side = 'both'
+
+[download]
+hash = '9795c70f48b7d134fe5563b280c08978edd6f2856290863c31a596e8e62db5ebbc8718f05b3e61598e1fe997a5addfb20984447ea8ddd4f0178d0fe233637735'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/gUv10ywC/versions/1BwTAX6a/ControllerX-20.1.5.jar'
+
+[update.modrinth]
+mod-id = 'gUv10ywC'
+version = '1BwTAX6a'

@@ -1,0 +1,13 @@
+filename = 'betterlightning-1.1.0-1.20.1.jar'
+name = 'Delayed Thunder'
+side = 'both'
+
+[download]
+hash = '9759f1deb67dcc44bfbf2fb9c47c9df6e60fd2ddb018984e641468021dad34253f932cf5d53f6b712e120c563cef4e2bcea63450a585b5d897b371622a1ec6f9'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/exGIC7QX/versions/mHFvj48X/betterlightning-1.1.0-1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'exGIC7QX'
+version = 'mHFvj48X'

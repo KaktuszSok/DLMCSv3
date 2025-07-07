@@ -1,0 +1,13 @@
+filename = 'customoreveins-1.20-1.0.0-forge.jar'
+name = 'Custom Ore Veins'
+side = 'both'
+
+[download]
+hash = '71937e0fb77b64199857d8836f8bcc074a9b5292'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4951502
+project-id = 949185

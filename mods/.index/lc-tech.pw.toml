@@ -1,0 +1,13 @@
+filename = 'lctech-1.20.1-0.2.2.2.jar'
+name = "Lightman's Currency Tech"
+side = 'both'
+
+[download]
+hash = '4707f86f0f84c26afbf1ea2eb0fe9fa6d1555241ee0405f7fe8688a19fb171a60e4803dee0fc88ce4c9b01dd17a8552f2f941fe35e57396ecde58c7dda118c90'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/US8EsYXT/versions/s98rdSnf/lctech-1.20.1-0.2.2.2.jar'
+
+[update.modrinth]
+mod-id = 'US8EsYXT'
+version = 's98rdSnf'

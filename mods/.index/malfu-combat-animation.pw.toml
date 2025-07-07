@@ -1,0 +1,13 @@
+filename = 'malfu-combat-animation-2.0.jar'
+name = 'Malfu Combat Animation'
+side = 'both'
+
+[download]
+hash = '93be068c5e9596dc00e1582ce580c084fe644eec25262fe9ca62090fdf712ae32c092593b81f8b2a5b031858d9123652821095f169edefbe80c9992cfb18a3e5'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/LNkOO2Ya/versions/8AHSDx4R/malfu-combat-animation-2.0.jar'
+
+[update.modrinth]
+mod-id = 'LNkOO2Ya'
+version = '8AHSDx4R'

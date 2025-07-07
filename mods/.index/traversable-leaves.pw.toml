@@ -1,0 +1,13 @@
+filename = 'traversable_leaves-1.4.1-1.20.1.jar'
+name = 'Traversable Leaves'
+side = 'both'
+
+[download]
+hash = '8bae68b8ba06d27f5e6ffc2d911e9613c965f01d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6305262
+project-id = 1153710

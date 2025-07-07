@@ -1,0 +1,13 @@
+filename = 'Shields+-1.11.9-mc1.20.1.jar'
+name = 'Shields+'
+side = 'both'
+
+[download]
+hash = '522d14a8298ae7d0a54d489623f6c54df4a8a6b0253374eebbef99dc9a9a9d299ddf0f745a14419dd946151fcdba0fc463a31e54136289e6236690089a2c7aa5'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/AmAXl2I5/versions/CMAG1FiN/Shields%2B-1.11.9-mc1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'AmAXl2I5'
+version = 'CMAG1FiN'

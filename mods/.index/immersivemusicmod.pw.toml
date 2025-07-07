@@ -1,0 +1,13 @@
+filename = 'timm-1.0.4.jar'
+name = 'The Immersive Music Mod'
+side = 'client'
+
+[download]
+hash = 'd3cecc467d4232bf5548d766fe118dad43348eddeb6c24c9ef28ea63c5f5434c0d50881fcc08b3790ca40abf0011ae31e628c05ab00dbd0f804c4eb483fd5096'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/EgBj3Bnf/versions/gUO8ftmV/timm-1.0.4.jar'
+
+[update.modrinth]
+mod-id = 'EgBj3Bnf'
+version = 'gUO8ftmV'

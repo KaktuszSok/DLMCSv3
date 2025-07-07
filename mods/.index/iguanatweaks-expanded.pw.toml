@@ -1,0 +1,13 @@
+filename = 'InsaneSurvivalExtra-1.23.8.jar'
+name = "Insane's Survival Extra (aka IguanaTweaks Expanded)"
+side = 'both'
+
+[download]
+hash = '20bc6309ddcd82042fb800abb4375c091f2cfb696026ac9dd8e2970669ab35c3a994efdcc9cc012ff18bd7852f4de4447f1e43dc06b44d721feb346d8c79c38f'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/hy7htrV5/versions/XvFsDJuM/InsaneSurvivalExtra-1.23.8.jar'
+
+[update.modrinth]
+mod-id = 'hy7htrV5'
+version = 'XvFsDJuM'

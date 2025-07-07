@@ -1,0 +1,13 @@
+filename = 'AsyncParticles-1.10.1+1.20.1-alpha.4.jar'
+name = 'AsyncParticles'
+side = 'client'
+
+[download]
+hash = 'd45834d29244cbba3d673b559d1d7e667a896575255a6fd7f68cba3675948a000a38a3437c8a20b86074479d218c8965fb196108fe426273ecaaf751cda3b0e0'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/c3onkd5k/versions/EXZXwlmA/AsyncParticles-1.10.1%2B1.20.1-alpha.4.jar'
+
+[update.modrinth]
+mod-id = 'c3onkd5k'
+version = 'EXZXwlmA'

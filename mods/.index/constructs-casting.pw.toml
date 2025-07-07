@@ -1,0 +1,13 @@
+filename = 'constructs_casting-1.2.2.jar'
+name = "Construct's Casting"
+side = 'both'
+
+[download]
+hash = 'b20ec4b273badf8fc8aa66e73353d804f391d674a3224ff4bbb426f38a13ecf84d3cfddf0c0cf9ca3c473342ad75540c79e6419c6d5210f06bd51916caf74944'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/nuBOPsPE/versions/oCW3xvtf/constructs_casting-1.2.2.jar'
+
+[update.modrinth]
+mod-id = 'nuBOPsPE'
+version = 'oCW3xvtf'

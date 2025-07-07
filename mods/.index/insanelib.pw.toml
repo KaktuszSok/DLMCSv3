@@ -1,0 +1,13 @@
+filename = 'insanelib-1.18.3.jar'
+name = 'InsaneLib'
+side = 'both'
+
+[download]
+hash = '8c99dc187d3545051b738dd99269c8559112201a8fb69319689f454660e627872670b3e31891e7bfc6dffbbb06f3c093de03deb83a550fde0d0c156c4b779bc8'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/USZyvOJq/versions/l4TqBFwP/insanelib-1.18.3.jar'
+
+[update.modrinth]
+mod-id = 'USZyvOJq'
+version = 'l4TqBFwP'

@@ -1,0 +1,13 @@
+filename = 'CarryOnExtend-1.4-hotfix-1.20.1-Forge.jar'
+name = 'Carry On Extend'
+side = 'both'
+
+[download]
+hash = 'ed53e8250f6848974227b7a59a5164dd377d2ed6acdaba22ca04b30ebdb17669b9070fa1a71c727417aaaebab6b0f98ba2e1a9bdec8b700e91220645c7be237c'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/JbqjOoQj/versions/tLg2N6Af/CarryOnExtend-1.4-hotfix-1.20.1-Forge.jar'
+
+[update.modrinth]
+mod-id = 'JbqjOoQj'
+version = 'tLg2N6Af'

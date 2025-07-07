@@ -1,0 +1,13 @@
+filename = 'particified-1.0.1-forge-1.20.1.jar'
+name = 'Particified'
+side = 'both'
+
+[download]
+hash = 'f3919bb9046516769a66880067bf6b5fc1b3d608632ce499d4effab169fd987b3ce3255b04307ddcd366abb16a1dcb7a8517b8074f51081b599fca1e0594ca96'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/d4eyDHBd/versions/mUO5bKEB/particified-1.0.1-forge-1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'd4eyDHBd'
+version = 'mUO5bKEB'

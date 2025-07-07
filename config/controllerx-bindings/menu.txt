@@ -1,0 +1,28 @@
+# controllerx.action.menu.closeInventory
+controllerx.action.menu.closeInventory=Y
+# controllerx.action.menu.nextPage
+controllerx.action.menu.nextPage=RightShoulder
+# controllerx.action.menu.place
+controllerx.action.menu.place=A
+# controllerx.action.menu.putSingle
+controllerx.action.menu.putSingle=X
+# controllerx.action.menu.prevPage
+controllerx.action.menu.prevPage=LeftShoulder
+# controllerx.action.menu.dpad_move
+controllerx.action.menu.dpadMove=Dpad
+# controllerx.action.menu.close
+controllerx.action.menu.close=B
+# controllerx.action.menu.pickup
+controllerx.action.menu.pickup=A
+# controllerx.action.menu.activate
+controllerx.action.menu.activate=A
+# controllerx.action.menu.back
+controllerx.action.menu.back=B
+# controllerx.action.menu.scroll_y
+controllerx.action.menu.scrollY=RightStickY
+# controllerx.action.menu.split
+controllerx.action.menu.split=X
+# controllerx.action.menu.joystick_move
+controllerx.action.menu.joystickMove=LeftStick
+# controllerx.action.menu.drop
+controllerx.action.menu.drop=RightStickClick

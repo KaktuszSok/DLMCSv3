@@ -1,0 +1,14 @@
+{
+  "acceptedFoodItems": [
+    "minecraft:golden_carrot",
+    "minecraft:golden_apple",
+    "minecraft:apple",
+    "minecraft:hay_block"
+  ],
+  "hungerDepletionRateOverride": -1,
+  "wildMaxAgeOverride": -1,
+  "domesticatedMaxAgeOverride": -1,
+  "breedingCooldownTicksOverride": -1,
+  "growthTimeTicksOverride": -1,
+  "feedingAmountOverride": -1
+}

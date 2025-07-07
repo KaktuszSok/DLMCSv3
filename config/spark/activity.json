@@ -1,0 +1,41 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "KaktuszSok",
+      "uniqueId": "edac17ef-c211-4d43-91e2-ecc632c3e376"
+    },
+    "time": 1750206423855,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/2UWjcS2TPj"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "KaktuszSok",
+      "uniqueId": "edac17ef-c211-4d43-91e2-ecc632c3e376"
+    },
+    "time": 1749502265437,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/76c5ZP23Eq"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "KaktuszSok",
+      "uniqueId": "edac17ef-c211-4d43-91e2-ecc632c3e376"
+    },
+    "time": 1749502113065,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/arca790klP"
+    }
+  }
+]

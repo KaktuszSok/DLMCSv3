@@ -1,0 +1,6 @@
+# controllerx.action.chat.send
+controllerx.action.chat.send=A
+# controllerx.action.chat.open_keyboard
+controllerx.action.chat.openKeyboard=Y
+# controllerx.action.menu.close
+controllerx.action.chat.close=B

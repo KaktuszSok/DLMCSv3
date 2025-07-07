@@ -1,0 +1,28 @@
+# controllerx.action.menu.drop
+controllerx.action.virtualKeyboard.drop=RightStickClick
+# controllerx.action.menu.prevPage
+controllerx.action.virtualKeyboard.prevPage=LeftShoulder
+# controllerx.action.menu.close
+controllerx.action.virtualKeyboard.close=B
+# controllerx.action.menu.back
+controllerx.action.virtualKeyboard.back=B
+# controllerx.action.menu.nextPage
+controllerx.action.virtualKeyboard.nextPage=RightShoulder
+# controllerx.action.menu.joystick_move
+controllerx.action.virtualKeyboard.joystickMove=LeftStick
+# controllerx.action.menu.pickup
+controllerx.action.virtualKeyboard.pickup=A
+# controllerx.action.menu.putSingle
+controllerx.action.virtualKeyboard.putSingle=X
+# controllerx.action.menu.split
+controllerx.action.virtualKeyboard.split=X
+# controllerx.action.menu.place
+controllerx.action.virtualKeyboard.place=A
+# controllerx.action.menu.closeInventory
+controllerx.action.virtualKeyboard.closeInventory=Y
+# controllerx.action.menu.dpad_move
+controllerx.action.virtualKeyboard.dpadMove=Dpad
+# controllerx.action.menu.scroll_y
+controllerx.action.virtualKeyboard.scrollY=RightStickY
+# controllerx.action.menu.activate
+controllerx.action.virtualKeyboard.activate=A

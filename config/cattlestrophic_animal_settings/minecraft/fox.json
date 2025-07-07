@@ -1,0 +1,12 @@
+{
+  "acceptedFoodItems": [
+    "minecraft:sweet_berries",
+    "minecraft:glow_berries"
+  ],
+  "hungerDepletionRateOverride": -1,
+  "wildMaxAgeOverride": -1,
+  "domesticatedMaxAgeOverride": -1,
+  "breedingCooldownTicksOverride": -1,
+  "growthTimeTicksOverride": -1,
+  "feedingAmountOverride": -1
+}

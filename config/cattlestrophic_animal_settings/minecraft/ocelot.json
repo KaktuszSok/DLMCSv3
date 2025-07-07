@@ -1,0 +1,12 @@
+{
+  "acceptedFoodItems": [
+    "minecraft:cod",
+    "minecraft:salmon"
+  ],
+  "hungerDepletionRateOverride": -1,
+  "wildMaxAgeOverride": -1,
+  "domesticatedMaxAgeOverride": -1,
+  "breedingCooldownTicksOverride": -1,
+  "growthTimeTicksOverride": -1,
+  "feedingAmountOverride": -1
+}

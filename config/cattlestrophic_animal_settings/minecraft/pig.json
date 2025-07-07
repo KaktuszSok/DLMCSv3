@@ -1,0 +1,13 @@
+{
+  "acceptedFoodItems": [
+    "minecraft:carrot",
+    "minecraft:potato",
+    "minecraft:beetroot"
+  ],
+  "hungerDepletionRateOverride": -1,
+  "wildMaxAgeOverride": -1,
+  "domesticatedMaxAgeOverride": -1,
+  "breedingCooldownTicksOverride": -1,
+  "growthTimeTicksOverride": -1,
+  "feedingAmountOverride": -1
+}

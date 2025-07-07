@@ -1,0 +1,13 @@
+filename = 'floral_tonics_and_tinctures-1.0.0.jar'
+name = 'Floral Tonics And Tinctures'
+side = 'both'
+
+[download]
+hash = '0ba8f302906054ba46bcbebe4f8bcd7f555a24cb95ffa4d5c26bef0e52e465097ace1911b146109aee773d2642f699992162896615c93ea6c28d2253c03bfcca'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/7UWAenJN/versions/fKXljv8e/floral_tonics_and_tinctures-1.0.0.jar'
+
+[update.modrinth]
+mod-id = '7UWAenJN'
+version = 'fKXljv8e'

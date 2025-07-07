@@ -1,0 +1,13 @@
+filename = 'twm-2.0.0-forge-1.20.1.jar'
+name = 'Tonic and Wild Medicine'
+side = 'both'
+
+[download]
+hash = '4ace633c60a58eaf7f5018da276b4199084c223900eae43b28ad5e1c83bc33333dc31889b954dcbccf0abd6d9d4061aed6f6d37f228693f32e3cbfe60d8b91a8'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/4W3JeAtd/versions/f9s9mvvz/twm-2.0.0-forge-1.20.1.jar'
+
+[update.modrinth]
+mod-id = '4W3JeAtd'
+version = 'f9s9mvvz'

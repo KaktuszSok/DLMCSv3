@@ -1,0 +1,55 @@
+
+["Slide Setting"]
+	#是否启用滑行：疾跑过程中按下潜行键即可贴地滑行。
+	enableSlide = true
+	#是否启用打水漂：滑行到水面时向前跃起。
+	enableDap = true
+	#是否启用滑行重置时间：滑行到空中时重置持续时间。
+	enableSlideRepeat = true
+	#是否启用滑行撞飞实体：滑行过程中与实体碰撞会停下并撞飞对方。
+	enableSlideKnock = true
+
+["Climb Setting"]
+	#是否启用攀爬：跳起后可爬上两格高的障碍。
+	enableClimb = true
+	#是否启用攀爬跳：攀爬中并按着潜行键时按下跳跃键往上起跳。
+	enableClimbJump = true
+	#是否启用失足抢救：在失足后的短暂时间内按潜行键即可站稳。
+	enableFallingRescue = true
+
+["Swimming Setting"]
+	#是否启用浅水游泳：在一格深的水中按疾跑键进入游泳状态。
+	enableShallowSwimming = true
+	#是否启用水中推进：在游泳状态下按疾跑键消耗氧气向前推进一段距离。
+	enableSwimmingBoost = true
+	#是否启用自由泳：径直往上游到水面后进入可同时呼吸和游泳的状态。
+	enableFreestyle = true
+	#是否启用水上漂：在自由泳状态下按跳跃向前跃出并进入滑行状态。
+	enableSwimmingPush = true
+
+["Craw Setting"]
+	#是否启用爬行：双击潜行键进入爬行状态，单击退出。
+	enableCraw = true
+	#是否启用爬行中滑行：爬行状态中按下疾跑键触发滑行。
+	enableCrawSlide = true
+	#是否启用飞扑：疾跑跳跃后按下潜行键会触发飞扑并进入爬行状态。
+	enableLeap = true
+	#是否启用跳跃取消爬行：跳跃后短时间内进入爬行状态从而触发飞扑。
+	enableJumpCancelCraw = false
+
+["Attribute Setting"]
+	#滑行时间限制，默认为25， 一秒为20。
+	SlideDuration = 25
+	#空中滑行时间限制，默认为30，一秒是20。
+	SlideAirDuration = 30
+	#打水漂次数上限，默认为2。
+	DapTimes = 2
+	#滑行的冷却，默认为60，一秒为20。
+	SlideCooldown = 60
+	#攀爬跳的冷却，默认为60，一秒为20。
+	ClimbJumpCooldown = 60
+	#水中推进的冷却，默认为60，一秒为20。
+	SwimmingBoostCooldown = 60
+	#水中推进的氧气消耗，默认为30，氧气上限为300。
+	SwimmingBoostAirCost = 30
+

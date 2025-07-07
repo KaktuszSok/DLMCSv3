@@ -1,0 +1,14 @@
+{
+  "acceptedFoodItems": [
+    "minecraft:wheat_seeds",
+    "minecraft:melon_seeds",
+    "minecraft:pumpkin_seeds",
+    "minecraft:beetroot_seeds"
+  ],
+  "hungerDepletionRateOverride": -1,
+  "wildMaxAgeOverride": -1,
+  "domesticatedMaxAgeOverride": -1,
+  "breedingCooldownTicksOverride": -1,
+  "growthTimeTicksOverride": -1,
+  "feedingAmountOverride": -1
+}

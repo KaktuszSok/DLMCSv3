@@ -1,0 +1,13 @@
+filename = 'WorldComment-0.3.2+1.20.1.jar'
+name = 'WorldComment'
+side = 'both'
+
+[download]
+hash = 'f28de50e5b968cd182f3100898e95078812970bcb72a91b8167eba485fa181734d7aa9f7fa32964b4c09cc820b939045d0f033cc9364a9327021f5eade83d0c7'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/GNAofCJ3/versions/SebcJV8H/WorldComment-0.3.2%2B1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'GNAofCJ3'
+version = 'SebcJV8H'

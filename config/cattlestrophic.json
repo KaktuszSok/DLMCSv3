@@ -1,0 +1,21 @@
+{
+  "enableMod": true,
+  "enableAnimalSettings": false,
+  "hungerDepletionRateInTicks": 6000,
+  "agingRateInTicks": 24000,
+  "showHungerIndicators": true,
+  "showAgeIndicators": true,
+  "feedingTroughRange": 8,
+  "feedingAmount": 50,
+  "maxAnimalsPerTrough": 8,
+  "breedingCooldownTicks": 6000,
+  "growthTimeTicks": 24000,
+  "wildMaxAge": 100,
+  "domesticatedMaxAge": 150,
+  "preventLeashingWildAnimals": true,
+  "wildAnimalBreedChance": 0.5,
+  "wildBreedingExtraCooldownTicks": 6000,
+  "wildAnimalLootPenaltyMultiplier": 0.5,
+  "domesticatedAnimalLootBonusMultiplier": 1.5,
+  "animalSettings": {}
+}

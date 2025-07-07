@@ -1,0 +1,214 @@
+# iris.keybind.wireframe
+controllerx.action.inGame.minecraft.iris.keybind.wireframe=Unknown
+# key.tacz.refit.desc
+controllerx.action.inGame.minecraft.key.tacz.refit.desc=Unknown
+# controllerx.action.inGame.sprint
+controllerx.action.inGame.sprint=LeftStickClick
+# controllerx.action.inGame.swapHands
+controllerx.action.inGame.swapHands=X
+# keybind.sophisticatedbackpacks.open_backpack
+controllerx.action.inGame.minecraft.keybind.sophisticatedbackpacks.openBackpack=Unknown
+# iris.keybind.toggleShaders
+controllerx.action.inGame.minecraft.iris.keybind.toggleshaders=Unknown
+# key.jade.config
+controllerx.action.inGame.minecraft.key.jade.config=Unknown
+# key.plane_throttle_down.desc
+controllerx.action.inGame.minecraft.key.planeThrottleDown.desc=Unknown
+# railways.keyinfo.cycle_menu
+controllerx.action.inGame.minecraft.railways.keyinfo.cycleMenu=Unknown
+# Toggle Cinematic Camera
+controllerx.action.inGame.minecraft.key.smoothcamera=Unknown
+# key.tacz.open_config.desc
+controllerx.action.inGame.minecraft.key.tacz.openConfig.desc=Unknown
+# key.taczplus.lean_left
+controllerx.action.inGame.minecraft.key.taczplus.leanLeft=Unknown
+# key.createbigcannons.pitch_mode
+controllerx.action.inGame.minecraft.key.createbigcannons.pitchMode=Unknown
+# iris.keybind.shaderPackSelection
+controllerx.action.inGame.minecraft.iris.keybind.shaderpackselection=Unknown
+# Social Interactions Screen
+controllerx.action.inGame.minecraft.key.socialinteractions=Unknown
+# key.taczplus.lean_right
+controllerx.action.inGame.minecraft.key.taczplus.leanRight=Unknown
+# key.flansmod.manual_reload
+controllerx.action.inGame.minecraft.key.flansmod.manualReload=Unknown
+# controllerx.action.inGame.dropItem
+controllerx.action.inGame.dropItem=DpadDown
+# key.plane_throttle_up.desc
+controllerx.action.inGame.minecraft.key.planeThrottleUp.desc=Unknown
+# keyinfo.copycats.fill_copycat
+controllerx.action.inGame.minecraft.keyinfo.copycats.fillCopycat=Unknown
+# keybind.sophisticatedbackpacks.tool_swap
+controllerx.action.inGame.minecraft.keybind.sophisticatedbackpacks.toolSwap=Unknown
+# keybind.sophisticatedbackpacks.toggle_upgrade_1
+controllerx.action.inGame.minecraft.keybind.sophisticatedbackpacks.toggleUpgrade1=Unknown
+# keybind.sophisticatedbackpacks.toggle_upgrade_2
+controllerx.action.inGame.minecraft.keybind.sophisticatedbackpacks.toggleUpgrade2=Unknown
+# key.createarmory.reload_key
+controllerx.action.inGame.minecraft.key.createarmory.reloadKey=Unknown
+# keybind.sophisticatedbackpacks.toggle_upgrade_5
+controllerx.action.inGame.minecraft.keybind.sophisticatedbackpacks.toggleUpgrade5=Unknown
+# key.tacz.shoot.desc
+controllerx.action.inGame.minecraft.key.tacz.shoot.desc=Unknown
+# controllerx.action.inGame.openInventory
+controllerx.action.inGame.openInventory=Y
+# keybind.sophisticatedbackpacks.toggle_upgrade_3
+controllerx.action.inGame.minecraft.keybind.sophisticatedbackpacks.toggleUpgrade3=Unknown
+# keybind.sophisticatedbackpacks.toggle_upgrade_4
+controllerx.action.inGame.minecraft.keybind.sophisticatedbackpacks.toggleUpgrade4=Unknown
+# key.taczplus.focus
+controllerx.action.inGame.minecraft.key.taczplus.focus=Unknown
+# key.valkyrienskies.ship_cruise
+controllerx.action.inGame.minecraft.key.valkyrienskies.shipCruise=Unknown
+# controllerx.action.inGame.selectLeft
+controllerx.action.inGame.selectLeft=LeftShoulder
+# key.taczplus.deadeye
+controllerx.action.inGame.minecraft.key.taczplus.deadeye=Unknown
+# controllerx.action.inGame.movePlayer
+controllerx.action.inGame.movePlayer=LeftStick
+# Save Hotbar Activator
+controllerx.action.inGame.minecraft.key.savetoolbaractivator=Unknown
+# key.jade.narrate
+controllerx.action.inGame.minecraft.key.jade.narrate=Unknown
+# controllerx.action.inGame.showPlayerList
+controllerx.action.inGame.showPlayerList=DpadLeft
+# controllerx.action.inGame.sneak
+controllerx.action.inGame.sneak=RightStickClick
+# key.pointblack.inspect
+controllerx.action.inGame.minecraft.key.pointblack.inspect=Unknown
+# create.keyinfo.ponder
+controllerx.action.inGame.minecraft.create.keyinfo.ponder=Unknown
+# key.pointblack.attachments
+controllerx.action.inGame.minecraft.key.pointblack.attachments=Unknown
+# Open Command
+controllerx.action.inGame.minecraft.key.command=Unknown
+# controllerx.action.inGame.lookPlayer
+controllerx.action.inGame.lookPlayer=RightStick
+# key.pointblack.firemode
+controllerx.action.inGame.minecraft.key.pointblack.firemode=Unknown
+# Toggle Fullscreen
+controllerx.action.inGame.minecraft.key.fullscreen=Unknown
+# controllerx.action.inGame.openGameMenu
+controllerx.action.inGame.openGameMenu=Start
+# key.jade.toggle_liquid
+controllerx.action.inGame.minecraft.key.jade.toggleLiquid=Unknown
+# create.keyinfo.
+controllerx.action.inGame.minecraft.create.keyinfo=Unknown
+# controllerx.action.inGame.useItem
+controllerx.action.inGame.useItem=LeftTrigger
+# Take Screenshot
+controllerx.action.inGame.minecraft.key.screenshot=Unknown
+# Load Hotbar Activator
+controllerx.action.inGame.minecraft.key.loadtoolbaractivator=Unknown
+# key.createbigcannons.fire_controlled_cannon
+controllerx.action.inGame.minecraft.key.createbigcannons.fireControlledCannon=Unknown
+# keybinds.bettercombat.toggle_mine_with_weapons
+controllerx.action.inGame.minecraft.keybinds.bettercombat.toggleMineWithWeapons=Unknown
+# key.tacz.inspect.desc
+controllerx.action.inGame.minecraft.key.tacz.inspect.desc=Unknown
+# key.plane_yaw_right.desc
+controllerx.action.inGame.minecraft.key.planeYawRight.desc=Unknown
+# key.entityculling.toggle
+controllerx.action.inGame.minecraft.key.entityculling.toggle=Unknown
+# controllerx.action.inGame.pickItem
+controllerx.action.inGame.pickItem=DpadUp
+# keybind.sophisticatedbackpacks.inventory_interaction
+controllerx.action.inGame.minecraft.keybind.sophisticatedbackpacks.inventoryInteraction=Unknown
+# key.modernfix.config
+controllerx.action.inGame.minecraft.key.modernfix.config=Unknown
+# create.keyinfo.toolbelt
+controllerx.action.inGame.minecraft.create.keyinfo.toolbelt=Unknown
+# key.plane_inventory_open.desc
+controllerx.action.inGame.minecraft.key.planeInventoryOpen.desc=Unknown
+# key.plane_pitch_up.desc
+controllerx.action.inGame.minecraft.key.planePitchUp.desc=Unknown
+# key.tacz.reload.desc
+controllerx.action.inGame.minecraft.key.tacz.reload.desc=Unknown
+# key.jetpack.toggle_active.description
+controllerx.action.inGame.minecraft.key.jetpack.toggleActive.description=Unknown
+# railways.keyinfo.bogey_menu
+controllerx.action.inGame.minecraft.railways.keyinfo.bogeyMenu=Unknown
+# iris.keybind.reload
+controllerx.action.inGame.minecraft.iris.keybind.reload=Unknown
+# controllerx.action.inGame.selectRight
+controllerx.action.inGame.selectRight=RightShoulder
+# key.tacz.melee.desc
+controllerx.action.inGame.minecraft.key.tacz.melee.desc=Unknown
+# key.toms_storage.open_terminal
+controllerx.action.inGame.minecraft.key.tomsStorage.openTerminal=Unknown
+# Highlight Players (Spectators)
+controllerx.action.inGame.minecraft.key.spectatoroutlines=Unknown
+# key.plane_pitch_down.desc
+controllerx.action.inGame.minecraft.key.planePitchDown.desc=Unknown
+# key.tacz.fire_select.desc
+controllerx.action.inGame.minecraft.key.tacz.fireSelect.desc=Unknown
+# supplementaries.keybind.quiver
+controllerx.action.inGame.minecraft.supplementaries.keybind.quiver=Unknown
+# controllerx.action.inGame.attack
+controllerx.action.inGame.attack=RightTrigger
+# key.tacz.aim.desc
+controllerx.action.inGame.minecraft.key.tacz.aim.desc=Unknown
+# Hotbar Slot 2
+controllerx.action.inGame.minecraft.key.hotbar.2=Unknown
+# Hotbar Slot 1
+controllerx.action.inGame.minecraft.key.hotbar.1=Unknown
+# Hotbar Slot 4
+controllerx.action.inGame.minecraft.key.hotbar.4=Unknown
+# Hotbar Slot 3
+controllerx.action.inGame.minecraft.key.hotbar.3=Unknown
+# key.create_sa.increase_reach
+controllerx.action.inGame.minecraft.key.createSa.increaseReach=Unknown
+# key.create_sa.flying
+controllerx.action.inGame.minecraft.key.createSa.flying=Unknown
+# Hotbar Slot 6
+controllerx.action.inGame.minecraft.key.hotbar.6=Unknown
+# Hotbar Slot 5
+controllerx.action.inGame.minecraft.key.hotbar.5=Unknown
+# Hotbar Slot 8
+controllerx.action.inGame.minecraft.key.hotbar.8=Unknown
+# Hotbar Slot 7
+controllerx.action.inGame.minecraft.key.hotbar.7=Unknown
+# Hotbar Slot 9
+controllerx.action.inGame.minecraft.key.hotbar.9=Unknown
+# key.pointblack.reload
+controllerx.action.inGame.minecraft.key.pointblack.reload=Unknown
+# key.flansmod.look_at
+controllerx.action.inGame.minecraft.key.flansmod.lookAt=Unknown
+# key.tacz.interact.desc
+controllerx.action.inGame.minecraft.key.tacz.interact.desc=Unknown
+# key.pointblack.scope_switch
+controllerx.action.inGame.minecraft.key.pointblack.scopeSwitch=Unknown
+# Advancements
+controllerx.action.inGame.minecraft.key.advancements=Unknown
+# key.valkyrienskies.ship_down
+controllerx.action.inGame.minecraft.key.valkyrienskies.shipDown=Unknown
+# keybinds.bettercombat.feint
+controllerx.action.inGame.minecraft.keybinds.bettercombat.feint=Unknown
+# controllerx.action.inGame.jump
+controllerx.action.inGame.jump=A
+# key.move_heli_up.desc
+controllerx.action.inGame.minecraft.key.moveHeliUp.desc=Unknown
+# Toggle Perspective
+controllerx.action.inGame.minecraft.key.toggleperspective=Unknown
+# key.jetpack.toggle_hover.description
+controllerx.action.inGame.minecraft.key.jetpack.toggleHover.description=Unknown
+# key.plane_drop_payload.desc
+controllerx.action.inGame.minecraft.key.planeDropPayload.desc=Unknown
+# keybind.sophisticatedbackpacks.sort
+controllerx.action.inGame.minecraft.keybind.sophisticatedbackpacks.sort=Unknown
+# key.flansmod.mode_toggle
+controllerx.action.inGame.minecraft.key.flansmod.modeToggle=Unknown
+# key.create_sa.decrease_reach
+controllerx.action.inGame.minecraft.key.createSa.decreaseReach=Unknown
+# controllerx.action.inGame.openChat
+controllerx.action.inGame.openChat=DpadRight
+# key.jade.show_overlay
+controllerx.action.inGame.minecraft.key.jade.showOverlay=Unknown
+# key.plane_yaw_left.desc
+controllerx.action.inGame.minecraft.key.planeYawLeft.desc=Unknown
+# key.tacz.zoom.desc
+controllerx.action.inGame.minecraft.key.tacz.zoom.desc=Unknown
+# key.jade.show_details
+controllerx.action.inGame.minecraft.key.jade.showDetails=Unknown
+# create.keyinfo.toolmenu
+controllerx.action.inGame.minecraft.create.keyinfo.toolmenu=Unknown

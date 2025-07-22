@@ -1,0 +1,13 @@
+filename = 'just_in_nether-1.1.8-forge-1.20.1.jar'
+name = 'Just-In NETHER'
+side = 'client'
+
+[download]
+hash = 'e670f269ed56a228fda4404203980736f2c388fe3ff1c7fac543410dc0242f0fce883e7fd2423a54ad3ee43a4c7b5c01346bd48ccad9b0d0cbf0c90b976ec051'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/ZDpp5yKa/versions/b733C1cf/just_in_nether-1.1.8-forge-1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'ZDpp5yKa'
+version = 'b733C1cf'

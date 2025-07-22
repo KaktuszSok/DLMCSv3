@@ -61,7 +61,7 @@
 
 	[World.Nether]
 		#Enables a data pack that makes the nether 128 blocks high instead of 256, effectively disabling the "Nether Roof" and reduces the 8 block ratio between nether and other dimensions to 4.
-		"Disable Nether Roof and reduce block ratio" = true
+		"Disable Nether Roof and reduce block ratio" = false
 		#If true, lava pockets in the nether are removed. If quark is installed, this is disabled
 		"Remove Lava Pockets" = true
 		#If true you cannot lit nether portals
@@ -435,7 +435,7 @@
 
 [Movement]
 	#Makes flying with elytra outside the end dimension have stronger "air resistance"
-	"Enable Elytra Nerf" = true
+	"Enable Elytra Nerf" = false
 	#Players's slides down climbable blocks faster and stands still when opening an interface. This is disabled if quark is enabled
 	"Enable Better Climbable" = true
 	"Enable Swimming" = false
@@ -652,7 +652,7 @@
 	#Beacon has been redesigned to have more effects and range based off blocks used for pyramid. Effects and blocks ranges are controlled via json config in this feature's folder.
 	"Enable Beacon & Conduit" = true
 	#Various data packs that can be enabled/disabled
-	"Enable Tinker Integration" = true
+	"Enable Tinker Integration" = false
 	#Various stuff that doesn't fit in any other Feature.
 	"Enable Tweaks" = true
 	#Apply potion effects on certain hunger / health / experience level. Debuffs are controlled via json in this feature's folder
@@ -716,7 +716,7 @@
 		#Integrates the mod with Crate. Alters ore generation.
 		"Create integration" = true
 		#Integrates the mod with Tinker's Construct. Disables vanilla items.
-		"Tinkers' Construct integration" = true
+		"Tinkers' Construct integration" = false
 		#When you add a new mod the game automatically sets the data pack of the mod at the bottom of all the data packs, making the data packs loaded from this mod not work. If this is set to true the enabled and disabled Data Packs of the world are reset and reloaded. WARNING: you'll lose disabled data packs!
 		"Force Reload world Data Packs" = false
 
@@ -1515,5 +1515,5 @@
 	#Apply attribute modifiers to players. Attributes can be added in the json config of this feature's folder. Changing attribute modifiers requires player rejoin
 	[Combat."Player Stats"]
 		#In vanilla, if you attack as soon as you just attacked you already deal 20% of the full damage. This changes that to 0%. This also mixins into Tinkers Construct to apply the same effect.
-		"No damage when spamming" = true
+		"No damage when spamming" = false
 

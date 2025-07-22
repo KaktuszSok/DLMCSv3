@@ -24,25 +24,25 @@
 		#If true a data pack will be enabled that overhauls structure loot. This overrides some loot tables from ITR
 		"Better Structure Loot" = false
 		"Block Data Data Pack" = true
-		"Tinkers Construct Integration" = true
+		"Tinkers Construct Integration" = false
 
 [Mining]
 	#Add new multi block furnaces
 	"Enable Multi Block Furnaces" = true
 	#Add a new Nether gem which makes lets you go fast (KEEp GOing). Disabling this will disable ore generation and items in the creative inventory.
-	"Enable Keego" = false
+	"Enable Keego" = true
 	#Add repair kits, making you able to repair items in the crafting grid
-	"Enable Repair Kits" = false
+	"Enable Repair Kits" = true
 	#Add Durium, a new metal made by alloying Durium Scrap (found as scrap pieces in ores in the Overworld) and can be used to upgrade Iron Equipment. Disabling this will disable ore generation and items in the creative inventory.
-	"Enable Durium" = false
+	"Enable Durium" = true
 	#Add Soul Steel, a new metal made by alloying Iron, Soul Sand and Hellish Coal. Disabling this will disable ore generation and items in the creative inventory.
-	"Enable Soul Steel" = false
+	"Enable Soul Steel" = true
 	#Adds mining charge
 	"Enable Mining Charge" = true
 	#Enables a Data Pack that makes Beeg Ore Veins generate. On the surface of the overworld you can now find ore rocks. These indicate that underground there's a huge vein of that ore
 	"Enable Beeg Ore Veins" = true
 	#Add Quaron, a new metal made by alloying Iron and Amethyst. Disabling this will disable ore generation and items in the creative inventory.
-	"Enable Quaron" = false
+	"Enable Quaron" = true
 	"Enable Forging" = true
 
 	#Add new multi block furnaces
@@ -74,9 +74,9 @@
 
 [Items]
 	#Add Solarium, a new material made by alloying Overgrown solium moss ball (found in hot biomes) and can be used to upgrade Iron Equipment. Disabling this will disable ore generation and items in the creative inventory.
-	"Enable Solarium" = false
+	"Enable Solarium" = true
 	#Two new set of tools and a new Armor Set. Disabling this will prevent copper tools from being faster and more durable the deeper are used and will prevent the electrocution effect of coated copper items. Disabling this will disable ore generation and items in the creative inventory.
-	"Enable Copper Tools & Armor Expansion" = false
+	"Enable Copper Tools & Armor Expansion" = true
 	#Back to base
 	"Enable Recall Potion" = true
 	#A new block that can let you carry more stuff around.

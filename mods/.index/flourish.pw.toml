@@ -1,0 +1,13 @@
+filename = 'flourish-forge-3.0.0+1.20.1.jar'
+name = 'Flourish'
+side = 'both'
+
+[download]
+hash = '4bd0b5afd48a5e5c37a9aecbf20c9dbb6b9d8fdf4e821ad34c402e7cdc621900e595e3287839507240d5319c37598a3bdfd2e5963d2b0941f9953311d5e1488a'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/nNI4DwbW/versions/TiOuKZv8/flourish-forge-3.0.0%2B1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'nNI4DwbW'
+version = 'TiOuKZv8'

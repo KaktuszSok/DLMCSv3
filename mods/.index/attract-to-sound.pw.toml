@@ -1,13 +1,13 @@
-filename = 'forge_soundattractmod_1.20.1-2.0.5b.jar'
-name = 'Attract to Sound'
+filename = 'forge_soundattract_1.20.1-4.0.3.jar'
+name = 'Sound Attract Mod'
 side = 'both'
 
 [download]
-hash = 'f94deb112bfa26901b6d7952b4302afe90693f7f2e40b933a01ac901a73f98126fe58af5c8b3730796ba2e548daaedcf1f520550743a17f91790748f25c43606'
+hash = '66a44471540b4e29975fe9520843db14b9484f9480a78d92025366030abfc31f599833a4e300640e2df44a490a3c3607ce5293a289d1698a388e200d4c814735'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/zZluixcp/versions/Fa5Z02qx/forge_soundattractmod_1.20.1-2.0.5b.jar'
+url = 'https://cdn.modrinth.com/data/zZluixcp/versions/WFWGJgh2/forge_soundattract_1.20.1-4.0.3.jar'
 
 [update.modrinth]
 mod-id = 'zZluixcp'
-version = 'Fa5Z02qx'
+version = 'WFWGJgh2'

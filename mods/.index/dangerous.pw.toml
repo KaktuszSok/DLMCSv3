@@ -1,0 +1,13 @@
+filename = 'Dangerous Forge - 1.20.1 v1.3.2.jar'
+name = 'Dangerous - Just A Difficulty Mod'
+side = 'both'
+
+[download]
+hash = 'a8b6e3f748710348f22cc7605ca703afadf1195c035ea854a59c2e3e62551b4e8ebf929601e3ca04e456d86f332ca32420c4838429564f8aeaf96fa28c28d47c'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/nsri5wVW/versions/QxucoUwF/Dangerous Forge - 1.20.1 v1.3.2.jar'
+
+[update.modrinth]
+mod-id = 'nsri5wVW'
+version = 'QxucoUwF'

@@ -71,6 +71,18 @@
 				phantom = true
 				potion = true
 				llama = true
+				stray = true
+				experience_bottle = true
+				zombie_horse = true
+				skeleton_horse = true
+				egg = true
+				panda = true
+				turtle = true
+				polar_bear = true
+				horse = true
+				silverfish = true
+				salmon = true
+				goat = true
 
 			[light_sources.settings.entities.irons_spellbooks]
 				necromancer = true
@@ -79,6 +91,7 @@
 				dead_king_corpse = true
 				archevoker = true
 				pyromancer = true
+				priest = true
 
 			[light_sources.settings.entities.wan_ancient_beasts]
 				toxlacanth = true
@@ -111,6 +124,9 @@
 				duck = true
 				alligator = true
 				bass = true
+				lion = true
+				rhino = true
+				hippo = true
 
 			[light_sources.settings.entities.alshanex_familiars]
 				summoner_pet = true
@@ -118,6 +134,9 @@
 				scorcher_pet = true
 				default_note = true
 				black_note = true
+				hunter_pet = true
+				druid_pet = true
+				mage_pet = true
 
 			[light_sources.settings.entities.tameablebeasts]
 				tameable_racoon = true
@@ -127,10 +146,15 @@
 				giant_grasshopper = true
 				tameable_beetle = true
 				ground_beetle = true
+				giant_roly_poly = true
+				tameable_penguin = true
+				quetzalcoatlus = true
 
 			[light_sources.settings.entities.burnt]
 				smoke = true
 				volcano = true
+				geyser = true
+				falling_slab = true
 
 			[light_sources.settings.entities.tide]
 				pike = true
@@ -147,6 +171,7 @@
 				barracuda = true
 				angelfish = true
 				ocean_perch = true
+				clayfish = true
 
 			[light_sources.settings.entities.swem]
 				swem_horse = true
@@ -167,6 +192,7 @@
 
 			[light_sources.settings.entities.bloomingnature]
 				termite = true
+				wandering_gardener = true
 
 			[light_sources.settings.entities.horse_colors]
 				horse_felinoid = true
@@ -176,4 +202,10 @@
 
 			[light_sources.settings.entities.breezy]
 				hot_air_balloon = true
+
+			[light_sources.settings.entities.spelunkery]
+				dust_bunny = true
+
+			[light_sources.settings.entities.variantsandventures]
+				gelid = true
 

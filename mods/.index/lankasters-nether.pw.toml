@@ -1,0 +1,13 @@
+filename = 'lankasters-nether-1.1.0.jar'
+name = 'Lankasters Nether'
+side = 'server'
+
+[download]
+hash = 'ffa08940ac4ae308d4e6c91531f7d9252ca520d0a6759b3980232cf34638c1eaacc8757d2984c7925701c9fed4c36a4868a2c2733c30b56af8abe28d31d95e9f'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/xE07xARe/versions/DjWhcX6S/lankasters-nether-1.1.0.jar'
+
+[update.modrinth]
+mod-id = 'xE07xARe'
+version = 'DjWhcX6S'

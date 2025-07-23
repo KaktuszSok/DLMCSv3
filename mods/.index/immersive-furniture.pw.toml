@@ -1,0 +1,13 @@
+filename = 'immersive_furniture-forge-0.0.7+1.20.1.jar'
+name = 'Immersive Furniture'
+side = 'both'
+
+[download]
+hash = '050fb43061223b57b6f3d91805eefe156d7e5f925415a725297f92fc77ebbf2bf89b8c851ad4d6e30d5c9407eba0573163bad293dc6741908b7827ff31dec9d1'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/SvN6UGeF/versions/X2NzHODg/immersive_furniture-forge-0.0.7%2B1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'SvN6UGeF'
+version = 'X2NzHODg'

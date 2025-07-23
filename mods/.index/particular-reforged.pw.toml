@@ -1,13 +1,13 @@
-filename = 'particular-1.20.1-Forge-1.2.0.jar'
-name = 'Particular ✨ Reforged'
-side = 'client'
+filename = 'particular-1.20.1-Forge-1.2.4.jar'
+name = 'Particular'
+side = 'both'
 
 [download]
-hash = 'bf3c9a8e615216177511d2e656f1260c881db3dc2cc3f0f14ac993747e5d90e17092e74ad24a90176291510c6af84e01fc44763c5b30719428954b40b2d7d121'
+hash = 'ad4e43288e04daa286cce5cedce07cceb9603e95562d91cbf5bb8cea0090fd93f28aa12c28d36988b60a86136899be2138fbf324171755b59b36dde2b836fdae'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/pYFUU6cq/versions/ZP94L2Nm/particular-1.20.1-Forge-1.2.0.jar'
+url = 'https://cdn.modrinth.com/data/pYFUU6cq/versions/E2JI5D7W/particular-1.20.1-Forge-1.2.4.jar'
 
 [update.modrinth]
 mod-id = 'pYFUU6cq'
-version = 'ZP94L2Nm'
+version = 'E2JI5D7W'

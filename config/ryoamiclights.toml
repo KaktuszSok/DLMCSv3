@@ -127,6 +127,9 @@
 				lion = true
 				rhino = true
 				hippo = true
+				giraffe = true
+				lizard_tail = true
+				zebra = true
 
 			[light_sources.settings.entities.alshanex_familiars]
 				summoner_pet = true
@@ -208,4 +211,12 @@
 
 			[light_sources.settings.entities.variantsandventures]
 				gelid = true
+				murk = true
+
+			[light_sources.settings.entities.zombifiedplayer]
+				zombified_player = true
+
+			[light_sources.settings.entities.enhancedai]
+				thrown_web = true
+				fishing_hook = true
 

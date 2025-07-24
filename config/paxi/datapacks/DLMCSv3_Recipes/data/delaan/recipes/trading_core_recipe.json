@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "i": {
+      "item": "lightmanscurrency:coin_iron"
+    },
+    "c": {
+      "item": "lightmanscurrency:coin_copper"
+    }
+  },
+  "pattern": [
+    "ic",
+    "ci"
+  ],
+  "result": {
+    "item": "lightmanscurrency:trading_core",
+    "count": 1
+  }
+}

@@ -82,13 +82,6 @@
     "block": true,
     "note_block": true
   },
-  "superbwarfare": {
-    "dps_generator": true,
-    "vehicle_deployer": true,
-    "container_entity": true,
-    "vehicle_health": true,
-    "c4_info": true
-  },
   "cookingforblockheads": {
     "fridge": true,
     "oven": true,

@@ -1,0 +1,17 @@
+# Ignore everything
+*
+!.gitignore
+
+# Except the mods and config folders
+!mods/
+!config/
+!defaultconfigs/
+
+# Include all contents of those folders
+!mods/**
+!config/**
+!defaultconfigs/**
+
+# Explicitly ignore specific files in mods
+mods/AmbientSounds_FORGE_v6.1.11_mc1.20.1.jar
+mods/timm-1.0.4.jar

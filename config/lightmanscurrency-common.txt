@@ -12,7 +12,7 @@ debugLevel=0
 	#Disabling will not remove any existing Network Traders from the world, nor prevent their use.
 	#Disabling does NOT disable the recipes of Network Upgrades or the Trading Terminals.
 	#Default: true
-	canCraftNetworkTrader=true
+	canCraftNetworkTrader=false
 	
 	#Whether Trader Interface blocks can be crafted.
 	#Disabling will not remove any existing Trader Interfaces from the world, nor prevent their use.
@@ -39,11 +39,11 @@ debugLevel=0
 		#Whether the Coin Mint machine can be crafted.
 		#Disabling will not remove and exist Coin Mints from the world, nor prevent their use.
 		#Default: true
-		canCraftCoinMint=true
+		canCraftCoinMint=false
 		
 		#Whether or not built-in coin mint recipes that turn resources into coins will be loaded.
 		#Default: true
-		canMint=true
+		canMint=false
 		
 		#Whether or not built-in coin mint recipes that turn coins back into resources will be loaded.
 		#Default: false
@@ -166,19 +166,19 @@ debugLevel=0
 	[villagers.modification]
 		#Whether vanilla villagers should have the Emeralds from their trades replaced with coins.
 		#Default: false
-		changeVanillaTrades=false
+		changeVanillaTrades=true
 		
 		#Whether villagers added by other mods should have the Emeralds from their trades replaced with coins.
 		#Default: false
-		changeModdedTrades=false
+		changeModdedTrades=true
 		
 		#Whether the wandering trader should have the emeralds from their trades replaced with the default replacement coin.
 		#Default: false
-		changeWanderingTrades=false
+		changeWanderingTrades=true
 		
 		#The default coin to replace a trades emeralds with.
 		#May seperate and define villager type specific entries by adding multiple items seperated by '-' with region
-		defaultEmeraldReplacementItem="lightmanscurrency:coin_emerald-r;minecraft:snow;lightmanscurrency:coin_chocolate_emerald"
+		defaultEmeraldReplacementItem="lightmanscurrency:coin_gold"
 		
 		#List of replacement coin overrides.
 		#Each entry must be formatted as follows: "mod:some_profession_type-SUB_ENTRY-SUB_ENTRY-..."
@@ -190,7 +190,7 @@ debugLevel=0
 		#Each item-entry is either 1 or 2 item ids (e.g. "mod:coin_item" or "mod:coin_item_1;mod:coin_item_2".
 		#When two are given, the first will replace the cost items (items the player must pay the villager) and the second will replace the result (items the player will be paid by the villager)
 		#Every trader not on this list will use the default trader coin defined above.
-		professionEmeraldReplacementOverrides=["minecraft:cartographer-lightmanscurrency:coin_iron-r;minecraft:snow;lightmanscurrency:coin_chocolate_iron","minecraft:fletcher-lightmanscurrency:coin_iron;lightmanscurrency:coin_copper-r;minecraft:snow;lightmanscurrency:coin_chocolate_iron;lightmanscurrency:coin_chocolate_copper","minecraft:butcher-lightmanscurrency:coin_iron-r;minecraft:snow;lightmanscurrency:coin_chocolate_iron","minecraft:farmer-lightmanscurrency:coin_iron-r;minecraft:snow;lightmanscurrency:coin_chocolate_iron","minecraft:fisherman-lightmanscurrency:coin_iron-r;minecraft:snow;lightmanscurrency:coin_chocolate_iron","minecraft:shepherd-lightmanscurrency:coin_iron-r;minecraft:snow;lightmanscurrency:coin_chocolate_iron","minecraft:mason-lightmanscurrency:coin_iron-r;minecraft:snow;lightmanscurrency:coin_chocolate_iron","minecraft:leatherworker-lightmanscurrency:coin_iron-r;minecraft:snow;lightmanscurrency:coin_chocolate_iron"]
+		professionEmeraldReplacementOverrides=["minecraft:cartographer-lightmanscurrency:coin_iron","minecraft:fletcher-lightmanscurrency:coin_iron;lightmanscurrency:coin_copper","minecraft:butcher-lightmanscurrency:coin_iron","minecraft:farmer-lightmanscurrency:coin_iron","minecraft:fisherman-lightmanscurrency:coin_iron","minecraft:shepherd-lightmanscurrency:coin_iron","minecraft:mason-lightmanscurrency:coin_iron","minecraft:leatherworker-lightmanscurrency:coin_iron"]
 		
 #Loot Options
 [loot]
@@ -261,15 +261,15 @@ debugLevel=0
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier3" loot table.
 			#Requires a player kill to trigger coin drops.
-			T3=["minecraft:guardian","minecraft:elder_guardian","minecraft:phantom","minecraft:blaze","minecraft:ghast","minecraft:hoglin","minecraft:piglin_brute","minecraft:piglin","minecraft:zombified_piglin","alexsmobs:crimson_mosquito","alexsmobs:dropbear","alexsmobs:guster","alexsmobs:skelewag","alexsmobs:tusklin"]
+			T3=["#minecraft:raiders","minecraft:enderman","minecraft:wither_skeleton","minecraft:guardian","minecraft:elder_guardian","minecraft:phantom","minecraft:blaze","minecraft:ghast","minecraft:hoglin","minecraft:piglin_brute","minecraft:piglin","minecraft:zombified_piglin","alexsmobs:crimson_mosquito","alexsmobs:dropbear","alexsmobs:guster","alexsmobs:skelewag","alexsmobs:tusklin"]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier4" loot table.
 			#Requires a player kill to trigger coin drops.
-			T4=["minecraft:enderman","minecraft:shulker","#minecraft:raiders","alexsmobs:enderiophage","alexsmobs:farseer","alexsmobs:murmur","alexsmobs:straddler"]
+			T4=["minecraft:shulker","alexsmobs:enderiophage","alexsmobs:farseer","alexsmobs:murmur","alexsmobs:straddler"]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier5" loot table.
 			#Requires a player kill to trigger coin drops.
-			T5=["minecraft:wither_skeleton"]
+			T5=[]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier6" loot table.
 			#Requires a player kill to trigger coin drops.
@@ -289,15 +289,15 @@ debugLevel=0
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/boss/tier4" loot table.
 			#Does NOT require a player kill to trigger coin drops.
-			BossT4=["minecraft:warden"]
+			BossT4=["minecraft:warden","minecraft:wither","minecraft:ender_dragon"]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/boss/tier5" loot table.
 			#Does NOT require a player kill to trigger coin drops.
-			BossT5=["minecraft:ender_dragon"]
+			BossT5=[]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/boss/tier6" loot table.
 			#Does NOT require a player kill to trigger coin drops.
-			BossT6=["minecraft:wither","alexsmobs:void_worm"]
+			BossT6=["alexsmobs:void_worm"]
 			
 	#Chest Loot Settings
 	[loot.chests]

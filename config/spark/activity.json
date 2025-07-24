@@ -5,6 +5,19 @@
       "name": "KaktuszSok",
       "uniqueId": "edac17ef-c211-4d43-91e2-ecc632c3e376"
     },
+    "time": 1753361625137,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/0nx8DLj9K6"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "KaktuszSok",
+      "uniqueId": "edac17ef-c211-4d43-91e2-ecc632c3e376"
+    },
     "time": 1753137704570,
     "type": "Profiler",
     "data": {

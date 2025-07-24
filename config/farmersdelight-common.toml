@@ -44,7 +44,7 @@
 	#Stack size overrides
 	[overrides.stack_size]
 		#Should BowlFoodItems in the following list become stackable to 16, much like Farmer's Delight's meals?
-		enableStackableSoupItems = true
+		enableStackableSoupItems = false
 		#List of BowlFoodItems. They must extend this class to be affected. Default: vanilla soups and stews.
 		soupItemList = ["minecraft:mushroom_stew", "minecraft:beetroot_soup", "minecraft:rabbit_stew"]
 
@@ -67,19 +67,19 @@
 	[world.wild_beetroots]
 		#Chance of generating clusters. Smaller value = more frequent.
 		#Range: > 0
-		chance = 30
+		chance = 2147483647
 
 	#Wild Potato generation
 	[world.wild_potatoes]
 		#Chance of generating clusters. Smaller value = more frequent.
 		#Range: > 0
-		chance = 100
+		chance = 2147483647
 
 	#Wild Carrot generation
 	[world.wild_carrots]
 		#Chance of generating clusters. Smaller value = more frequent.
 		#Range: > 0
-		chance = 120
+		chance = 2147483647
 
 	#Wild Onion generation
 	[world.wild_onions]

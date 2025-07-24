@@ -83,6 +83,10 @@
 				silverfish = true
 				salmon = true
 				goat = true
+				ender_pearl = true
+				warden = true
+				husk = true
+				area_effect_cloud = true
 
 			[light_sources.settings.entities.irons_spellbooks]
 				necromancer = true
@@ -92,6 +96,7 @@
 				archevoker = true
 				pyromancer = true
 				priest = true
+				icicle = true
 
 			[light_sources.settings.entities.wan_ancient_beasts]
 				toxlacanth = true
@@ -101,6 +106,7 @@
 				royal_zombie = true
 				royal_creeper = true
 				royal_skeleton = true
+				projectile_marked_arrow = true
 
 			[light_sources.settings.entities.naturalist]
 				snake = true
@@ -199,6 +205,7 @@
 
 			[light_sources.settings.entities.horse_colors]
 				horse_felinoid = true
+				donkey = true
 
 			[light_sources.settings.entities.furnish]
 				seat = true
@@ -212,6 +219,8 @@
 			[light_sources.settings.entities.variantsandventures]
 				gelid = true
 				murk = true
+				verdant = true
+				thicket = true
 
 			[light_sources.settings.entities.zombifiedplayer]
 				zombified_player = true
@@ -219,4 +228,7 @@
 			[light_sources.settings.entities.enhancedai]
 				thrown_web = true
 				fishing_hook = true
+
+			[light_sources.settings.entities.astikorcarts]
+				supply_cart = true
 

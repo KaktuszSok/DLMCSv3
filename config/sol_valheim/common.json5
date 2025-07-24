@@ -104,9 +104,27 @@
 			"healthRegenModifier": 1.0,
 			"extraEffects": []
 		},
+		"psychedelicraft:crack_cocaine": {
+			"nutrition": 0,
+			"saturationModifier": 0.10000000149011612,
+			"healthRegenModifier": 1.0,
+			"extraEffects": []
+		},
+		"psychedelicraft:heroine_powder": {
+			"nutrition": 0,
+			"saturationModifier": 0.10000000149011612,
+			"healthRegenModifier": 1.0,
+			"extraEffects": []
+		},
 		"psychedelicraft:tomato": {
 			"nutrition": 1,
 			"saturationModifier": 1.899999976158142,
+			"healthRegenModifier": 1.0,
+			"extraEffects": []
+		},
+		"psychedelicraft:morphine_tablet": {
+			"nutrition": 0,
+			"saturationModifier": 0.10000000149011612,
 			"healthRegenModifier": 1.0,
 			"extraEffects": []
 		},
@@ -149,6 +167,12 @@
 		"minecraft:cooked_porkchop": {
 			"nutrition": 8,
 			"saturationModifier": 0.800000011920929,
+			"healthRegenModifier": 1.0,
+			"extraEffects": []
+		},
+		"psychedelicraft:extacy": {
+			"nutrition": 0,
+			"saturationModifier": 0.10000000149011612,
 			"healthRegenModifier": 1.0,
 			"extraEffects": []
 		},
@@ -320,6 +344,12 @@
 			"healthRegenModifier": 1.0,
 			"extraEffects": []
 		},
+		"psychedelicraft:blue_methamphetamine_powder": {
+			"nutrition": 0,
+			"saturationModifier": 0.10000000149011612,
+			"healthRegenModifier": 1.0,
+			"extraEffects": []
+		},
 		"minecraft:bread": {
 			"nutrition": 5,
 			"saturationModifier": 0.6000000238418579,
@@ -333,6 +363,12 @@
 			"extraEffects": []
 		},
 		"psychedelicraft:red_magic_mushrooms": {
+			"nutrition": 0,
+			"saturationModifier": 0.10000000149011612,
+			"healthRegenModifier": 1.0,
+			"extraEffects": []
+		},
+		"psychedelicraft:methamphetamine_powder": {
 			"nutrition": 0,
 			"saturationModifier": 0.10000000149011612,
 			"healthRegenModifier": 1.0,

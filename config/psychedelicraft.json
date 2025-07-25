@@ -115,49 +115,19 @@
     // Sets the rate at which each fluid is processed.,
     // Delete the entry for a fluid and restart the game to have the default value for that fluid populated.,
     "fluidattributes": {
-      "psychedelicraft:milk": {
+      "psychedelicraft:corn": {
         "ticksPerFermentation": 48000,
         "ticksPerDistillation": 48000,
         "ticksPerMaturation": 36000,
         "ticksUntilAcetification": 36000
       },
-      "psychedelicraft:wheat_hop": {
-        "ticksPerFermentation": 36000,
-        "ticksPerDistillation": 72000,
-        "ticksPerMaturation": 120000,
-        "ticksUntilAcetification": 36000
-      },
-      "psychedelicraft:morning_glory_extract": {
-        "ticksPerFermentation": 48000,
-        "ticksPerDistillation": 1200,
-        "ticksPerMaturation": 36000,
-        "ticksUntilAcetification": 36000
-      },
-      "psychedelicraft:red_grapes": {
+      "psychedelicraft:honey": {
         "ticksPerFermentation": 48000,
         "ticksPerDistillation": 48000,
         "ticksPerMaturation": 36000,
         "ticksUntilAcetification": 36000
       },
-      "psychedelicraft:pineapple": {
-        "ticksPerFermentation": 48000,
-        "ticksPerDistillation": 48000,
-        "ticksPerMaturation": 36000,
-        "ticksUntilAcetification": 36000
-      },
-      "psychedelicraft:jimsonweed_extract": {
-        "ticksPerFermentation": 48000,
-        "ticksPerDistillation": 1200,
-        "ticksPerMaturation": 36000,
-        "ticksUntilAcetification": 36000
-      },
-      "psychedelicraft:agave": {
-        "ticksPerFermentation": 36000,
-        "ticksPerDistillation": 96000,
-        "ticksPerMaturation": 48000,
-        "ticksUntilAcetification": 108000
-      },
-      "psychedelicraft:banana": {
+      "psychedelicraft:wheat": {
         "ticksPerFermentation": 48000,
         "ticksPerDistillation": 48000,
         "ticksPerMaturation": 36000,
@@ -169,7 +139,25 @@
         "ticksPerMaturation": 36000,
         "ticksUntilAcetification": 36000
       },
-      "psychedelicraft:wheat": {
+      "psychedelicraft:morning_glory_extract": {
+        "ticksPerFermentation": 48000,
+        "ticksPerDistillation": 1200,
+        "ticksPerMaturation": 36000,
+        "ticksUntilAcetification": 36000
+      },
+      "psychedelicraft:agave": {
+        "ticksPerFermentation": 36000,
+        "ticksPerDistillation": 96000,
+        "ticksPerMaturation": 48000,
+        "ticksUntilAcetification": 108000
+      },
+      "psychedelicraft:milk": {
+        "ticksPerFermentation": 48000,
+        "ticksPerDistillation": 48000,
+        "ticksPerMaturation": 36000,
+        "ticksUntilAcetification": 36000
+      },
+      "psychedelicraft:pineapple": {
         "ticksPerFermentation": 48000,
         "ticksPerDistillation": 48000,
         "ticksPerMaturation": 36000,
@@ -187,25 +175,31 @@
         "ticksPerMaturation": 36000,
         "ticksUntilAcetification": 36000
       },
+      "psychedelicraft:wheat_hop": {
+        "ticksPerFermentation": 36000,
+        "ticksPerDistillation": 72000,
+        "ticksPerMaturation": 120000,
+        "ticksUntilAcetification": 36000
+      },
+      "psychedelicraft:red_grapes": {
+        "ticksPerFermentation": 48000,
+        "ticksPerDistillation": 48000,
+        "ticksPerMaturation": 36000,
+        "ticksUntilAcetification": 36000
+      },
       "psychedelicraft:rice": {
         "ticksPerFermentation": 48000,
         "ticksPerDistillation": 48000,
         "ticksPerMaturation": 36000,
         "ticksUntilAcetification": 36000
       },
-      "psychedelicraft:corn": {
+      "psychedelicraft:banana": {
         "ticksPerFermentation": 48000,
         "ticksPerDistillation": 48000,
         "ticksPerMaturation": 36000,
         "ticksUntilAcetification": 36000
       },
-      "psychedelicraft:honey": {
-        "ticksPerFermentation": 48000,
-        "ticksPerDistillation": 48000,
-        "ticksPerMaturation": 36000,
-        "ticksUntilAcetification": 36000
-      },
-      "psychedelicraft:sugar_cane": {
+      "psychedelicraft:apple": {
         "ticksPerFermentation": 48000,
         "ticksPerDistillation": 48000,
         "ticksPerMaturation": 36000,
@@ -217,7 +211,13 @@
         "ticksPerMaturation": 36000,
         "ticksUntilAcetification": 36000
       },
-      "psychedelicraft:apple": {
+      "psychedelicraft:jimsonweed_extract": {
+        "ticksPerFermentation": 48000,
+        "ticksPerDistillation": 1200,
+        "ticksPerMaturation": 36000,
+        "ticksUntilAcetification": 36000
+      },
+      "psychedelicraft:sugar_cane": {
         "ticksPerFermentation": 48000,
         "ticksPerDistillation": 48000,
         "ticksPerMaturation": 36000,

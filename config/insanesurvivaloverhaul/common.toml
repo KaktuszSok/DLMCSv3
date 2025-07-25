@@ -791,7 +791,7 @@
 		#If true, Iron golems will only drop Iron when killed by the player.
 		"Iron from golems requires player" = true
 		#If true, renderDebugInfo is enabled by default. Requires a world restart.
-		"No coordinates" = true
+		"No coordinates" = false
 		#Kelp blocks smelt 16 items instead of 20
 		"Less burn time for kelp block" = true
 		#Prevents duping falling blocks when they travel across dimensions. (If quark is present this is disabled)
@@ -878,7 +878,7 @@
 	"Enable Stack sizes" = true
 	#Make items not able to mine / attack
 	"Enable Disabled items" = true
-	#Enchanted items no longer break, will sit at one durability and can't be used. Items in the item tag `iguanatweaksreborn:not_unbreakable` are not affected.
+	#Enchanted items no longer break, will sit at one durability and can't be used. Items in the item tag `iguanatweaksreborn:not_unbreakable` are not affected and items in the item tag `iguanatweaksreborn:unbreakable` are always unbreakable.
 	"Enable Unbreakable items" = true
 	#Control Items properties via data packs. Add more tooltips.
 	"Enable Misc item" = true
@@ -916,7 +916,7 @@
 		#If set to true items in the 'no_damage', 'no_efficiency', 'no_equip' and 'disabled' item tags will get a tooltip.
 		"Add tooltip" = true
 
-	#Enchanted items no longer break, will sit at one durability and can't be used. Items in the item tag `iguanatweaksreborn:not_unbreakable` are not affected.
+	#Enchanted items no longer break, will sit at one durability and can't be used. Items in the item tag `iguanatweaksreborn:not_unbreakable` are not affected and items in the item tag `iguanatweaksreborn:unbreakable` are always unbreakable.
 	[Items."Unbreakable items"]
 		#Items with durability get a durability tooltip
 		"Durability tooltip" = true
@@ -1506,7 +1506,7 @@
 		"Better healing potion" = true
 		#If enabled, tools will not take 2 damage when used to hurt entities
 		"One damage for tool attacking" = true
-		#Rework Sweeping attack. Sweeping is no longer on swords, instead it's on hoes. Also, the sweeping attack deals full damage and the Sweeping Edge enchantment increases the range. This also replaces the vanilla sweeping edge enchantment with a new one that can be applied to hoes instead of swords.
+		#Rework Sweeping attack. Sweeping is no longer on swords, instead it's on hoes. Also, the sweeping attack deals full damage and the range is increased. Sweeping edge enchantment has been disabled via the enchantments feature disable_enchantments.json
 		"Sweeping overhaul" = true
 		#Enables a data pack that reworks armor, weapons and tools.
 		"Combat rework data pack" = true

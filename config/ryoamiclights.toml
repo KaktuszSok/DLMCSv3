@@ -87,6 +87,7 @@
 				warden = true
 				husk = true
 				area_effect_cloud = true
+				llama_spit = true
 
 			[light_sources.settings.entities.irons_spellbooks]
 				necromancer = true
@@ -164,6 +165,7 @@
 				volcano = true
 				geyser = true
 				falling_slab = true
+				wisp = true
 
 			[light_sources.settings.entities.tide]
 				pike = true
@@ -231,4 +233,10 @@
 
 			[light_sources.settings.entities.astikorcarts]
 				supply_cart = true
+
+			[light_sources.settings.entities.miapi]
+				thrown_item = true
+
+			[light_sources.settings.entities.immersive_furniture]
+				sitting = true
 

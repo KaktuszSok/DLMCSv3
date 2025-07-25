@@ -1,13 +1,13 @@
-filename = 'iguanatweaksreborn-4.17.6.jar'
-name = "Insane's Survival Overhaul"
+filename = 'iguanatweaksreborn-4.17.8.jar'
+name = 'Insane Survival Overhaul'
 side = 'both'
 
 [download]
-hash = '4fe6644a86dc4989ed794356a9f4306aa431bd96bc1672e5406efb121c37817993d49cfa40d3208abd90037688a5c62462f4b3ba81593317000c69525cff67ff'
+hash = '72aaadb436a63e69410ad3a75bd4f4dcaf0d95d8d2d0595f05896a0aff94b10ed563fd3c5d418c158ae24885bde99792f5e70c1f46b7b28c233cd12156f66ac7'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/72JfV3Be/versions/u2Esb0qX/iguanatweaksreborn-4.17.6.jar'
+url = 'https://cdn.modrinth.com/data/72JfV3Be/versions/gnOg1Kf4/iguanatweaksreborn-4.17.8.jar'
 
 [update.modrinth]
 mod-id = '72JfV3Be'
-version = 'u2Esb0qX'
+version = 'gnOg1Kf4'

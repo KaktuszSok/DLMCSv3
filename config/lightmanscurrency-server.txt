@@ -327,7 +327,7 @@
 	#0 will allow infinite distance but require that both players be in the same dimension.
 	#Range: -1.0 -> 1.7976931348623157E308
 	#Default: -1.0
-	maxPlayerDistance=8
+	maxPlayerDistance=8.0
 	
 #Tax Settings
 [taxes]

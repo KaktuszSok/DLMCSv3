@@ -1,13 +1,13 @@
-filename = 'InsaneSurvivalExtra-1.26.3.jar'
+filename = 'InsaneSurvivalExtra-1.29.0.jar'
 name = "Insane's Survival Extra"
 side = 'both'
 
 [download]
-hash = 'becc85bdc284c67d489afca0f061c3c22379f1ad0fcd38e79f6cf3ed0835c28e279c9ba9d98a67a310c337c98f242c189dda1b9d5f62f380529a7bbbe1f781d1'
+hash = 'c63e2cea1648278a451666a386e8395226877bdafdba67fa546e394160b1fa82997b79d8249c3df04a2b6532e7b20c58282da39050b62e31fc90da6bfb3e451c'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/hy7htrV5/versions/b3ALrAT4/InsaneSurvivalExtra-1.26.3.jar'
+url = 'https://cdn.modrinth.com/data/hy7htrV5/versions/DT6vUvYO/InsaneSurvivalExtra-1.29.0.jar'
 
 [update.modrinth]
 mod-id = 'hy7htrV5'
-version = 'b3ALrAT4'
+version = 'DT6vUvYO'

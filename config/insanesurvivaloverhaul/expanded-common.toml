@@ -53,7 +53,7 @@
 		#* Gold Gear requires Flint / Leather gear to be forged
 		#* Iron Gear requires Stone / Chained Copper gear to be forged
 		#* Buckets, Flint and Steel and Shears require a forge to be made
-		"Forging Equipment Crafting Data Pack" = true
+		"Forging equipment crafting data pack" = true
 
 [Items]
 	#Add Solarium, a new material made by alloying Overgrown solium moss ball (found in hot biomes) and can be used to upgrade Iron Equipment. Disabling this will disable ore generation and items in the creative inventory.
@@ -122,6 +122,11 @@
 			#Enchantability with no bookshelves
 			#Range: > 0
 			"Base enchantability" = 1
+
+		[Experience.Enchanting.Ensorceller]
+			#How many ticks will the ensorceller take to generate a new enchantment
+			#Range: > -2147483648
+			"Time to generate" = 2400
 
 [Combat]
 	"Enable Shields+" = true

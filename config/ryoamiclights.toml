@@ -88,6 +88,10 @@
 				husk = true
 				area_effect_cloud = true
 				llama_spit = true
+				evoker_fangs = true
+				snow_golem = true
+				cave_spider = true
+				elder_guardian = true
 
 			[light_sources.settings.entities.irons_spellbooks]
 				necromancer = true
@@ -98,6 +102,9 @@
 				pyromancer = true
 				priest = true
 				icicle = true
+				summoned_zombie = true
+				summoned_skeleton = true
+				cryomancer = true
 
 			[light_sources.settings.entities.wan_ancient_beasts]
 				toxlacanth = true
@@ -147,6 +154,7 @@
 				hunter_pet = true
 				druid_pet = true
 				mage_pet = true
+				harp_explosion = true
 
 			[light_sources.settings.entities.tameablebeasts]
 				tameable_racoon = true
@@ -159,6 +167,7 @@
 				giant_roly_poly = true
 				tameable_penguin = true
 				quetzalcoatlus = true
+				graptera = true
 
 			[light_sources.settings.entities.burnt]
 				smoke = true
@@ -183,6 +192,7 @@
 				angelfish = true
 				ocean_perch = true
 				clayfish = true
+				fishing_bobber = true
 
 			[light_sources.settings.entities.swem]
 				swem_horse = true
@@ -233,10 +243,27 @@
 
 			[light_sources.settings.entities.astikorcarts]
 				supply_cart = true
+				plow = true
+				animal_cart = true
+				postilion = true
 
 			[light_sources.settings.entities.miapi]
 				thrown_item = true
 
 			[light_sources.settings.entities.immersive_furniture]
 				sitting = true
+
+			[light_sources.settings.entities.goodending]
+				woodpecker = true
+
+			[light_sources.settings.entities.create_bic_bit]
+				herring = true
+
+			[light_sources.settings.entities.goety]
+				heretic = true
+				wraith = true
+				web_spider = true
+				warlock = true
+				maverick = true
+				reaper = true
 

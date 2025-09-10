@@ -1,0 +1,13 @@
+filename = 'unusual_furniture-1.1.1-forge-1.20.1.jar'
+name = 'Unusual Furniture'
+side = 'both'
+
+[download]
+hash = 'ee9854a33bb5afa95f8a08983bfa44d2d21fc9d1064bc62d902770ecfc626382645b489a5699de21b9b933bd7c98792d9e4a19d36d9f8c160391fe478b4ded65'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/MZFE37e3/versions/i4vKolbx/unusual_furniture-1.1.1-forge-1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'MZFE37e3'
+version = 'i4vKolbx'

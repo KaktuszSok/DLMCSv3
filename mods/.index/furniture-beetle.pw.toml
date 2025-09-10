@@ -1,0 +1,13 @@
+filename = 'Furniture-Beetle-1.20.1-0.7.0.jar'
+name = 'Furniture Beetle'
+side = 'both'
+
+[download]
+hash = '66a33bb9399ae9ae8dc22cc76450883b3d6b13e60ba57fe035edcd800c274ffc51da731cfc8e857f390a455d11ecb85ce9b21abb52742ad6d6efea7733b0d350'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/O96k7dzN/versions/yc0hcKjH/Furniture-Beetle-1.20.1-0.7.0.jar'
+
+[update.modrinth]
+mod-id = 'O96k7dzN'
+version = 'yc0hcKjH'

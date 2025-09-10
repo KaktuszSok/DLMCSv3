@@ -92,6 +92,12 @@
 				snow_golem = true
 				cave_spider = true
 				elder_guardian = true
+				illusioner = true
+				tnt_minecart = true
+				glow_item_frame = true
+				hopper_minecart = true
+				leash_knot = true
+				camel = true
 
 			[light_sources.settings.entities.irons_spellbooks]
 				necromancer = true
@@ -144,6 +150,7 @@
 				giraffe = true
 				lizard_tail = true
 				zebra = true
+				dragonfly = true
 
 			[light_sources.settings.entities.alshanex_familiars]
 				summoner_pet = true
@@ -255,6 +262,7 @@
 
 			[light_sources.settings.entities.goodending]
 				woodpecker = true
+				marsh = true
 
 			[light_sources.settings.entities.create_bic_bit]
 				herring = true
@@ -266,4 +274,34 @@
 				warlock = true
 				maverick = true
 				reaper = true
+				obsidian_monolith = true
+				muck_wraith = true
+				icy_spider = true
+				haunted_armor = true
+				bone_spider = true
+				cairn_necromancer = true
+				ice_bouquet = true
+				web_shot = true
+				spider_web = true
+
+			[light_sources.settings.entities.cataclysm]
+				void_vortex = true
+				deepling_angler = true
+				deepling = true
+				deepling_brute = true
+				deepling_priest = true
+				coralssus = true
+				deepling_warlock = true
+				lionfish = true
+				the_harbinger = true
+				the_watcher = true
+				the_prowler = true
+
+			[light_sources.settings.entities.tconstruct]
+				sky_slime = true
+
+			[light_sources.settings.entities.furniture]
+				chair = true
+				pells = true
+				canvas = true
 

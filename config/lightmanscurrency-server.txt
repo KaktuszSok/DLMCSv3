@@ -238,7 +238,7 @@
 	#If disabled after players have interacted with it, items & money in the auction house cannot be accessed until re-enabled.
 	#If disabled, it is highly recommended that you also disable the 'crafting.allowAuctionStandCrafting' option in the common config.
 	#Default: true
-	enabled=true
+	enabled=false
 	
 	#Whether the Auction House will appear in the trading terminal.
 	#If false, you will only be able to access the Auction House from an Auction Stand.

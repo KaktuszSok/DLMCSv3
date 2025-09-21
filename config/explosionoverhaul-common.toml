@@ -22,6 +22,9 @@
 	enableGlassBreaking = true
 	#Enables or disables the flickering effect on Redstone Lamps near explosions.
 	enableLampFlicker = true
+	#Enables or disables the clustering of nearby explosives into a single, more powerful explosion.
+	#If true, multiple TNT blocks/entities close together will merge into one explosion with increased power.
+	enableExplosionClustering = true
 
 #
 #Dripstone Falling

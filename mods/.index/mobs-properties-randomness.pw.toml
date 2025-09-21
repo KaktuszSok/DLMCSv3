@@ -1,0 +1,13 @@
+filename = 'mobspropertiesrandomness-5.0.19.jar'
+name = 'Mobs Properties Randomness'
+side = 'both'
+
+[download]
+hash = 'ac98f34c31c5b66db01ad7768f41de1eef39cd5b6b0ba4e883ebbe921038667c82d0155da7d8601f94a8b3b99d9b6fb084036ccc9dee45c0f832495015daf421'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/iLdm4nHd/versions/2wlI3uyO/mobspropertiesrandomness-5.0.19.jar'
+
+[update.modrinth]
+mod-id = 'iLdm4nHd'
+version = '2wlI3uyO'

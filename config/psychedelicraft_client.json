@@ -25,7 +25,7 @@
     "domotionblur": true,
     // Sets whether to apply a distortion effect when the player is in arid environments,
     // Default: true,
-    "doheatdistortion": true,
+    "doheatdistortion": false,
     // Controls the intensity of the sunglare. Set to 0 to disable the sun flare entirely,
     // Default: 0.25,
     "sunflareintensity": 0.0,

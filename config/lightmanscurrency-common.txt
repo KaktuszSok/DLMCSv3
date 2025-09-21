@@ -22,7 +22,7 @@ debugLevel=0
 	#Whether Auction Stand blocks can be crafted.
 	#Disabling will not remove any existing Auction Stands from the world, nor prevent their use.
 	#Default: true
-	canCraftAuctionStand=true
+	canCraftAuctionStand=false
 	
 	#Whether Tax Blocks can be crafted.
 	#Disabling will not remove any existing Tax Blocks from the world, nor prevent their use.
@@ -289,11 +289,11 @@ debugLevel=0
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/boss/tier4" loot table.
 			#Does NOT require a player kill to trigger coin drops.
-			BossT4=["minecraft:warden","minecraft:wither","minecraft:ender_dragon"]
+			BossT4=["minecraft:warden"]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/boss/tier5" loot table.
 			#Does NOT require a player kill to trigger coin drops.
-			BossT5=[]
+			BossT5=["minecraft:wither","minecraft:ender_dragon"]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/boss/tier6" loot table.
 			#Does NOT require a player kill to trigger coin drops.
@@ -311,16 +311,16 @@ debugLevel=0
 			T1=["minecraft:chests/underwater_ruin_small","minecraft:chests/underwater_ruin_big"]
 			
 			#List of Loot Tables that will also spawn loot from the "lightmanscurrency:loot_addons/chest/tier2" loot table.
-			T2=[]
+			T2=["minecraft:chests/jungle_temple","minecraft:chests/nether_bridge","minecraft:chests/simple_dungeon","minecraft:chests/ruined_portal"]
 			
 			#List of Loot Tables that will also spawn loot from the "lightmanscurrency:loot_addons/chest/tier3" loot table.
-			T3=["minecraft:chests/jungle_temple","minecraft:chests/nether_bridge","minecraft:chests/simple_dungeon","minecraft:chests/ruined_portal"]
+			T3=["minecraft:chests/stronghold_crossing","minecraft:chests/stronghold_corridor","minecraft:chests/stronghold_library","minecraft:chests/ancient_city"]
 			
 			#List of Loot Tables that will also spawn loot from the "lightmanscurrency:loot_addons/chest/tier4" loot table.
-			T4=["minecraft:chests/stronghold_crossing","minecraft:chests/stronghold_corridor","minecraft:chests/stronghold_library","minecraft:chests/ancient_city"]
+			T4=["minecraft:chests/buried_treasure","minecraft:chests/bastion_hoglin_stable","minecraft:chests/bastion_bridge","minecraft:chests/bastion_other","minecraft:chests/bastion_treasure","minecraft:chests/end_city_treasure"]
 			
 			#List of Loot Tables that will also spawn loot from the "lightmanscurrency:loot_addons/chest/tier5" loot table.
-			T5=["minecraft:chests/buried_treasure","minecraft:chests/bastion_hoglin_stable","minecraft:chests/bastion_bridge","minecraft:chests/bastion_other","minecraft:chests/bastion_treasure","minecraft:chests/end_city_treasure"]
+			T5=[]
 			
 			#List of Loot Tables that will also spawn loot from the "lightmanscurrency:loot_addons/chest/tier6" loot table.
 			T6=[]

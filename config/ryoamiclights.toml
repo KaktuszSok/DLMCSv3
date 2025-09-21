@@ -98,6 +98,11 @@
 				hopper_minecart = true
 				leash_knot = true
 				camel = true
+				firework_rocket = true
+				donkey = true
+				ender_dragon = true
+				shulker = true
+				shulker_bullet = true
 
 			[light_sources.settings.entities.irons_spellbooks]
 				necromancer = true
@@ -121,6 +126,7 @@
 				royal_creeper = true
 				royal_skeleton = true
 				projectile_marked_arrow = true
+				projectile_royal_bomb_projectile = true
 
 			[light_sources.settings.entities.naturalist]
 				snake = true
@@ -151,6 +157,7 @@
 				lizard_tail = true
 				zebra = true
 				dragonfly = true
+				duck_egg = true
 
 			[light_sources.settings.entities.alshanex_familiars]
 				summoner_pet = true
@@ -283,6 +290,14 @@
 				ice_bouquet = true
 				web_shot = true
 				spider_web = true
+				black_wolf = true
+				scatter_mine = true
+				blaze_servant = true
+				fire_pillar = true
+				crusher = true
+				storm_caster = true
+				necromancer = true
+				ill_bomb = true
 
 			[light_sources.settings.entities.cataclysm]
 				void_vortex = true
@@ -296,6 +311,7 @@
 				the_harbinger = true
 				the_watcher = true
 				the_prowler = true
+				ender_golem = true
 
 			[light_sources.settings.entities.tconstruct]
 				sky_slime = true
@@ -304,4 +320,24 @@
 				chair = true
 				pells = true
 				canvas = true
+
+			[light_sources.settings.entities.unusual_furniture]
+				sit = true
+				sit_stools = true
+
+			[light_sources.settings.entities.redeco]
+				seat = true
+
+			[light_sources.settings.entities.alekiships]
+				cannonball = true
+
+			[light_sources.settings.entities.create]
+				stationary_contraption = true
+
+			[light_sources.settings.entities.pyrellium]
+				bomb_flower = true
+
+			[light_sources.settings.entities.tfmg]
+				spark = true
+				pipe_bomb = true
 

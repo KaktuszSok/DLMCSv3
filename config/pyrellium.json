@@ -1,0 +1,39 @@
+{
+  "biomes": {
+    "blackstone_springs_enabled": true,
+    "burning_grove_enabled": true,
+    "crystal_forest_enabled": true,
+    "frostburn_valley_enabled": true,
+    "ghostly_woods_enabled": true,
+    "infested_valley_enabled": true,
+    "monolith_plains_enabled": true,
+    "mushroom_wastes_enabled": true,
+    "quartz_caverns_enabled": true
+  },
+  "blocks": {
+    "bomb_flower_explosion_strength": 1.0,
+    "brown_bounceshroom_bounce": 0.75,
+    "red_bounceshroom_bounce": 1.0
+  },
+  "features_biome": {
+    "blackstone_springs_blackstone_rocks": true,
+    "burning_grove_pyrolily": true,
+    "crystal_forest_floor_crystals": true,
+    "ghostly_woods_headstones": true,
+    "infested_valley_floor_decorations": true,
+    "infested_valley_hanging_silk": true,
+    "monolith_plains_bomb_flowers": true,
+    "monolith_plains_monolith": true,
+    "mushroom_wastes_spores": true,
+    "mushroom_wastes_wall_mushrooms": true,
+    "quartz_caverns_spikes": true,
+    "soul_sand_valley_bones": true
+  },
+  "features_global": {
+    "gilded_blackstone_patches": true,
+    "lava_lake_additions": true,
+    "nether_forest_fallen_logs": true,
+    "opal_geodes": true,
+    "thicker_bedrock_ceiling": true
+  }
+}

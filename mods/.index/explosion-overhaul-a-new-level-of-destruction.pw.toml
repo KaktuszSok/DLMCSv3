@@ -1,13 +1,13 @@
-filename = 'Explosion-Overhaul-0.1.6.2-a Forge-1.20.1.jar.jar'
+filename = 'Explosion-Overhaul-0.1.6.9-a Forge-1.20.1.jar'
 name = 'Explosion Overhaul: A new level of destruction'
 side = 'both'
 
 [download]
-hash = '3c3a6496e9aa1c18b1350f63f98e4a09dc1cb4a3'
+hash = '794305ef632ff4a5eb4047bc3a90d0f9de1077ac'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6949399
+file-id = 6982851
 project-id = 1296203

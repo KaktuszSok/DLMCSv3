@@ -4,21 +4,29 @@
         "type": "minecraft:interpolated",
         "argument": {
           "type": "minecraft:range_choice",
-          "input": "minecraft:y",
-          "min_inclusive": -60,
-          "max_exclusive": 51,
+          "input": {
+			"type": "minecraft:shifted_noise",
+			"noise": "minecraft:temperature",
+		    "shift_x": "minecraft:shift_x",
+		    "shift_y": 0.0,
+		    "shift_z": "minecraft:shift_z",
+		    "xz_scale": 0.25,
+		    "y_scale": 0.0
+		  },
+          "min_inclusive": -99,
+          "max_exclusive": -0.15,
           "when_in_range": {
             "type": "minecraft:noise",
             "noise": "regional_ore_veins:ore_veininess_common",
-            "xz_scale": 0.5,
-            "y_scale": 0.5
+            "xz_scale": 0.35,
+            "y_scale": 0.35
           },
           "when_out_of_range": 0
         }
       },
-      "min_value": 0.25,
+      "max_value": -0.25,
       "min_y": 0,
-      "max_y": 64
+      "max_y": 250
     },
     "ridged": {
       "density": {
@@ -34,10 +42,10 @@
                 "type": "minecraft:range_choice",
                 "input": "minecraft:y",
                 "min_inclusive": -60,
-                "max_exclusive": 51,
+                "max_exclusive": 251,
                 "when_in_range": {
                   "type": "minecraft:noise",
-                  "noise": "regional_ore_veins:ore_vein_b1",
+                  "noise": "regional_ore_veins:ore_vein_a1",
                   "xz_scale": 4,
                   "y_scale": 4
                 },
@@ -53,10 +61,10 @@
                 "type": "minecraft:range_choice",
                 "input": "minecraft:y",
                 "min_inclusive": -60,
-                "max_exclusive": 51,
+                "max_exclusive": 251,
                 "when_in_range": {
                   "type": "minecraft:noise",
-                  "noise": "regional_ore_veins:ore_vein_b2",
+                  "noise": "regional_ore_veins:ore_vein_a2",
                   "xz_scale": 4,
                   "y_scale": 4
                 },
@@ -67,7 +75,7 @@
         }
       }
     },
-    "min_ore_chance": 0.05,
+    "min_ore_chance": 0.03,
     "max_ore_chance": 0.15,
     "ore": "iron_ore",
     "raw_ore": "iguanatweaksexpanded:rich_iron_ore",

@@ -1,0 +1,19 @@
+
+#Stardew Fishing
+[stardew_fishing]
+	Enable = true
+	DisableMiniGameIfNotPassCheck = true
+
+#Snowy Spirit
+[snowyspirit]
+	Enable = true
+	#Enable special time with SnowySpirit.
+	SpecialTime = true
+	#Solar Terms in which SnowySpirit villager AI behaviors will be active.
+	WinterTime = ["BEGINNING_OF_WINTER", "LIGHT_SNOW", "HEAVY_SNOW", "WINTER_SOLSTICE", "LESSER_COLD", "GREATER_COLD"]
+
+#Goety
+[goety]
+	Enable = true
+	FakeSeasonsLoaded = true
+

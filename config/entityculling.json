@@ -12,7 +12,10 @@
   ],
   "entityWhitelist": [
     "botania:mana_burst",
-    "drg_flares:drg_flares"
+    "drg_flares:drg_flares",
+    "mts:builder_rendering",
+    "mts:builder_existing",
+    "mts:builder_seat"
   ],
   "tracingDistance": 128,
   "debugMode": false,

@@ -1,0 +1,13 @@
+filename = 'tgears-0.3.8-for-create-6.0.6.jar'
+name = "Tinkers' Gears"
+side = 'both'
+
+[download]
+hash = 'e5b2b1e58ab9234661116095bf39ec081fad01af32fcf1953b70461a704bb0df26c2c46bbde0821f9886d152f5901e966921136eaa9017e56e94703a7fa73977'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/g4cGxdiq/versions/EPtWv2H8/tgears-0.3.8-for-create-6.0.6.jar'
+
+[update.modrinth]
+mod-id = 'g4cGxdiq'
+version = 'EPtWv2H8'

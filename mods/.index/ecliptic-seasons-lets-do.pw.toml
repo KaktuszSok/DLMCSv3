@@ -1,0 +1,13 @@
+filename = 'EclipticSeasonsLetsDo-1.0.jar'
+name = "Ecliptic Seasons - Let's Do"
+side = 'both'
+
+[download]
+hash = 'e4811277672857b4340bcf4004c8f032c0f836ac'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7047367
+project-id = 1356039

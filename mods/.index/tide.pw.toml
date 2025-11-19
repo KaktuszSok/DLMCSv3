@@ -1,13 +1,13 @@
-filename = 'Tide-forge-1.20.1-1.5.0.jar'
+filename = 'tide-forge-1.20.1-1.6.5.jar'
 name = 'Tide'
 side = 'both'
 
 [download]
-hash = 'f104c0a31d95e027c0d971a64a0527c8fc7a2b88e757313b267b14c2699e52ade54c0e28469607610be5533b4c14c2219316e4915ca08a4a86400c954fffe6c3'
+hash = '453f92e087f13657da51d688d0d27445705390abe07e3047dc63ff6bc33a754a03e249130e9f1364dcacc02ad1df21f71b84e496b4662ade24f7afd03af96272'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/die1AF7i/versions/mm0cplOh/Tide-forge-1.20.1-1.5.0.jar'
+url = 'https://cdn.modrinth.com/data/die1AF7i/versions/apM9qbvB/tide-forge-1.20.1-1.6.5.jar'
 
 [update.modrinth]
 mod-id = 'die1AF7i'
-version = 'mm0cplOh'
+version = 'apM9qbvB'

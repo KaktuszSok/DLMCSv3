@@ -4,9 +4,17 @@
         "type": "minecraft:interpolated",
         "argument": {
           "type": "minecraft:range_choice",
-          "input": "minecraft:y",
-          "min_inclusive": -60,
-          "max_exclusive": 51,
+          "input": {
+			"type": "minecraft:shifted_noise",
+			"noise": "minecraft:temperature",
+		    "shift_x": "minecraft:shift_x",
+		    "shift_y": 0.0,
+		    "shift_z": "minecraft:shift_z",
+		    "xz_scale": 0.25,
+		    "y_scale": 0.0
+		  },
+          "min_inclusive": -99,
+          "max_exclusive": -0.15,
           "when_in_range": {
             "type": "minecraft:noise",
             "noise": "regional_ore_veins:ore_veininess_common_create",
@@ -37,7 +45,7 @@
                 "max_exclusive": 51,
                 "when_in_range": {
                   "type": "minecraft:noise",
-                  "noise": "regional_ore_veins:ore_vein_g1",
+                  "noise": "regional_ore_veins:ore_vein_d1",
                   "xz_scale": 4,
                   "y_scale": 4
                 },
@@ -56,7 +64,7 @@
                 "max_exclusive": 51,
                 "when_in_range": {
                   "type": "minecraft:noise",
-                  "noise": "regional_ore_veins:ore_vein_g2",
+                  "noise": "regional_ore_veins:ore_vein_d2",
                   "xz_scale": 4,
                   "y_scale": 4
                 },
@@ -67,6 +75,8 @@
         }
       }
     },
+	"min_ore_chance": 0.1,
+    "max_ore_chance": 0.3,
     "ore": "create:deepslate_zinc_ore",
     "raw_ore": "create:raw_zinc_block",
     "stone": "create:scorchia"

@@ -17,8 +17,6 @@
 	"Enable Fluids" = true
 	"Enable Coal & Fire" = true
 	"Enable Berries" = true
-	#Change a few things relative to Serene Seasons. Grass and tall grass decays in Winter and regrows back in Spring. Saplings are also transformed into Dead Bushes. This can be disabled with the iguanatweaks:doSeasonGrassGrowDeath game rule
-	"Enable Seasons" = true
 	"Enable Faster decay leaves" = true
 	#Trees fall when cut.
 	"Enable Timber trees" = true
@@ -178,32 +176,6 @@
 		#	If berry good is present, a different datapack is enabled that integrates with the mod
 		#
 		"Data pack" = true
-
-	#Change a few things relative to Serene Seasons. Grass and tall grass decays in Winter and regrows back in Spring. Saplings are also transformed into Dead Bushes. This can be disabled with the iguanatweaks:doSeasonGrassGrowDeath game rule
-	[World.Seasons]
-		#Has no effect if 'Serene Seasons changes' is disabled
-		#Allowed Values: EARLY_SPRING, MID_SPRING, LATE_SPRING, EARLY_SUMMER, MID_SUMMER, LATE_SUMMER, EARLY_AUTUMN, MID_AUTUMN, LATE_AUTUMN, EARLY_WINTER, MID_WINTER, LATE_WINTER
-		"Starting season" = "EARLY_SUMMER"
-		"Season based fishing time" = true
-		#Makes the following changes to Serene Seasons config:
-		#* seasonal_crops is set to false, as it's controlled by Plants Growth
-		#* Sets the starting season to the one in 'Starting season'
-		"Change serene seasons config" = true
-		#Removes greenhouse glass.
-		"No green house glass" = true
-		#Changes what leaves can drop in different seasons.
-		#Sapling no longer drop in winter
-		#Apples only drop in spring
-		"Leaves drops" = true
-		#How many minutes will day and night duration be (with this set to 10 the day will last 10 minutes and the night 10 minutes for a grand total of 20 minutes). This also adjusts the day_duration config option in Serene Seasons. Vanilla is 10. Requires Time Control mod
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Time control day night duration" = 15.0
-		#How many minutes will day and night duration be shifted based off seasons? E.g. in Mid spring / autumn the duration of day and night is vanilla, when moving off those seasons day and night will last this many minutes more/less. In mid summer / winter the duration of day and night duration will be more / less by 3 times this value. Set to 0 to disable. Requires Time Control mod
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Time control day night shift" = 1.5
-		"Grow double tall grass" = true
-		"Grow flowers from grass" = true
-		"Slowdown grass spreading" = true
 
 	[World."Faster decay leaves"]
 		#Range: > 1
@@ -559,8 +531,6 @@
 	"Enable Misc mobs" = true
 	#Change wandering trader offers. Trades can be customized via json in this feature's folder
 	"Enable Wandering trades" = true
-	#Changes to mob spawn with Serene Seasons installed. Check this feature's json config folder for all the configuration options
-	"Enable Season spawning" = true
 
 	#Add a brand new Echo Torch and some changes to mob spawn
 	[Mobs.Spawning]

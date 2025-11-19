@@ -4,9 +4,17 @@
         "type": "minecraft:interpolated",
         "argument": {
           "type": "minecraft:range_choice",
-          "input": "minecraft:y",
-          "min_inclusive": -60,
-          "max_exclusive": 51,
+          "input": {
+			"type": "minecraft:shifted_noise",
+			"noise": "minecraft:temperature",
+		    "shift_x": "minecraft:shift_x",
+		    "shift_y": 0.0,
+		    "shift_z": "minecraft:shift_z",
+		    "xz_scale": 0.25,
+		    "y_scale": 0.0
+		  },
+          "min_inclusive": 0.2,
+          "max_exclusive": 99,
           "when_in_range": {
             "type": "minecraft:noise",
             "noise": "regional_ore_veins:ore_veininess_uncommon",
@@ -70,7 +78,7 @@
     "gap": {
         "min_value": -0.2
     },
-    "min_ore_chance": 0.15,
+    "min_ore_chance": 0.05,
     "max_ore_chance": 0.7,
     "ore": "deepslate_gold_ore",
     "raw_ore": "raw_gold_block",

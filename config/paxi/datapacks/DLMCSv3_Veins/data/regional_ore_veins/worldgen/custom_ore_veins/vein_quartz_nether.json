@@ -5,8 +5,8 @@
         "argument": {
           "type": "minecraft:range_choice",
           "input": "minecraft:y",
-          "min_inclusive": -60,
-          "max_exclusive": 51,
+          "min_inclusive": 1,
+          "max_exclusive": 181,
           "when_in_range": {
             "type": "minecraft:noise",
             "noise": "regional_ore_veins:ore_veininess_nether",
@@ -18,12 +18,12 @@
       },
       "max_value": -0.4,
       "min_y": 128,
-      "max_y": 250
+      "max_y": 181
     },
     "ridged": {
       "density": {
         "type": "minecraft:add",
-        "argument1": -0.08,
+        "argument1": -0.18,
         "argument2": {
           "type": "minecraft:max",
           "argument1": {
@@ -68,6 +68,8 @@
       }
     },
     "dimension": "minecraft:the_nether",
+	"min_ore_chance": 0.05,
+    "max_ore_chance": 0.6,
     "ore": "nether_quartz_ore",
 	"raw_ore": "quartz_block",
     "stone": "create:calcite"

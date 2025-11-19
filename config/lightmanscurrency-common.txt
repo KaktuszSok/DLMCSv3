@@ -261,15 +261,15 @@ debugLevel=0
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier3" loot table.
 			#Requires a player kill to trigger coin drops.
-			T3=["#minecraft:raiders","minecraft:enderman","minecraft:wither_skeleton","minecraft:guardian","minecraft:elder_guardian","minecraft:phantom","minecraft:blaze","minecraft:ghast","minecraft:hoglin","minecraft:piglin_brute","minecraft:piglin","minecraft:zombified_piglin","alexsmobs:crimson_mosquito","alexsmobs:dropbear","alexsmobs:guster","alexsmobs:skelewag","alexsmobs:tusklin"]
+			T3=["#minecraft:raiders","minecraft:enderman","minecraft:wither_skeleton","minecraft:guardian","minecraft:shulker","minecraft:phantom","minecraft:blaze","minecraft:ghast","minecraft:hoglin","minecraft:piglin_brute","minecraft:piglin","minecraft:zombified_piglin","alexsmobs:crimson_mosquito","alexsmobs:dropbear","alexsmobs:guster","alexsmobs:skelewag","alexsmobs:tusklin"]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier4" loot table.
 			#Requires a player kill to trigger coin drops.
-			T4=["minecraft:shulker","alexsmobs:enderiophage","alexsmobs:farseer","alexsmobs:murmur","alexsmobs:straddler"]
+			T4=["alexsmobs:enderiophage","alexsmobs:farseer","alexsmobs:murmur","alexsmobs:straddler"]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier5" loot table.
 			#Requires a player kill to trigger coin drops.
-			T5=[]
+			T5=["minecraft:elder_guardian"]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier6" loot table.
 			#Requires a player kill to trigger coin drops.
@@ -314,10 +314,10 @@ debugLevel=0
 			T2=["minecraft:chests/jungle_temple","minecraft:chests/nether_bridge","minecraft:chests/simple_dungeon","minecraft:chests/ruined_portal"]
 			
 			#List of Loot Tables that will also spawn loot from the "lightmanscurrency:loot_addons/chest/tier3" loot table.
-			T3=["minecraft:chests/stronghold_crossing","minecraft:chests/stronghold_corridor","minecraft:chests/stronghold_library","minecraft:chests/ancient_city"]
+			T3=["minecraft:chests/stronghold_crossing","minecraft:chests/stronghold_corridor","minecraft:chests/stronghold_library","minecraft:chests/ancient_city","minecraft:chests/buried_treasure","minecraft:chests/bastion_hoglin_stable","minecraft:chests/bastion_bridge","minecraft:chests/bastion_other","minecraft:chests/bastion_treasure","minecraft:chests/end_city_treasure"]
 			
 			#List of Loot Tables that will also spawn loot from the "lightmanscurrency:loot_addons/chest/tier4" loot table.
-			T4=["minecraft:chests/buried_treasure","minecraft:chests/bastion_hoglin_stable","minecraft:chests/bastion_bridge","minecraft:chests/bastion_other","minecraft:chests/bastion_treasure","minecraft:chests/end_city_treasure"]
+			T4=[]
 			
 			#List of Loot Tables that will also spawn loot from the "lightmanscurrency:loot_addons/chest/tier5" loot table.
 			T5=[]

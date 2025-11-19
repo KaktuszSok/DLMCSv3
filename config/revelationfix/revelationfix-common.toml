@@ -1,7 +1,7 @@
 
 [Others]
 	#A list of mob effect that would never be cleared by curio abilities/bosses...
-	whitelistMobEffects = ["minecraft:night_vision", "cataclysm:ghost_sickness"]
+	whitelistMobEffects = ["minecraft:night_vision"]
 
 ["The Apocalypse"]
 	#A list of items(curios!) won't be banned when The Nether Apollyon in the phase "The Apocalypse".

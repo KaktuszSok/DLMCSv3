@@ -1,0 +1,13 @@
+filename = 'tinkers_compat_materials-1.20.1-forge-1.0.0.jar'
+name = 'Metallic Tinkering'
+side = 'both'
+
+[download]
+hash = 'c2dd725a22adf0d506ba7ef63e414f44e369da8b119101c4e654a3fe49b9743f461441dbf70769cf3dd7d8c57cf7b5919d012159d140bdef1bc4569a73632e19'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/FXERuJ1U/versions/GOICWYur/tinkers_compat_materials-1.20.1-forge-1.0.0.jar'
+
+[update.modrinth]
+mod-id = 'FXERuJ1U'
+version = 'GOICWYur'

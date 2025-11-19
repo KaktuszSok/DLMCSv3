@@ -1,0 +1,13 @@
+filename = 'betterendfix-1.0.0-1.20.1.jar'
+name = 'Better End Fix'
+side = 'server'
+
+[download]
+hash = 'b406c4df21d352149e331ac98df2056e93393db2e8719436cfaa9293321ec95f38aa820b9cb7376291457277cb71aa2409f5ef598eb1a694d96de3f10ef082f9'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/lcl84AyI/versions/wOuhf2Qj/betterendfix-1.0.0-1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'lcl84AyI'
+version = 'wOuhf2Qj'

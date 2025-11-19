@@ -103,6 +103,12 @@
 				ender_dragon = true
 				shulker = true
 				shulker_bullet = true
+				small_fireball = true
+				mule = true
+				eye_of_ender = true
+				endermite = true
+				snowball = true
+				boat = true
 
 			[light_sources.settings.entities.irons_spellbooks]
 				necromancer = true
@@ -120,6 +126,11 @@
 			[light_sources.settings.entities.wan_ancient_beasts]
 				toxlacanth = true
 				paleontologist = true
+				eater = true
+				walker = true
+				crusher = true
+				glider = true
+				soarer = true
 
 			[light_sources.settings.entities.royalvariations]
 				royal_zombie = true
@@ -298,6 +309,60 @@
 				storm_caster = true
 				necromancer = true
 				ill_bomb = true
+				wartling = true
+				cryologer = true
+				snap_fungus = true
+				wraith_servant = true
+				zombie_servant = true
+				falling_block = true
+				fang = true
+				doppelganger = true
+				fireball = true
+				reaper_servant = true
+				magic_ground = true
+				rain_arrow = true
+				vanguard_servant = true
+				phantom_servant = true
+				skeleton_pillager = true
+				zombie_vindicator = true
+				blackguard_servant = true
+				haunted_skull = true
+				totemic_wall = true
+				earth_fist = true
+				hail_cloud = true
+				ice_chunk = true
+				ice_spike = true
+				poison_quill = true
+				blossom_ball = true
+				blossom_thorn = true
+				vine_hook = true
+				bear_servant = true
+				slime_servant = true
+				quick_growing_vine = true
+				ice_storm = true
+				leapleaf = true
+				whisperer = true
+				entangle_vines = true
+				cushion = true
+				updraft_blast = true
+				razor_wind = true
+				monsoon_cloud = true
+				electro_orb = true
+				trident_storm = true
+				bouncy_bubble = true
+				guardian_servant = true
+				biomine = true
+				acid_pool = true
+				tidal_surge = true
+				lavaball = true
+				magma_bomb = true
+				magma_cube_servant = true
+				mini_ghast = true
+				wither_skull = true
+				summon_circle_boss = true
+				endersent = true
+				camera_shake = true
+				ender_keeper = true
 
 			[light_sources.settings.entities.cataclysm]
 				void_vortex = true
@@ -312,9 +377,18 @@
 				the_watcher = true
 				the_prowler = true
 				ender_golem = true
+				hippocamtus = true
+				the_baby_leviathan = true
+				the_leviathan = true
+				ancient_remnant = true
+				ignis = true
+				koboleton = true
 
 			[light_sources.settings.entities.tconstruct]
 				sky_slime = true
+				fluid_spit = true
+				indestructible_item = true
+				ender_slime = true
 
 			[light_sources.settings.entities.furniture]
 				chair = true
@@ -340,4 +414,50 @@
 			[light_sources.settings.entities.tfmg]
 				spark = true
 				pipe_bomb = true
+				lithium_spark = true
+				thermite_grenade = true
+				zinc_grenade = true
+				copper_grenade = true
+				blue_spark = true
+
+			[light_sources.settings.entities.iguanatweaksreborn]
+				quartz_arrow = true
+
+			[light_sources.settings.entities.betterend]
+				shadow_walker = true
+				dragonfly = true
+				cubozoa = true
+				end_fish = true
+				end_slime = true
+				silk_moth = true
+
+			[light_sources.settings.entities.tinker_transplant]
+				tinker_shuriken = true
+
+			[light_sources.settings.entities.snowyspirit]
+				sled = true
+				gingerbread_golem = true
+				container_entity = true
+
+			[light_sources.settings.entities.xenotech]
+				dummy = true
+
+			[light_sources.settings.entities.simpleplanes]
+				cargo_plane = true
+
+			[light_sources.settings.entities.valkyrienskies]
+				ship_mounting_entity = true
+
+			[light_sources.settings.entities.stdrive]
+				apocalypse_car = true
+
+			[light_sources.settings.entities.biomeswevegone]
+				wreath = true
+				pumpkin_warden = true
+
+			[light_sources.settings.entities.trackwork]
+				wheel_entity = true
+
+			[light_sources.settings.entities.call_of_yucutan]
+				dart = true
 

@@ -18,13 +18,13 @@
           "when_in_range": {
             "type": "minecraft:noise",
             "noise": "regional_ore_veins:ore_veininess_common",
-            "xz_scale": 0.35,
-            "y_scale": 0.35
+            "xz_scale": 0.33,
+            "y_scale": 0.33
           },
           "when_out_of_range": 0
         }
       },
-      "max_value": -0.25,
+      "max_value": -0.4,
       "min_y": 0,
       "max_y": 250
     },

@@ -169,6 +169,7 @@
 				zebra = true
 				dragonfly = true
 				duck_egg = true
+				catfish = true
 
 			[light_sources.settings.entities.alshanex_familiars]
 				summoner_pet = true
@@ -444,6 +445,7 @@
 
 			[light_sources.settings.entities.simpleplanes]
 				cargo_plane = true
+				plane = true
 
 			[light_sources.settings.entities.valkyrienskies]
 				ship_mounting_entity = true
@@ -460,4 +462,7 @@
 
 			[light_sources.settings.entities.call_of_yucutan]
 				dart = true
+
+			[light_sources.settings.entities.car]
+				car = true
 

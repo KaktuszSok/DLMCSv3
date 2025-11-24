@@ -385,7 +385,7 @@
 	#Change how mobs target players. Use the enhancedai:use_target_changes and enhancedai:use_follow_range_changes entity type tag to whitelist mobs. Add mobs to enhancedai:allow_target_switch entity type tag to allow these mobs to be able to switch targets when hit (e.g. Creepers can't normally do that).
 	"Enable Targeting" = true
 	#Makes mobs be able to leap over a few blocks.
-	"Enable Leap" = false
+	"Enable Leap" = true
 	#Makes mobs be able to move in more ways, like climbing or swim. Only mobs in the enhancedai:allow_climbing entity type tag are allowed to climb.
 	"Enable Movement" = true
 	#Prevent players from abusing some game mechanics to stop mobs. Only mobs in the entity type tag enhancedai:can_use_anti_cheese will be affected by this feature. Only veichles in `enhancedai:anti_cheese_veichles` will be affected by this feature.
@@ -474,7 +474,7 @@
 			"Prefer players" = true
 			#Change for a mob to not attack other mobs when hit.
 			#Range: 0.0 ~ 1.0
-			"Prevent infighting" = 0.9
+			"Prevent infighting" = 0.0
 
 		#Chances for a mob to spawn neutral
 		[Mobs.Targeting."Neutral chances"]
@@ -900,7 +900,7 @@
 		"Movement Speed Multiplier" = 1.1
 		#Animals' knockback attribute will be set to this value.
 		#Range: 0.0 ~ 128.0
-		Knockback = 1.5
+		Knockback = 1.0
 		#Animals' knockback attribute will be increased/decreased based on the side of the mob.
 		"Knockback size based" = true
 		#Animals have this percentage chance to be able to fight back instead of fleeing. Animals have a slightly bigger range to attack. Attack damage can't be changed via config due to limitations so use mods like Mobs Properties Randomness to change the damage. Base damage is 3
@@ -908,7 +908,7 @@
 		"Neutral chance" = 0.35
 		#Animals have this percentage chance to be hostile
 		#Range: 0.0 ~ 1.0
-		"Hostile chance" = 0.1
+		"Hostile chance" = 0.0
 		#Speed multiplier when the animal avoids the player and it's within 8 blocks from him.
 		#Range: 0.0 ~ 4.0
 		"Flee speed Multiplier Near" = 1.1
@@ -924,7 +924,7 @@
 	[Animals."Not Tempted Animals"]
 		#Animals have this percentage chance to not be temped by food.
 		#Range: 0.0 ~ 1.0
-		"Not tempted chance" = 0.5
+		"Not tempted chance" = 0.0
 
 [Drowned]
 	#Makes drowned swim speed based off swim speed attribute instead of movement speed. Only drowned in the enhancedai:change_drowned_swimming entity type tag are affected by this feature.

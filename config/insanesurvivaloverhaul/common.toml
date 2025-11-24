@@ -1233,20 +1233,20 @@
 		#Range: > -2147483648
 		"Chicken from egg chance" = 8
 		#If true, animals will no longer be able to be bred manually. Only animals in iguanatweaksreborn:prevent_breeding will be affected by this.
-		"Prevent breeding" = true
+		"Prevent breeding" = false
 		#Seconds until you can milk cows (or stew mooshrooms)
 		#Range: > 0
 		"Fluid cooldown" = 1200
 		#Enables a data pack that changes animal loot (reduced food drops) and slows down growing, breeding, egging etc
-		"Data pack" = true
+		"Data pack" = false
 		#If true, mobs can randomly fall in love and possibly breed
-		"Auto breed" = true
+		"Auto breed" = false
 
 		[Farming.Livestock.Aging]
 			#If true, animals will age and die of old age. Configurable via data packs. With the data pack enabled, adult will drop more goodies. With pehkui installed, animals will also be smaller/bigger.
 			Enable = true
 			#If true, animals die of old age.
-			"Die of old age" = true
+			"Die of old age" = false
 			#If Die of old age is disabled you can still make animals grow up to this age
 			#Allowed Values: YOUNG, ADULT, ELDER
 			"Stop at" = "ELDER"
@@ -1258,7 +1258,7 @@
 		[Farming.Livestock."Well fed"]
 			#If true, animals will be 'well fed' for this ticks when fed. During this time they have an higher chance (given by the livestock data) to breed. Set to 0 to disable.
 			#Range: > 0
-			Duration = 60
+			Duration = 0
 			#How much well fed time must be left to the entity to be able to feed it again.
 			#Range: > 0
 			"Left to feed again" = 30
@@ -1421,7 +1421,7 @@
 		#On death, players will drop this percentage of experience instead of max 7 levels. Setting to -1 will disable this.
 		#Due to Minecraft limitations this is incompatible with other mods that change the level scaling (e.g. Allurement's 'Remove level Scaling').
 		#Range: -1.0 ~ 1.0
-		"Dropped experience on death" = 0.8
+		"Dropped experience on death" = 0.0
 		#Players will pick up experience faster
 		"Pick up faster" = true
 

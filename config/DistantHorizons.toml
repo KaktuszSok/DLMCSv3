@@ -367,7 +367,7 @@ _version = 3
 				showFullDataUpdateStatus = false
 				#
 				# Render queued world gen tasks?
-				showWorldGenQueue = true
+				showWorldGenQueue = false
 				#
 				# A white box will be drawn when an LOD starts rendering 
 				# and a purple box when an LOD stops rendering. 
@@ -383,7 +383,7 @@ _version = 3
 				# NOTE: There WILL be performance hit! 
 				#    Additionally, only stuff that's loaded after you enable this 
 				#    will render their debug wireframes.
-				enableRendering = true
+				enableRendering = false
 
 			[client.advanced.debugging.f3Screen]
 				#

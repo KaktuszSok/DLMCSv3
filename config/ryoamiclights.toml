@@ -109,6 +109,7 @@
 				endermite = true
 				snowball = true
 				boat = true
+				zoglin = true
 
 			[light_sources.settings.entities.irons_spellbooks]
 				necromancer = true
@@ -364,6 +365,9 @@
 				endersent = true
 				camera_shake = true
 				ender_keeper = true
+				hell_chant = true
+				fire_blast_trap = true
+				zpiglin_servant = true
 
 			[light_sources.settings.entities.cataclysm]
 				void_vortex = true

@@ -27,12 +27,12 @@
 [Mining]
 	"Enable Multi Block Furnaces" = true
 	#Add a new Nether gem which makes lets you go fast (KEEp GOing). Disabling this will disable ore generation and items in the creative inventory.
-	"Enable Keego" = true
+	"Enable Keego" = false
 	#Add Durium, a new metal made by alloying Durium Scrap (found as scrap pieces in ores in the Overworld) and can be used to upgrade Iron Equipment. Disabling this will disable ore generation and items in the creative inventory.
-	"Enable Durium" = true
-	"Enable Beeg Ore Veins" = true
-	"Enable Quaron" = true
-	"Enable Forging" = true
+	"Enable Durium" = false
+	"Enable Beeg Ore Veins" = false
+	"Enable Quaron" = false
+	"Enable Forging" = false
 	#Add Soul Steel, a new metal made by alloying Iron, Soul Sand and Hellish Coal. Disabling this will disable ore generation and items in the creative inventory.
 	"Enable Soul steel" = false
 	#Adds mining charge
@@ -55,28 +55,29 @@
 		#* Buckets, Flint and Steel and Shears require a forge to be made
 		"Forging equipment crafting data pack" = true
 
+	#Adds mining charge
+	[Mining."Mining charge"]
+		#Range: > 1
+		"Tunnel length" = 8
+		#Range: > 0
+		"Tunnel radius" = 1
+
 [Items]
 	#Add Solarium, a new material made by alloying Overgrown solium moss ball (found in hot biomes) and can be used to upgrade Iron Equipment. Disabling this will disable ore generation and items in the creative inventory.
-	"Enable Solarium" = true
+	"Enable Solarium" = false
 	"Enable Recall Potion" = true
-	"Enable Crate" = true
-	"Enable Altimeter" = true
 	#Add a new explosive block.
 	"Enable Explosive barrel" = true
 
-	[Items.Crate]
-		#Range: > 0
-		"Max crates without slowdown" = 2
-		#When you have > 'Max crates without slowdown' this is the base value for the slowdown. The slowdown is calculated as (crates above 'Max crates' ^ 2 * this)
-		#Range: 0.0 ~ 1.0
-		"Base Slowness per crate over max" = 0.05
-
-	[Items.Altimeter]
-		"Show approx altitude in tooltip" = true
+	#Add a new explosive block.
+	[Items."Explosive barrel"]
+		#Range: 0.5 ~ 1.7976931348623157E308
+		"Explosion radius" = 5.0
 
 [Experience]
 	"Enable Enchanting" = true
-	"Enable New Enchantments" = true
+	#Adds new enchantments. Please note that Damaging enchantments such as water coolant are enabled only if ITR 'Replace damaging enchantments' is enabled. This also applies for protection enchantments and ITR 'Replace protection enchantments'. Disabling this feature will make the new enchantments not discoverable
+	"Enable New enchantments" = true
 
 	[Experience.Enchanting]
 		#Enchanted items can no longer be merged with other enchanted items.

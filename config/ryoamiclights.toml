@@ -466,3 +466,6 @@
 			[light_sources.settings.entities.car]
 				car = true
 
+			[light_sources.settings.entities.adpother]
+				gas = true
+

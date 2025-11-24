@@ -1,0 +1,8 @@
+#Control the max stack size of tonic and tincture items. Defaults to 3.
+#Range: 1 ~ 64
+"Tonic/Tincture max stack size:" = 3
+#Controls whether tonics and tinctures should be consumed quickly, like sweet berries. Defaults to false.
+"Consume tonics/tinctures quickly:" = false
+#Controls whether tonics and tinctures should have a reduced duration compared to their potion counterparts. Defaults to true.
+"Tonics/tinctures have a reduced duration:" = true
+

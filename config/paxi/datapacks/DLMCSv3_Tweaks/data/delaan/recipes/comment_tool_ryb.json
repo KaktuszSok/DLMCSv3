@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:book" },
+    { "tag": "c:dyes/red" },
+    { "tag": "c:dyes/yellow" },
+    { "tag": "c:blue_dyes" }
+  ],
+  "result": {
+    "item": "worldcomment:comment_tool",
+    "count": 1
+  }
+}

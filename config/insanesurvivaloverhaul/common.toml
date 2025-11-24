@@ -22,6 +22,8 @@
 	"Enable Timber trees" = true
 	#Various changes to explosions, like higher knockback and getting hit when behind blown up blocks.
 	"Enable Explosion overhaul" = true
+	#Change a few things relative to Serene Seasons. Grass and tall grass decays in Winter and regrows back in Spring. Saplings are also transformed into Dead Bushes. This can be disabled with the iguanatweaks:doSeasonGrassGrowDeath game rule
+	"Enable Seasons" = false
 
 	[World.Nether]
 		#Enables a data pack that makes the nether 128 blocks high instead of 256, effectively disabling the "Nether Roof" and reduces the 8 block ratio between nether and other dimensions to 2.
@@ -121,9 +123,6 @@
 		"[EXPERIMENTAL] Floaty entities" = false
 
 	[World."Coal & Fire"]
-		#Chance for logs to release charcoal layer when burnt
-		#Range: 0.0 ~ 1.0
-		"Charcoal from burnt logs chance" = 0.8
 		#If enabled, a data pack will be enabled that:
 		#* Removes the Charcoal recipe from smelting
 		#* Makes Coal Ore require an Iron Pickaxe or better to mine
@@ -134,6 +133,9 @@
 		"Campfire turn off under rain" = true
 		#If true, campfires must be lit
 		"Unlit campfires" = true
+		#Chance for logs to yield burnt logs when burnt
+		#Range: 0.0 ~ 1.0
+		"Burnt logs chance" = 0.8
 
 		[World."Coal & Fire"."Two flint fire starter"]
 			#If true, two flints (on per hand) can start a fire
@@ -222,6 +224,32 @@
 		#If true, potion effects from the exploder will be applied to the damaged entities
 		"Apply effect from exploder" = true
 
+	#Change a few things relative to Serene Seasons. Grass and tall grass decays in Winter and regrows back in Spring. Saplings are also transformed into Dead Bushes. This can be disabled with the iguanatweaks:doSeasonGrassGrowDeath game rule
+	[World.Seasons]
+		#Makes the following changes to Serene Seasons config:
+		#* seasonal_crops is set to false, as it's controlled by Plants Growth
+		#* Sets the starting season to the one in 'Starting season'
+		"Change serene seasons config" = true
+		#Removes greenhouse glass.
+		"No green house glass" = true
+		#Changes what leaves can drop in different seasons.
+		#Sapling no longer drop in winter
+		#Apples only drop in spring
+		"Leaves drops" = true
+		#Has no effect if 'Serene Seasons changes' is disabled
+		#Allowed Values: EARLY_SPRING, MID_SPRING, LATE_SPRING, EARLY_SUMMER, MID_SUMMER, LATE_SUMMER, EARLY_AUTUMN, MID_AUTUMN, LATE_AUTUMN, EARLY_WINTER, MID_WINTER, LATE_WINTER
+		"Starting season" = "EARLY_SUMMER"
+		#How many minutes will day and night duration be (with this set to 10 the day will last 10 minutes and the night 10 minutes for a grand total of 20 minutes). This also adjusts the day_duration config option in Serene Seasons. Vanilla is 10. Requires Time Control mod
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Time control day night duration" = 15.0
+		#How many minutes will day and night duration be shifted based off seasons? E.g. in Mid spring / autumn the duration of day and night is vanilla, when moving off those seasons day and night will last this many minutes more/less. In mid summer / winter the duration of day and night duration will be more / less by 3 times this value. Set to 0 to disable. Requires Time Control mod
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Time control day night shift" = 1.5
+		"Slowdown grass spreading" = true
+		"Season based fishing time" = true
+		"Grow double tall grass" = true
+		"Grow flowers from grass" = false
+
 ["Sleep & Respawn"]
 	#Changes to respawning. Adds the doLooseRespawn gamerule that can disable the loose spawn range
 	"Enable Respawn" = false
@@ -235,6 +263,8 @@
 	"Enable Cloth" = false
 	#Prevents the player from sleeping if has not enough Hunger and gives him effects on wake up. Effects on wake up are controlled via json in this feature's folder
 	"Enable Sleeping effects" = true
+	#Health and hunger penalties on respawn
+	"Enable Respawn penalties" = true
 
 	#Changes to respawning. Adds the doLooseRespawn gamerule that can disable the loose spawn range
 	["Sleep & Respawn".Respawn]
@@ -246,6 +276,9 @@
 		"Allow obelisk spawn point overwrite with beds sneaking" = true
 		#If true, respawn obelisks will require (and consume) precious blocks to let you respawn
 		"Respawn obelisks require catalyst blocks" = false
+		#How many ticks of the Ghostly effect is given to the player on respawn.
+		#Range: > 0
+		"Ghostly effect" = 120
 
 		#The range from world spawn where players will respawn.
 		["Sleep & Respawn".Respawn."Loose world spawn range"]
@@ -257,71 +290,9 @@
 		#The range from beds where players will respawn.
 		["Sleep & Respawn".Respawn."Loose bed spawn range"]
 			#Range: 0.0 ~ 1.7976931348623157E308
-			Minimum = 96.0
+			Minimum = 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			Maximum = 192.0
-
-		["Sleep & Respawn".Respawn."Stats penalty"]
-
-			["Sleep & Respawn".Respawn."Stats penalty".Health]
-
-				#Min Health of respawning players
-				["Sleep & Respawn".Respawn."Stats penalty".Health.Minimum]
-					#Range: 0.0 ~ 20.0
-					"Easy/Peaceful" = 10.0
-					#Range: 0.0 ~ 20.0
-					Normal = 10.0
-					#Range: 0.0 ~ 20.0
-					Hard = 6.0
-
-				#How much health respawning players lose on respawn (not max health)
-				["Sleep & Respawn".Respawn."Stats penalty".Health."Per death"]
-					#Range: 0.0 ~ 20.0
-					"Easy/Peaceful" = 1.0
-					#Range: 0.0 ~ 20.0
-					Normal = 2.0
-					#Range: 0.0 ~ 20.0
-					Hard = 2.0
-
-			["Sleep & Respawn".Respawn."Stats penalty".Hunger]
-
-				#Min Hunger of respawning players. If below this value on death will be set to this value
-				["Sleep & Respawn".Respawn."Stats penalty".Hunger.Min]
-					#Range: 0.0 ~ 20.0
-					"Easy/Peaceful" = 6.0
-					#Range: 0.0 ~ 20.0
-					Normal = 6.0
-					#Range: 0.0 ~ 20.0
-					Hard = 6.0
-
-				#Max Hunger of respawning players. If above this value on death will be set to this value
-				["Sleep & Respawn".Respawn."Stats penalty".Hunger.Maximum]
-					#Range: 0.0 ~ 20.0
-					"Easy/Peaceful" = 14.0
-					#Range: 0.0 ~ 20.0
-					Normal = 14.0
-					#Range: 0.0 ~ 20.0
-					Hard = 10.0
-
-			["Sleep & Respawn".Respawn."Stats penalty".Saturation]
-
-				#Min Saturation of respawning players. If below this value on death will be set to this value
-				["Sleep & Respawn".Respawn."Stats penalty".Saturation.Minimum]
-					#Range: 0.0 ~ 20.0
-					"Easy/Peaceful" = 6.0
-					#Range: 0.0 ~ 20.0
-					Normal = 6.0
-					#Range: 0.0 ~ 20.0
-					Hard = 6.0
-
-				#Max Saturation of respawning players. If above this value on death will be set to this value
-				["Sleep & Respawn".Respawn."Stats penalty".Saturation.Maximum]
-					#Range: 0.0 ~ 20.0
-					"Easy/Peaceful" = 10.0
-					#Range: 0.0 ~ 20.0
-					Normal = 10.0
-					#Range: 0.0 ~ 20.0
-					Hard = 6.0
+			Maximum = 3.0
 
 	#Prevents sleeping if the player is not tired. Tiredness is gained by gaining exhaustion. Allows you to sleep during daytime if too tired. Energy Boost Items are controlled via json in this feature's folder
 	["Sleep & Respawn".Tiredness]
@@ -348,6 +319,8 @@
 		#If true, Simple Clouds' clouds will speed up when player skips time by sleeping.
 		"Simple clouds integration" = false
 		"Allow sleeping even when not tired" = false
+		#If true, sets the playersSleepingPercentage gamerule to 1 so tired players can sleep no matter how many players on a server.
+		"Force one player sleep" = true
 
 		["Sleep & Respawn".Tiredness."Energy boost"]
 			#If the player has energy boost, reduce tiredness by this value (multiplied by the effect level) each tick.
@@ -399,6 +372,7 @@
 		"Crouch take items" = false
 		#If true, only players that generated the grave can crouch right-click to take items from graves.
 		"Crouch take items only owner" = false
+		"Remove ghostly on grave break" = true
 
 	#Zombies drop cloth instead of Rotten Flesh. Cloth is used to make beds and various other stuff.
 	["Sleep & Respawn".Cloth]
@@ -427,6 +401,69 @@
 		#Apply the bad effects only when the Tired effect is equal or above this amplifier. -1 to disable
 		#Range: -1 ~ 255
 		"Dizzy when to tired" = 1
+
+	#Health and hunger penalties on respawn
+	["Sleep & Respawn"."Respawn penalties"]
+
+		["Sleep & Respawn"."Respawn penalties".Health]
+
+			#Min Health of respawning players
+			["Sleep & Respawn"."Respawn penalties".Health.Minimum]
+				#Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 10.0
+				#Range: 0.0 ~ 20.0
+				Normal = 10.0
+				#Range: 0.0 ~ 20.0
+				Hard = 6.0
+
+			#How much health respawning players lose on respawn (not max health)
+			["Sleep & Respawn"."Respawn penalties".Health."Per death"]
+				#Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 1.0
+				#Range: 0.0 ~ 20.0
+				Normal = 2.0
+				#Range: 0.0 ~ 20.0
+				Hard = 2.0
+
+		["Sleep & Respawn"."Respawn penalties".Hunger]
+
+			#Min Hunger of respawning players. If below this value on death will be set to this value
+			["Sleep & Respawn"."Respawn penalties".Hunger.Min]
+				#Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 6.0
+				#Range: 0.0 ~ 20.0
+				Normal = 6.0
+				#Range: 0.0 ~ 20.0
+				Hard = 6.0
+
+			#Max Hunger of respawning players. If above this value on death will be set to this value
+			["Sleep & Respawn"."Respawn penalties".Hunger.Maximum]
+				#Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 14.0
+				#Range: 0.0 ~ 20.0
+				Normal = 14.0
+				#Range: 0.0 ~ 20.0
+				Hard = 10.0
+
+		["Sleep & Respawn"."Respawn penalties".Saturation]
+
+			#Min Saturation of respawning players. If below this value on death will be set to this value
+			["Sleep & Respawn"."Respawn penalties".Saturation.Minimum]
+				#Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 6.0
+				#Range: 0.0 ~ 20.0
+				Normal = 6.0
+				#Range: 0.0 ~ 20.0
+				Hard = 6.0
+
+			#Max Saturation of respawning players. If above this value on death will be set to this value
+			["Sleep & Respawn"."Respawn penalties".Saturation.Maximum]
+				#Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 10.0
+				#Range: 0.0 ~ 20.0
+				Normal = 10.0
+				#Range: 0.0 ~ 20.0
+				Hard = 6.0
 
 [Movement]
 	"Enable Swimming" = false
@@ -531,6 +568,8 @@
 	"Enable Misc mobs" = true
 	#Change wandering trader offers. Trades can be customized via json in this feature's folder
 	"Enable Wandering trades" = true
+	#Changes to mob spawn with Serene Seasons installed. Check this feature's json config folder for all the configuration options
+	"Enable Season spawning" = true
 
 	#Add a brand new Echo Torch and some changes to mob spawn
 	[Mobs.Spawning]
@@ -580,6 +619,8 @@
 		#Multiplier to experience required by villagers to level up
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Experience to level up multiplier" = 1.3
+		#Disable the loading of villager trades from data packs. This is useful for mods like Numismatic Overhaul that has the same folder structure as ISO
+		"Load villager trades from data packs" = true
 
 	[Mobs."Misc mobs"]
 		#1 in X chance each tick for mobs in the `iguanatweaksreborn:passive_regen` entity type tag to regain 1 health. Set to 0 to disable
@@ -659,6 +700,9 @@
 		#Plays a sound effect when a mob is hit at least from this distance.
 		#Range: > -2147483648
 		"Ding distance" = 40
+		#The speed divider when off ground. Vanilla is 5
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Off ground speed divider" = 3.0
 
 		[Miscellaneous.Tweaks.Sponge]
 			#The maximum amount of blocks a sponge can soak. (Vanilla is 64, disabled if quark is installed)
@@ -819,7 +863,7 @@
 		"Slowdown message" = 900
 
 [Mining]
-	#Changes Gold tools to have an innate Fortune/Looting I
+	#Changes Gold tools to have an innate Fortune/Looting
 	"Enable Gold" = true
 	#Various changes for different materials and ores.
 	"Enable Materials and ores" = true
@@ -832,7 +876,7 @@
 	#Change, through data packs, some blocks properties, from hardness to explosion resistance to speed and jump factors to bone meal chance to fail.
 	"Enable Block definition" = true
 
-	#Changes Gold tools to have an innate Fortune/Looting I
+	#Changes Gold tools to have an innate Fortune/Looting
 	[Mining.Gold]
 		#Set the innate looting level of gold tools.
 		#Range: 0 ~ 255
@@ -908,6 +952,10 @@
 	"Enable Blinker" = true
 	#If enabled, a data pack will be enabled that disables stone tools crafting and generation in chests will be replaced with copper ones.
 	"Enable Stone tools gone" = true
+	#A new item that can let you carry more stuff around.
+	"Enable Pouch" = true
+	#Check your altitude. Disables itself if Caverns and Chasms is present
+	"Enable Altimeter" = true
 
 	[Items."gigaherz Tool Belt"]
 		#Enables a data pack that changes the crafting of the Tool Belt to give more slots (2 -> 4)
@@ -923,10 +971,10 @@
 	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
 	[Items."Stack sizes"]
 		#The formula to calculate the stack size of a food item. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. Set to empty to disable this. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-		"Food stack reduction formula" = "2 ^ CEILING(LOG(MAX(64 / MAX(hunger, 1) * 0.4, 1)) / LOG(2))"
+		"Food stack reduction formula" = "MIN(16, 2 ^ CEILING(LOG(MAX(64 / MAX(hunger, 1) * 0.4, 1)) / LOG(2)))"
 		#Items max stack sizes (excluding blocks) will be multiplied by this value. Foods will be overridden by 'Food Stack Reduction' or 'Food Stack Multiplier' if are active. Setting to 1 will disable this feature.
 		#Range: 0.01 ~ 64.0
-		"Item Stack Multiplier" = 1.0
+		"Item Stack Multiplier" = 0.25
 		#All the blocks max stack sizes will be multiplied by this value to increase / decrease them.
 		#Range: 0.01 ~ 64.0
 		"Block stack multiplier" = 0.25
@@ -969,10 +1017,18 @@
 		#Range: 0 ~ 15
 		"Max sunlight" = 12
 
+	#A new item that can let you carry more stuff around.
+	[Items.Pouch]
+		#Range: > 0
+		"Max pouch without slowdown" = 2
+		#When you have > 'Max pouch without slowdown' this is the base value for the slowdown. The slowdown is calculated as (pouch above 'Max pouch' ^ 2 * this)
+		#Range: 0.0 ~ 1.0
+		"Base slowness per pouch over max" = 0.03
+
 ["Hunger & Health"]
 	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
 	"Enable Health Regen & Hunger" = true
-	#Make the player consume more hunger with different actions. Please note that if hunger is disabled, exhaustion still applies to Tiredness.
+	#Make the player consume more hunger with different actions. Please note that even if hunger is disabled, exhaustion will still be user by Tiredness.
 	"Enable Exhaustion" = true
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder.
 	"Enable Foods & Drinks" = true
@@ -1036,7 +1092,7 @@
 				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 				Maximum = 3600.0
 
-	#Make the player consume more hunger with different actions. Please note that if hunger is disabled, exhaustion still applies to Tiredness.
+	#Make the player consume more hunger with different actions. Please note that even if hunger is disabled, exhaustion will still be user by Tiredness.
 	["Hunger & Health".Exhaustion]
 		#Every tick of the player's charging an arrow on a bow/crossbow will get this exhaustion.
 		#Range: 0.0 ~ 128.0
@@ -1118,6 +1174,9 @@
 		"Compostable rotten flesh" = true
 		#Makes bone meal have a chance to fail on Cave Vines, Saplings and Sweet Berry Bushes.
 		"Data pack" = true
+		#Vanilla is 20
+		#Range: > 0
+		"Composter time to produce" = 50
 
 		#How many stages will bone meal make stuff grow?
 		[Farming."Bone meal"."Stage growth"]
@@ -1180,6 +1239,8 @@
 		"Fluid cooldown" = 1200
 		#Enables a data pack that changes animal loot (reduced food drops) and slows down growing, breeding, egging etc
 		"Data pack" = true
+		#If true, mobs can randomly fall in love and possibly breed
+		"Auto breed" = true
 
 		[Farming.Livestock.Aging]
 			#If true, animals will age and die of old age. Configurable via data packs. With the data pack enabled, adult will drop more goodies. With pehkui installed, animals will also be smaller/bigger.
@@ -1191,11 +1252,19 @@
 			"Stop at" = "ELDER"
 			#If true, animals will die if not young and haven't been fed in a while.
 			"Starvation death" = false
-			#How long (in minutes) will an animal remain marked as fed after eating?
-			#Range: > 0
-			"Last fed duration" = 60
 			#If fed a poisonous potato, animals will stop aging at a 'Stop At With Poisonous Potato' age.
 			"Stop aging with poisonous potato" = true
+
+		[Farming.Livestock."Well fed"]
+			#If true, animals will be 'well fed' for this ticks when fed. During this time they have an higher chance (given by the livestock data) to breed. Set to 0 to disable.
+			#Range: > 0
+			Duration = 60
+			#How much well fed time must be left to the entity to be able to feed it again.
+			#Range: > 0
+			"Left to feed again" = 30
+			#How much well fed time is consumed when animals breed.
+			#Range: > 0
+			"Consumed on breed" = 20
 
 	#Slower Plants (non-crops) growing. Plants properties are controlled via data packs
 	[Farming."Plants growth"]
@@ -1444,6 +1513,8 @@
 	"Enable Player stats" = true
 	#Gives a use to the fletching table.
 	"Enable Fletching" = true
+	#Changes attack sound based off tool used. Axes use vanilla strong attack, swords use vanilla weak attack, pickaxes and shovels use new sounds.
+	"Enable Attack sounds" = true
 
 	#Players live with a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
 	[Combat."Unfair one-shot"]
@@ -1577,7 +1648,7 @@
 	#Apply attribute modifiers to players. Attributes can be added in the json config of this feature's folder. Changing attribute modifiers requires player rejoin
 	[Combat."Player stats"]
 		#In vanilla, if you attack as soon as you just attacked you already deal 20% of the full damage. This changes that to 0%. This also mixins into Tinkers Construct to apply the same effect.
-		"No damage when spamming" = true
+		"No damage when spamming" = false
 
 	#Gives a use to the fletching table.
 	[Combat.Fletching]
@@ -1587,4 +1658,8 @@
 		#* Replaces the vanilla fletching table recipe with the mod's one
 		#* Adds more arrows recipes
 		"Data pack" = true
+
+	#Changes attack sound based off tool used. Axes use vanilla strong attack, swords use vanilla weak attack, pickaxes and shovels use new sounds.
+	[Combat."Attack sounds"]
+		"Randomize pitch" = true
 

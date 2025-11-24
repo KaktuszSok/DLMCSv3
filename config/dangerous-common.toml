@@ -6,10 +6,10 @@
 ["Health Multiplier Settings"]
 	#Base health multiplier for enemies.
 	#Range: 0.1 ~ 100.0
-	baseHealthMultiplier = 1.0
+	baseHealthMultiplier = 2.0
 	#Maximum health multiplier for enemies.
 	#Range: 0.1 ~ 10.0
-	maxHealthMultiplier = 1.0
+	maxHealthMultiplier = 2.0
 	#Increment to increase health multiplier after reaching certain amount of days.
 	#Range: 0.1 ~ 10.0
 	healthMultiplierIncrement = 0.2

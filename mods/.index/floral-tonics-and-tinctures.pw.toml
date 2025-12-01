@@ -1,13 +1,13 @@
-filename = 'floral_tonics_and_tinctures-2.1.1-1.20.1-forge-neoforge.jar'
-name = 'Floral Tonics and Tinctures'
+filename = 'floral_tonics_and_tinctures-2.1.2-1.20.1-forge-neoforge.jar'
+name = 'Floral Tonics & Tinctures'
 side = 'both'
 
 [download]
-hash = '58d6d1b46f0676426797caa3e4077ec4cfa8d1d9e3db921aabe0c56c272b18c648a81e03653e8d59b9b9828ae54ca1be40eea5c891a07ed701f5a6ba26cb6e6c'
+hash = 'a6a1c5c5596c224638672aef0664dcc8533bc4d37b137a8e4a0a8468a533d065952f5a5b35b38959fe1b994d63498618cb8747f0605e54392e2cd34a71f7067f'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/7UWAenJN/versions/kgP48Dcw/floral_tonics_and_tinctures-2.1.1-1.20.1-forge-neoforge.jar'
+url = 'https://cdn.modrinth.com/data/7UWAenJN/versions/jGoJRM6P/floral_tonics_and_tinctures-2.1.2-1.20.1-forge-neoforge.jar'
 
 [update.modrinth]
 mod-id = '7UWAenJN'
-version = 'kgP48Dcw'
+version = 'jGoJRM6P'

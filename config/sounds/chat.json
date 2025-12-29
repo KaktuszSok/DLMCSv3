@@ -21,7 +21,8 @@
 		"soundEvent": "minecraft:block.note_block.chime"
 	},
 	"mentionKeywords": [
-		"@KaktuszSok"
+		"@KaktuszSok",
+		"@Kielbashnikov"
 	],
 	"ignoreSystemChats": false,
 	"enableChatSoundCooldown": false,

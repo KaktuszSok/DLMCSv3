@@ -6,6 +6,139 @@
     "enable_global_spacing_and_separation_modifier": true,
     "global_spacing_and_separation_modifier": 1.3
   },
-  "structures": [],
-  "structure_sets": []
+  "structures": [
+    {
+      "name": "trek:overworld/rare/portal_sword",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 64,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 64,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    }
+  ],
+  "structure_sets": [
+    {
+      "name": "burnt:burnt_armorer_house",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 50,
+      "separation": 25
+    },
+    {
+      "name": "burnt:burnt_clearing",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 40,
+      "separation": 20
+    },
+    {
+      "name": "burnt:burnt_outpost",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 50,
+      "separation": 25
+    },
+    {
+      "name": "burnt:burnt_plains_house",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 40,
+      "separation": 20
+    },
+    {
+      "name": "burnt:soul_clearing",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 65,
+      "separation": 35
+    },
+    {
+      "name": "minecraft:igloos",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 16,
+      "separation": 8
+    },
+    {
+      "name": "minecraft:jungle_temples",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 24,
+      "separation": 8
+    },
+    {
+      "name": "minecraft:ocean_monuments",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 32,
+      "separation": 16
+    },
+    {
+      "name": "minecraft:pillager_outposts",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 24,
+      "separation": 8
+    },
+    {
+      "name": "minecraft:villages",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 65,
+      "separation": 20
+    },
+    {
+      "name": "nova_structures:illager_camp",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 20,
+      "separation": 6
+    },
+    {
+      "name": "nova_structures:taverns",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 32,
+      "separation": 15
+    },
+    {
+      "name": "spelunkery:cinnabar_wires",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 32,
+      "separation": 24
+    },
+    {
+      "name": "tconstruct:end_sky_island",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 25,
+      "separation": 16
+    },
+    {
+      "name": "tconstruct:nether_ocean_island",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 15,
+      "separation": 12
+    },
+    {
+      "name": "tconstruct:overworld_ocean_island",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 30,
+      "separation": 24
+    },
+    {
+      "name": "tconstruct:overworld_sky_island",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 35,
+      "separation": 16
+    },
+    {
+      "name": "tide:fishing_boat",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 45,
+      "separation": 26
+    },
+    {
+      "name": "towns_and_towers:towers",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 40,
+      "separation": 24
+    },
+    {
+      "name": "towns_and_towers:towns",
+      "override_global_spacing_and_separation_modifier": false,
+      "spacing": 40,
+      "separation": 24
+    }
+  ]
 }

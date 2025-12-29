@@ -89,18 +89,5 @@
       "type": "url",
       "value": "https://spark.lucko.me/m053kariKe"
     }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "KaktuszSok",
-      "uniqueId": "edac17ef-c211-4d43-91e2-ecc632c3e376"
-    },
-    "time": 1760542676554,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/3jpZoVOk25"
-    }
   }
 ]

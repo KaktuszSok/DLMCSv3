@@ -368,6 +368,7 @@
 				hell_chant = true
 				fire_blast_trap = true
 				zpiglin_servant = true
+				trampler = true
 
 			[light_sources.settings.entities.cataclysm]
 				void_vortex = true

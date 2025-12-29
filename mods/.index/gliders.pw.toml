@@ -1,13 +1,16 @@
-filename = 'gliders-forge-1.1.6.jar'
+filename = 'gliders-forge-1.2.0.jar'
 name = 'Gliders'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '97f29aaec75570fd8ec47c99e742a314be50b58ebdb5d5da9f6bda67d938bad17768c6699ea1a27f5da16d3da3ad91d13846e763e7387ba174da8f1d8da44ea5'
+hash = '21e5dab556cd34979a82915d740073f871b202ff6171b68613d793b24793eaa55c3965309ad68bc1e4b355967440a25d46fe6bc6fdd0d2a3e799ea717228c7a2'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/XiC6HzoU/versions/5V8JfBma/gliders-forge-1.1.6.jar'
+url = 'https://cdn.modrinth.com/data/XiC6HzoU/versions/gLPEZ1Xm/gliders-forge-1.2.0.jar'
 
 [update.modrinth]
 mod-id = 'XiC6HzoU'
-version = '5V8JfBma'
+version = 'gLPEZ1Xm'

@@ -1,13 +1,16 @@
-filename = 'projectvibrantjourneys-1.20.1-6.1.0.jar'
+filename = 'projectvibrantjourneys-1.20.1-6.2.0.jar'
 name = 'Project: Vibrant Journeys'
 side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'c797f4f63d3a94d2fe380dbe6e944b60446f06e019b8b17cc287241f9c27bc7d079686e82baba3598bd069cccd48f2cae53105c1ce8c692af53ad1eaf9c37418'
+hash = 'cc55ad3169c90ea117c01b5fd9672d04a2ab60134e2c0cef62d620f575b3ea8aa8a0dc205f2d057f6af6186df13e338692a54e74298d74a0b240df4e49b723a6'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/Z8Xbk4yv/versions/xRTQcHum/projectvibrantjourneys-1.20.1-6.1.0.jar'
+url = 'https://cdn.modrinth.com/data/Z8Xbk4yv/versions/5aVTVbOO/projectvibrantjourneys-1.20.1-6.2.0.jar'
 
 [update.modrinth]
 mod-id = 'Z8Xbk4yv'
-version = 'xRTQcHum'
+version = '5aVTVbOO'

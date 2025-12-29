@@ -1,13 +1,16 @@
-filename = 'bbb-1.20.1-forge-1.1.1.jar'
+filename = 'bbb-forge-2.0pre3.jar'
 name = 'Building But Better'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
 
 [download]
-hash = '1e596090be5a8cba13246fe09d31acf7c56e5c53c377fa6a14f5be9f6ece8780922038ab30a0487b996ddef60935c34c15857826b46cfd963f48296d0e321723'
+hash = '8a49e950aca69aeb97c6310f2b835921d9980d8859b85d565514a7fcb93b40c7c3b0d2554884ffbff88c813e889f47e0e3767c7b237ea77028f73055d56dbd68'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/OSDpLd82/versions/zGMhmLYb/bbb-1.20.1-forge-1.1.1.jar'
+url = 'https://cdn.modrinth.com/data/OSDpLd82/versions/C0xx6Q9L/bbb-forge-2.0pre3.jar'
 
 [update.modrinth]
 mod-id = 'OSDpLd82'
-version = 'zGMhmLYb'
+version = 'C0xx6Q9L'

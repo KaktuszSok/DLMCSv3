@@ -1,13 +1,16 @@
-filename = 'malfu-combat-animation-2.0.jar'
+filename = 'malfu-combat-animation-3.1.jar'
 name = 'Malfu Combat Animation'
 side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.2', '1.20.3', '1.20.4', '1.20.5', '1.20.6' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '93be068c5e9596dc00e1582ce580c084fe644eec25262fe9ca62090fdf712ae32c092593b81f8b2a5b031858d9123652821095f169edefbe80c9992cfb18a3e5'
+hash = '0d3cbb7be483180785358a7b314ca56da4cde868deaa5b107ac5ac78724b94fba43bc2931e9b70c2f1e338fd724eb007af3de6e4debc50de890a62891b2ad1b8'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/LNkOO2Ya/versions/8AHSDx4R/malfu-combat-animation-2.0.jar'
+url = 'https://cdn.modrinth.com/data/LNkOO2Ya/versions/tjgtJbsB/malfu-combat-animation-3.1.jar'
 
 [update.modrinth]
 mod-id = 'LNkOO2Ya'
-version = '8AHSDx4R'
+version = 'tjgtJbsB'

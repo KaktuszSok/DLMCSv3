@@ -1,13 +1,16 @@
-filename = 'structurify-forge-mc1.20.1-1.0.11.jar'
+filename = 'structurify-forge-2.0.11+mc1.20.1.jar'
 name = 'Structurify'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '6c72162b26039b38fe6b165573c466bbfbe65f8f006cf6cfe3a8b3d41cb8c384569aa8394916699abd61c0de1ae9c1bea3bc5b2fec0d7162420bfc55a2ecdcb4'
+hash = 'd74c92a6f02123872f4739b156f1dfe4b996bd97e12f9cb74f805acdc865ad9016bfc7363f48f42cf8107c122360662d038bb01c41570e9392c87773303446bf'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/yz7AM2zx/versions/HdSQGqdH/structurify-forge-mc1.20.1-1.0.11.jar'
+url = 'https://cdn.modrinth.com/data/yz7AM2zx/versions/BC0L0fye/structurify-forge-2.0.11%2Bmc1.20.1.jar'
 
 [update.modrinth]
 mod-id = 'yz7AM2zx'
-version = 'HdSQGqdH'
+version = 'BC0L0fye'

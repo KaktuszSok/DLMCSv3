@@ -1,13 +1,16 @@
-filename = 'gottschcore-1.20.1-2.3.0.jar'
+filename = 'gottschcore-1.20.1-2.5.1.jar'
 name = 'GottschCore'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '98ce73172c90248edf389019e7484c2503c20952'
+hash = '1af5f44ca476205ffb8a57534a051eac779a620f'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5852444
+file-id = 7069162
 project-id = 272450

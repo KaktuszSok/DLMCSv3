@@ -51,23 +51,10 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "eclipticseasons": {
-    "greenhouse_core": true,
-    "animal": true,
-    "cauldron": true,
-    "crop": true,
-    "snowy_status": true,
-    "crop.shift_hint": true
-  },
   "lightmanscurrency": {
     "model_variant": true,
+    "model_variant.locked": false,
     "paygate": true
-  },
-  "car": {
-    "car": true,
-    "generator": true,
-    "tank": true,
-    "fluid_extractor": true
   },
   "enigmaticgraves": {
     "grave": true

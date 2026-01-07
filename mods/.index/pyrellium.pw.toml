@@ -1,0 +1,16 @@
+filename = 'pyrellium-0.2.6.jar'
+name = 'Pyrellium'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'dc6cccdc60906c487a4323d65b3f5b3f28208f5e2d8f7604903a01828cc08967dcc3637c0147e9a84c0a98dc3b1531dbf136ffa7c412e88c8f9a609d037c8bfa'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/uZWcuZ4t/versions/szavddxP/pyrellium-0.2.6.jar'
+
+[update.modrinth]
+mod-id = 'uZWcuZ4t'
+version = 'szavddxP'

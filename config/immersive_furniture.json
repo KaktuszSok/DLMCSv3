@@ -1,6 +1,7 @@
 {
   "favorites": [],
   "immersiveLibraryUrl": "https://mca.conczin.net",
+  "maximumInteractDistance": 0,
   "lowMemoryModeThreshold": 10,
   "saveAsHash": true,
   "costMultiplier": 1.0,

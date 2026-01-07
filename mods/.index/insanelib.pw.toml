@@ -1,13 +1,16 @@
-filename = 'insanelib-1.21.21.jar'
+filename = 'insanelib-1.23.2.jar'
 name = 'InsaneLib'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '28ae0487c40472e057ab1397e9f19c01a52a3c358c0ca9823251f2656b50f006f29ba6e46dec290586d3f172c3426e42fb123704b7fe4427150f1e834a52f6de'
+hash = '9fc61425d1896e8499f08b94aa2e66d3ac6d5207442aec36cd634d7685802c1d252917abc0201aefcee4c324b69a50fb3d250dfbcaf2fa580a7a90d5dcc2ca0b'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/USZyvOJq/versions/SjnQa9IK/insanelib-1.21.21.jar'
+url = 'https://cdn.modrinth.com/data/USZyvOJq/versions/aPLrBEIU/insanelib-1.23.2.jar'
 
 [update.modrinth]
 mod-id = 'USZyvOJq'
-version = 'SjnQa9IK'
+version = 'aPLrBEIU'

@@ -1,13 +1,16 @@
-filename = 'lctech-1.20.1-0.2.2.2.jar'
+filename = 'lctech-1.20.1-0.2.2.6.jar'
 name = "Lightman's Currency Tech"
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '4707f86f0f84c26afbf1ea2eb0fe9fa6d1555241ee0405f7fe8688a19fb171a60e4803dee0fc88ce4c9b01dd17a8552f2f941fe35e57396ecde58c7dda118c90'
+hash = '00622f71a69f7e04cf2b95b1ef845d2010b64bda8579a536123cef30f80c4aec9af81e98a8832b874cee2bcc22a8d3087c2aa37a407a86f59ae5111509b9276b'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/US8EsYXT/versions/s98rdSnf/lctech-1.20.1-0.2.2.2.jar'
+url = 'https://cdn.modrinth.com/data/US8EsYXT/versions/BKFKaw9q/lctech-1.20.1-0.2.2.6.jar'
 
 [update.modrinth]
 mod-id = 'US8EsYXT'
-version = 's98rdSnf'
+version = 'BKFKaw9q'

@@ -8,64 +8,36 @@
 	mobBlacklist = ["minecraft:pig"]
 
 ["Simple VC"]
-	#Enable voice chat integration
+	#Enable Simple Voice Chat (SVC) integration.
+	#When enabled, voice chat frames generate a dynamic sound whose range scales with the audio's peak level (dBFS).
+	#Optional: Only takes effect if SVC is installed.
 	enableVoiceChatIntegration = true
-	#Voice chat whisper range
+	#Base range used when the player is whispering in SVC (before applying dB multiplier).
 	#Range: 1 ~ 64
 	voiceChatWhisperRange = 8
-	#Voice chat normal range
+	#Base range used for normal speaking in SVC (before applying dB multiplier).
 	#Range: 1 ~ 128
 	voiceChatNormalRange = 24
-	#Voice chat weight
+	#Weight assigned to the generated SVC sound event.
 	#Range: 0.0 ~ 10.0
 	voiceChatWeight = 9.0
+	#Mapping from normalized dB thresholds to range multipliers for SVC.
+	#Normalized dB is in [0..127], where 0 = silence and 127 = max peak (0 dBFS).
+	#Each entry format: 'threshold:multiplier'. Entries are evaluated from highest threshold to lowest.
+	#Defaults replicate the built-in behavior: >=50 -> 1.0, >=30 -> 0.7, >=10 -> 0.3.
+	voiceChatDbThresholdMap = ["110:2.0", "90:1.8", "75:1.5", "50:1.0", "30:0.7", "10:0.3", "0:0.05"]
 
 #Sound Attract Mod Configuration
 [general]
 	#Enable debug logging for troubleshooting.
 	debugLogging = false
-	#Enable caching for raycast results to improve performance. Disable if experiencing issues with sound obstruction detection.
-	enableRaycastCache = true
-	#Enables smarter behavior for mobs at the edge of their hearing range (e.g. pathing closer to investigate further)
-	edgeMobSmartBehavior = false
-	#How long a sound event remains 'interesting' to a mob, in ticks (20 ticks = 1 second).
-	#Range: 20 ~ 1000000
-	soundLifetimeTicks = 600
-	#Minimum time in ticks between mob scans for new sounds. Higher values can improve performance but reduce responsiveness.
-	#Range: 1 ~ 1000000
-	scanCooldownTicks = 25
-	#How many ticks to add to the base scan cooldown for each active mob.
-	#This directly controls how much the cooldown increases with more mobs.
-	#A higher value means more cooldown per mob, slowing down scans more aggressively.
-	#Example: 0.25 means 100 mobs will add (100 * 0.15) = 15 ticks to the base cooldown.
-	#Range: 0.0 ~ 10.0
-	cooldownTicksPerMob = 0.15
-	#TPS below which scanCooldownTicks is dynamically increased to save performance. Set to 0 to disable.
-	#Range: 0.0 ~ 20.0
-	minTpsForScanCooldown = 15.0
-	#TPS above which scanCooldownTicks is dynamically decreased (down to its minimum defined value). Set to 21 to disable.
-	#Range: 0.0 ~ 21.0
-	maxTpsForScanCooldown = 19.0
-	#How close a mob needs to get to a sound source to consider it 'reached'.
-	#Range: 1.0 ~ 100.0
-	arrivalDistance = 6.0
-	#Base speed multiplier for mobs moving towards a sound.
-	#Range: 0.1 ~ 3.0
-	mobMoveSpeed = 1.15
 	#Maximum number of sounds any single mob can track simultaneously.
 	#Range: 1 ~ 1000000
 	maxSoundsTracked = 20
-	#Maximum number of mobs allowed in a group for group AI behavior. Default: 64
-	#Range: 1 ~ 128
-	maxGroupSize = 64
-	#Radius (in blocks) used to group mobs under a leader for group AI behavior. Default: 64.0
-	#Range: 1.0 ~ 128.0
-	leaderGroupRadius = 64.0
-	#Maximum distance (in blocks) for mobs to consider themselves part of a group for group behaviors. Used in AI such as FollowLeaderGoal.
-	#Range: 1.0 ~ 128.0
-	groupDistance = 128.0
-	#Minimum ratio for a new sound's weight to overcome an existing target sound's weight for a mob to switch targets (e.g., 1.2 means new sound must be 20% 'heavier').
-	#Range: 1.0 ~ 5.0
+	#Switching threshold factor (0.0–1.0]. A mob will switch if newWeight > currentWeight × soundSwitchRatio.
+	#Example: 0.5 means a new sound beating 70% of the current weight will trigger a switch (more eager switching).
+	#Set closer to 1.0 for conservative switching; closer to 0.0 for very eager switching.
+	#Range: 0.0 ~ 1.0
 	soundSwitchRatio = 1.0
 	#A small weight bonus given to very new sounds to make mobs more likely to switch to them.
 	#This helps break ties and makes mobs seem more 'alert' to new threats.
@@ -76,22 +48,19 @@
 	#20 ticks = 1 second.
 	#Range: 1 ~ 200
 	soundNoveltyTimeTicks = 100
-	#Multiplier for spacing between mob leaders in a group. Default: 1.0
-	#Range: 0.1 ~ 10.0
-	leaderSpacingMultiplier = 1.0
-	#Number of edge sectors for group detection (AI). Default: 8
-	#Range: 1 ~ 64
-	numEdgeSectors = 8
-	#Interval (in ticks) between group AI updates. Default: 200
-	#Range: 1 ~ 200
-	groupUpdateInterval = 200
-	#Maximum number of group leaders tracked for AI grouping. Default: 16
-	#Range: 1 ~ 64
-	maxLeaders = 16
+	#Enable datapack-based configuration (tags/JSON).
+	#If false, only the TOML configuration is used for sounds and other features.
+	enableDataDriven = true
+	#Controls precedence when both datapacks and config define the same entries.
+	#'datapack_over_config' = datapacks override config values.
+	#'config_over_datapack' = config overrides datapack values.
+	datapackPriority = "datapack_over_config"
+	#Enable the FleeFromUnseenAttackerGoal that makes mobs flee after being hurt by an attacker they cannot see.
+	enableFleeFromUnseenAttackerGoal = true
 
 ["Sounds White List"]
 	#If not empty, only sound event IDs in this list will be considered by mobs.
-	soundIdWhitelist = ["gcaa:item.g19.fire", "minecraft:item.crossbow.shoot", "minecraft:item.crossbow.loading_start", "minecraft:item.crossbow.loading_middle", "minecraft:item.crossbow.loading_end", "minecraft:item.crossbow.quick_charge_1", "minecraft:item.crossbow.quick_charge_2", "minecraft:item.crossbow.quick_charge_3", "minecraft:entity.arrow.shoot", "minecraft:item.shield.block", "minecraft:block.lever.click", "minecraft:block.wooden_trapdoor.open", "minecraft:block.wooden_trapdoor.close", "minecraft:block.bamboo_wood_trapdoor.open", "minecraft:block.bamboo_wood_trapdoor.close", "minecraft:block.cherry_wood_trapdoor.open", "minecraft:block.cherry_wood_trapdoor.close", "minecraft:block.iron_trapdoor.open", "minecraft:block.iron_trapdoor.close", "minecraft:block.wooden_door.open", "minecraft:block.wooden_door.close", "minecraft:block.bamboo_wood_door.open", "minecraft:block.bamboo_wood_door.close", "minecraft:block.cherry_wood_door.open", "minecraft:block.cherry_wood_door.close", "minecraft:block.iron_door.open", "minecraft:block.iron_door.close", "minecraft:block.fence_gate.open", "minecraft:block.fence_gate.close", "minecraft:block.piston.extend", "minecraft:block.piston.contract", "minecraft:block.dispenser.dispense", "minecraft:block.dispenser.launch", "minecraft:block.anvil.land", "minecraft:block.anvil.use", "minecraft:block.anvil.destroy", "minecraft:block.sand.fall", "minecraft:block.gravel.fall", "minecraft:block.grass.break", "minecraft:block.scaffolding.break", "tacz:target_block_hit", "minecraft:entity.boat.paddle_water", "minecraft:ambient.underwater.enter", "minecraft:ambient.underwater.exit", "minecraft:block.chest.open", "minecraft:block.chest.close", "minecraft:block.barrel.open", "minecraft:block.barrel.close", "minecraft:block.ender_chest.open", "minecraft:block.ender_chest.close", "minecraft:block.shulker_box.open", "minecraft:block.shulker_box.close", "minecraft:block.bell.use", "minecraft:block.bell.resonate", "minecraft:block.furnace.fire_crackle", "minecraft:entity.generic.explode", "minecraft:entity.firework_rocket.launch", "minecraft:entity.firework_rocket.blast", "minecraft:entity.firework_rocket.large_blast", "minecraft:entity.player.hurt", "parcool:grabbing", "parcool:wallrun_and_running", "parcool:jumping", "parcool:sliding_1", "parcool:sliding_2", "parcool:sliding_3", "parcool:roll_and_dodge", "parcool:landing", "minecraft:random/anvil_land", "entity/leashknot/place1", "minecraft:entity.player.sprint", "minecraft:entity.player.jump", "minecraft:entity.player.sneak", "tacz:gun", "soundattract:voice_chat", "musketmod:musket_fire", "musketmod:blunderbuss_fire", "musketmod:pistol_fire", "cgm:item.shotgun.fire", "cgm:item.shotgun.silenced_fire", "cgm:item.shotgun.enchanted_fire", "cgm:item.shotgun.cock", "cgm:item.rifle.fire", "cgm:item.rifle.silenced_fire", "cgm:item.rifle.enchanted_fire", "cgm:item.rifle.cock", "cgm:item.pistol.fire", "cgm:item.pistol.silenced_fire", "cgm:item.pistol.enchanted_fire", "cgm:item.pistol.reload", "cgm:item.pistol.cock", "cgm:item.assault_rifle.fire", "cgm:item.assault_rifle.silenced_fire", "cgm:item.assault_rifle.enchanted_fire", "cgm:item.assault_rifle.cock", "cgm:item.grenade_launcher.fire", "cgm:item.bazooka.fire", "cgm:item.mini_gun.fire", "cgm:item.mini_gun.enchanted_fire", "cgm:item.machine_pistol.fire", "cgm:item.machine_pistol.silenced_fire", "cgm:item.machine_pistol.enchanted_fire", "cgm:item.heavy_rifle.fire", "cgm:item.heavy_rifle.silenced_fire", "cgm:item.heavy_rifle.enchanted_fire", "cgm:item.heavy_rifle.cock", "cgm:item.grenade.pin", "cgm:entity.stun_grenade.explosion", "cgm:entity.stun_grenade.ring", "scguns:item.makeshift_rifle.cock", "scguns:item.pistol.cock", "scguns:item.flamethrower.reload", "scguns:item.gauss.reload", "scguns:item.pistol.reload", "scguns:item.airgun.fire", "scguns:item.beam.fire", "scguns:item.blackpowder.fire", "scguns:item.boomstick.fire", "scguns:item.brass_pistol.fire", "scguns:item.brass_revolver.fire", "scguns:item.brass_shotgun.fire", "scguns:item.bruiser.fire", "scguns:item.combat_shotgun.fire", "scguns:item.cowboy.fire", "scguns:item.flamethrower.fire_2", "scguns:item.gauss.fire", "scguns:item.greaser_smg.fire", "scguns:item.gyrojet.fire", "scguns:item.heavy_rifle.fire", "scguns:item.heavier_rifle.fire", "scguns:item.iron_pistol.fire", "scguns:item.iron_rifle.fire", "scguns:item.makeshift_rifle.fire", "scguns:item.plasma.fire", "scguns:item.raygun.fire", "scguns:item.rocket.fire", "scguns:item.rocket_rifle.fire", "scguns:item.rusty_gnat.fire", "scguns:item.scrapper.fire", "scguns:item.sculk.fire", "scguns:item.shock.fire", "scguns:item.shulker.fire", "scguns:item.scorched_sniper.fire", "scguns:item.scorched_rifle.fire", "scguns:item.shock.silenced_fire", "scguns:item.bruiser.silenced_fire", "scguns:item.makeshift_rifle.silenced_fire", "scguns:item.combat_shotgun.silenced_fire", "scguns:item.rusty_gnat.silenced_fire", "scguns:item.shock.fire", "scguns:item.scorched_sniper.fire", "scguns:item.scorched_rifle.fire", "scguns:item.bruiser.fire", "scguns:item.flamethrower.fire_2", "scguns:item.blackpowder.fire", "scguns:item.gyrojet.fire", "scguns:item.boomstick.fire", "scguns:item.brass_shotgun.fire", "scguns:item.brass_revolver.fire", "scguns:item.shulker.fire", "scguns:item.iron_rifle.fire", "scguns:item.combat_shotgun.fire", "scguns:item.beam.fire", "scguns:item.airgun.fire", "scguns:item.heavier_rifle.fire", "scguns:item.iron_pistol.fire", "scguns:item.gauss.fire", "scguns:item.heavy_rifle.fire", "scguns:item.greaser_smg.fire", "scguns:item.plasma.fire", "scguns:item.rusty_gnat.fire", "scguns:item.cowboy.fire", "scguns:item.scrapper.fire", "scguns:item.sculk.fire", "scguns:item.raygun.fire", "scguns:item.rocket_rifle.fire", "scguns:item.makeshift_rifle.cock", "scguns:item.pistol.cock", "scguns:item.flamethrower.reload", "scguns:item.gauss.reload", "scguns:item.pistol.reload", "scguns:item.airgun.fire", "scguns:item.beam.fire", "scguns:item.blackpowder.fire", "scguns:item.boomstick.fire", "scguns:item.brass_pistol.fire", "scguns:item.brass_revolver.fire", "scguns:item.brass_shotgun.fire", "scguns:item.bruiser.fire", "scguns:item.combat_shotgun.fire", "scguns:item.cowboy.fire", "scguns:item.flamethrower.fire_2", "scguns:item.gauss.fire", "scguns:item.greaser_smg.fire", "scguns:item.gyrojet.fire", "scguns:item.heavy_rifle.fire", "scguns:item.heavier_rifle.fire", "scguns:item.iron_pistol.fire", "scguns:item.iron_rifle.fire", "scguns:item.makeshift_rifle.fire", "scguns:item.plasma.fire", "scguns:item.raygun.fire", "scguns:item.rocket.fire", "scguns:item.rocket_rifle.fire", "scguns:item.rusty_gnat.fire", "scguns:item.scrapper.fire", "scguns:item.sculk.fire", "scguns:item.shock.fire", "scguns:item.shulker.fire", "scguns:item.scorched_sniper.fire", "scguns:item.scorched_rifle.fire", "scguns:item.shock.silenced_fire", "scguns:item.bruiser.silenced_fire", "scguns:item.makeshift_rifle.silenced_fire", "scguns:item.combat_shotgun.silenced_fire", "scguns:item.rusty_gnat.silenced_fire", "scguns:item.shock.fire", "scguns:item.scorched_sniper.fire", "scguns:item.scorched_rifle.fire", "scguns:item.bruiser.fire", "scguns:item.flamethrower.fire_2", "scguns:item.blackpowder.fire", "scguns:item.gyrojet.fire", "scguns:item.boomstick.fire", "scguns:item.brass_shotgun.fire", "scguns:item.brass_revolver.fire", "scguns:item.shulker.fire", "scguns:item.iron_rifle.fire", "scguns:item.combat_shotgun.fire", "scguns:item.beam.fire", "scguns:item.airgun.fire", "scguns:item.heavier_rifle.fire", "scguns:item.iron_pistol.fire", "scguns:item.gauss.fire", "scguns:item.heavy_rifle.fire", "scguns:item.greaser_smg.fire", "scguns:item.plasma.fire", "scguns:item.rusty_gnat.fire", "scguns:item.cowboy.fire", "scguns:item.scrapper.fire", "scguns:item.sculk.fire", "scguns:item.raygun.fire", "scguns:item.rocket_rifle.fire"]
+	soundIdWhitelist = ["gcaa:item.g19.fire", "minecraft:item.crossbow.shoot", "minecraft:item.crossbow.loading_start", "minecraft:item.crossbow.loading_middle", "minecraft:item.crossbow.loading_end", "minecraft:item.crossbow.quick_charge_1", "minecraft:item.crossbow.quick_charge_2", "minecraft:item.crossbow.quick_charge_3", "minecraft:entity.arrow.shoot", "minecraft:item.shield.block", "minecraft:block.lever.click", "minecraft:block.wooden_trapdoor.open", "minecraft:block.wooden_trapdoor.close", "minecraft:block.bamboo_wood_trapdoor.open", "minecraft:block.bamboo_wood_trapdoor.close", "minecraft:block.cherry_wood_trapdoor.open", "minecraft:block.cherry_wood_trapdoor.close", "minecraft:block.iron_trapdoor.open", "minecraft:block.iron_trapdoor.close", "minecraft:block.wooden_door.open", "minecraft:block.wooden_door.close", "minecraft:block.bamboo_wood_door.open", "minecraft:block.bamboo_wood_door.close", "minecraft:block.cherry_wood_door.open", "minecraft:block.cherry_wood_door.close", "minecraft:block.iron_door.open", "minecraft:block.iron_door.close", "minecraft:block.fence_gate.open", "minecraft:block.fence_gate.close", "minecraft:block.piston.extend", "minecraft:block.piston.contract", "minecraft:block.dispenser.dispense", "minecraft:block.dispenser.launch", "minecraft:block.anvil.land", "minecraft:block.anvil.use", "minecraft:block.anvil.destroy", "minecraft:block.sand.fall", "minecraft:block.gravel.fall", "minecraft:block.grass.break", "minecraft:block.scaffolding.break", "tacz:target_block_hit", "minecraft:entity.boat.paddle_water", "minecraft:ambient.underwater.enter", "minecraft:ambient.underwater.exit", "minecraft:block.chest.open", "minecraft:block.chest.close", "minecraft:block.barrel.open", "minecraft:block.barrel.close", "minecraft:block.ender_chest.open", "minecraft:block.ender_chest.close", "minecraft:block.shulker_box.open", "minecraft:block.shulker_box.close", "minecraft:block.bell.use", "minecraft:block.bell.resonate", "minecraft:block.furnace.fire_crackle", "minecraft:entity.generic.explode", "minecraft:entity.firework_rocket.launch", "minecraft:entity.firework_rocket.blast", "minecraft:entity.firework_rocket.large_blast", "minecraft:entity.player.hurt", "parcool:grabbing", "parcool:wallrun_and_running", "parcool:jumping", "parcool:sliding_1", "parcool:sliding_2", "parcool:sliding_3", "parcool:roll_and_dodge", "parcool:landing", "minecraft:random/anvil_land", "entity/leashknot/place1", "minecraft:entity.player.sprint", "minecraft:entity.player.jump", "minecraft:entity.player.sneak", "tacz:gun", "soundattract:voice_chat", "musketmod:musket_fire", "musketmod:blunderbuss_fire", "musketmod:pistol_fire", "cgm:item.shotgun.fire", "cgm:item.shotgun.silenced_fire", "cgm:item.shotgun.enchanted_fire", "cgm:item.shotgun.cock", "cgm:item.rifle.fire", "cgm:item.rifle.silenced_fire", "cgm:item.rifle.enchanted_fire", "cgm:item.rifle.cock", "cgm:item.pistol.fire", "cgm:item.pistol.silenced_fire", "cgm:item.pistol.enchanted_fire", "cgm:item.pistol.reload", "cgm:item.pistol.cock", "cgm:item.assault_rifle.fire", "cgm:item.assault_rifle.silenced_fire", "cgm:item.assault_rifle.enchanted_fire", "cgm:item.assault_rifle.cock", "cgm:item.grenade_launcher.fire", "cgm:item.bazooka.fire", "cgm:item.mini_gun.fire", "cgm:item.mini_gun.enchanted_fire", "cgm:item.machine_pistol.fire", "cgm:item.machine_pistol.silenced_fire", "cgm:item.machine_pistol.enchanted_fire", "cgm:item.heavy_rifle.fire", "cgm:item.heavy_rifle.silenced_fire", "cgm:item.heavy_rifle.enchanted_fire", "cgm:item.heavy_rifle.cock", "cgm:item.grenade.pin", "cgm:entity.stun_grenade.explosion", "cgm:entity.stun_grenade.ring", "scguns:item.makeshift_rifle.cock", "scguns:item.pistol.cock", "scguns:item.flamethrower.reload", "scguns:item.gauss.reload", "scguns:item.pistol.reload", "scguns:item.airgun.fire", "scguns:item.beam.fire", "scguns:item.blackpowder.fire", "scguns:item.boomstick.fire", "scguns:item.brass_pistol.fire", "scguns:item.brass_revolver.fire", "scguns:item.brass_shotgun.fire", "scguns:item.bruiser.fire", "scguns:item.combat_shotgun.fire", "scguns:item.cowboy.fire", "scguns:item.flamethrower.fire_2", "scguns:item.gauss.fire", "scguns:item.greaser_smg.fire", "scguns:item.gyrojet.fire", "scguns:item.heavy_rifle.fire", "scguns:item.heavier_rifle.fire", "scguns:item.iron_pistol.fire", "scguns:item.iron_rifle.fire", "scguns:item.makeshift_rifle.fire", "scguns:item.plasma.fire", "scguns:item.raygun.fire", "scguns:item.rocket.fire", "scguns:item.rocket_rifle.fire", "scguns:item.rusty_gnat.fire", "scguns:item.scrapper.fire", "scguns:item.sculk.fire", "scguns:item.shock.fire", "scguns:item.shulker.fire", "scguns:item.scorched_sniper.fire", "scguns:item.scorched_rifle.fire", "scguns:item.shock.silenced_fire", "scguns:item.bruiser.silenced_fire", "scguns:item.makeshift_rifle.silenced_fire", "scguns:item.combat_shotgun.silenced_fire", "scguns:item.rusty_gnat.silenced_fire", "scguns:item.shock.fire", "scguns:item.scorched_sniper.fire", "scguns:item.scorched_rifle.fire", "scguns:item.bruiser.fire", "scguns:item.flamethrower.fire_2", "scguns:item.blackpowder.fire", "scguns:item.gyrojet.fire", "scguns:item.boomstick.fire", "scguns:item.brass_shotgun.fire", "scguns:item.brass_revolver.fire", "scguns:item.shulker.fire", "scguns:item.iron_rifle.fire", "scguns:item.combat_shotgun.fire", "scguns:item.beam.fire", "scguns:item.airgun.fire", "scguns:item.heavier_rifle.fire", "scguns:item.iron_pistol.fire", "scguns:item.gauss.fire", "scguns:item.heavy_rifle.fire", "scguns:item.greaser_smg.fire", "scguns:item.plasma.fire", "scguns:item.rusty_gnat.fire", "scguns:item.cowboy.fire", "scguns:item.scrapper.fire", "scguns:item.sculk.fire", "scguns:item.raygun.fire", "scguns:item.rocket_rifle.fire", "scguns:item.makeshift_rifle.cock", "scguns:item.pistol.cock", "scguns:item.flamethrower.reload", "scguns:item.gauss.reload", "scguns:item.pistol.reload", "scguns:item.airgun.fire", "scguns:item.beam.fire", "scguns:item.blackpowder.fire", "scguns:item.boomstick.fire", "scguns:item.brass_pistol.fire", "scguns:item.brass_revolver.fire", "scguns:item.brass_shotgun.fire", "scguns:item.bruiser.fire", "scguns:item.combat_shotgun.fire", "scguns:item.cowboy.fire", "scguns:item.flamethrower.fire_2", "scguns:item.gauss.fire", "scguns:item.greaser_smg.fire", "scguns:item.gyrojet.fire", "scguns:item.heavy_rifle.fire", "scguns:item.heavier_rifle.fire", "scguns:item.iron_pistol.fire", "scguns:item.iron_rifle.fire", "scguns:item.makeshift_rifle.fire", "scguns:item.plasma.fire", "scguns:item.raygun.fire", "scguns:item.rocket.fire", "scguns:item.rocket_rifle.fire", "scguns:item.rusty_gnat.fire", "scguns:item.scrapper.fire", "scguns:item.sculk.fire", "scguns:item.shock.fire", "scguns:item.shulker.fire", "scguns:item.scorched_sniper.fire", "scguns:item.scorched_rifle.fire", "scguns:item.shock.silenced_fire", "scguns:item.bruiser.silenced_fire", "scguns:item.makeshift_rifle.silenced_fire", "scguns:item.combat_shotgun.silenced_fire", "scguns:item.rusty_gnat.silenced_fire", "scguns:item.shock.fire", "scguns:item.scorched_sniper.fire", "scguns:item.scorched_rifle.fire", "scguns:item.bruiser.fire", "scguns:item.flamethrower.fire_2", "scguns:item.blackpowder.fire", "scguns:item.gyrojet.fire", "scguns:item.boomstick.fire", "scguns:item.brass_shotgun.fire", "scguns:item.brass_revolver.fire", "scguns:item.shulker.fire", "scguns:item.iron_rifle.fire", "scguns:item.combat_shotgun.fire", "scguns:item.beam.fire", "scguns:item.airgun.fire", "scguns:item.heavier_rifle.fire", "scguns:item.iron_pistol.fire", "scguns:item.gauss.fire", "scguns:item.heavy_rifle.fire", "scguns:item.greaser_smg.fire", "scguns:item.plasma.fire", "scguns:item.rusty_gnat.fire", "scguns:item.cowboy.fire", "scguns:item.scrapper.fire", "scguns:item.sculk.fire", "scguns:item.raygun.fire", "scguns:item.rocket_rifle.fire", "pointblank:gun_action"]
 	#Minimum sound level (0.0-1.0) for player-emitted sounds to be considered. Higher values mean only louder sounds are tracked.
 	#Range: 0.0 ~ 1.0
 	minSoundLevelForPlayer = 0.1
@@ -103,7 +72,7 @@
 [sound_defaults]
 	#List of default sound properties. Format: 'sound_id;range;weight'
 	#Example: 'minecraft:item.crossbow.shoot;16.0;4.0'
-	soundDefaults = ["gcaa:item.g19.fire;160;10", "minecraft:item.crossbow.shoot;16;4", "minecraft:item.crossbow.loading_start;6;2", "minecraft:item.crossbow.loading_middle;6;2", "minecraft:item.crossbow.loading_end;6;2", "minecraft:item.crossbow.quick_charge_1;6;2", "minecraft:item.crossbow.quick_charge_2;6;2", "minecraft:item.crossbow.quick_charge_3;6;2", "minecraft:entity.arrow.shoot;14;4", "minecraft:item.shield.block;12;3", "minecraft:block.lever.click;5;3", "minecraft:block.wooden_trapdoor.open;8;3", "minecraft:block.wooden_trapdoor.close;8;3", "minecraft:block.bamboo_wood_trapdoor.open;10;3", "minecraft:block.bamboo_wood_trapdoor.close;10;3", "minecraft:block.cherry_wood_trapdoor.open;10;3", "minecraft:block.cherry_wood_trapdoor.close;10;3", "minecraft:block.iron_trapdoor.open;15;4", "minecraft:block.iron_trapdoor.close;15;4", "minecraft:block.wooden_door.open;12;4", "minecraft:block.wooden_door.close;12;4", "minecraft:block.bamboo_wood_door.open;15;4", "minecraft:block.bamboo_wood_door.close;15;4", "minecraft:block.cherry_wood_door.open;15;4", "minecraft:block.cherry_wood_door.close;15;4", "minecraft:block.iron_door.open;20;5", "minecraft:block.iron_door.close;20;5", "minecraft:block.fence_gate.open;10;3", "minecraft:block.fence_gate.close;10;3", "minecraft:block.piston.extend;20;4", "minecraft:block.piston.contract;20;4", "minecraft:block.dispenser.dispense;12;4", "minecraft:block.dispenser.launch;12;4", "minecraft:block.anvil.land;25;5", "minecraft:block.anvil.use;25;5", "minecraft:block.anvil.destroy;25;5", "minecraft:block.sand.fall;6;3", "minecraft:block.gravel.fall;6;3", "minecraft:block.grass.break;3;2", "minecraft:block.scaffolding.break;3;2", "tacz:target_block_hit;6;3", "minecraft:entity.boat.paddle_water;8;3", "minecraft:ambient.underwater.enter;4;2", "minecraft:ambient.underwater.exit;4;2", "minecraft:block.chest.open;5;2", "minecraft:block.chest.close;5;2", "minecraft:block.barrel.open;5;2", "minecraft:block.barrel.close;5;2", "minecraft:block.ender_chest.open;6;2", "minecraft:block.ender_chest.close;6;2", "minecraft:block.shulker_box.open;6;2", "minecraft:block.shulker_box.close;6;2", "minecraft:block.bell.use;30;5", "minecraft:block.bell.resonate;15;4", "minecraft:block.furnace.fire_crackle;8;3", "minecraft:entity.generic.explode;50;7", "minecraft:entity.firework_rocket.launch;10;3", "minecraft:entity.firework_rocket.blast;20;5", "minecraft:entity.firework_rocket.large_blast;30;6", "musketmod:musket_fire;155;8", "musketmod:blunderbuss_fire;154;7", "musketmod:pistol_fire;164;5", "cgm:item.shotgun.fire;156;15", "cgm:item.shotgun.silenced_fire;131;13", "cgm:item.shotgun.enchanted_fire;156;15", "cgm:item.shotgun.cock;90;6", "cgm:item.rifle.fire;162;16", "cgm:item.rifle.silenced_fire;137;13", "cgm:item.rifle.enchanted_fire;162;16", "cgm:item.rifle.cock;90;6", "cgm:item.pistol.fire;164;16", "cgm:item.pistol.silenced_fire;139;13", "cgm:item.pistol.enchanted_fire;164;16", "cgm:item.pistol.reload;85;7", "cgm:item.pistol.cock;90;6", "cgm:item.assault_rifle.fire;159;16", "cgm:item.assault_rifle.silenced_fire;134;13", "cgm:item.assault_rifle.enchanted_fire;159;16", "cgm:item.assault_rifle.cock;90;6", "cgm:item.grenade_launcher.fire;172;17", "cgm:item.bazooka.fire;184;17", "cgm:item.mini_gun.fire;180;17", "cgm:item.mini_gun.enchanted_fire;180;17", "cgm:item.machine_pistol.fire;160;16", "cgm:item.machine_pistol.silenced_fire;135;13", "cgm:item.machine_pistol.enchanted_fire;160;16", "cgm:item.heavy_rifle.fire;165;16", "cgm:item.heavy_rifle.silenced_fire;140;13", "cgm:item.heavy_rifle.enchanted_fire;165;16", "cgm:item.heavy_rifle.cock;90;6", "cgm:item.grenade.pin;72;6", "cgm:entity.stun_grenade.explosion;175;18", "cgm:entity.stun_grenade.ring;104;10", "scguns:item.makeshift_rifle.cock;10;1.0", "scguns:item.pistol.cock;5;0.5", "scguns:item.flamethrower.reload;10;1.0", "scguns:item.gauss.reload;25;2.5", "scguns:item.pistol.reload;10;1.0", "scguns:item.airgun.fire;80;8.0", "scguns:item.beam.fire;100;10.0", "scguns:item.blackpowder.fire;115;11.5", "scguns:item.boomstick.fire;120;12.0", "scguns:item.brass_pistol.fire;105;10.5", "scguns:item.brass_revolver.fire;110;11.0", "scguns:item.brass_shotgun.fire;110;11.0", "scguns:item.bruiser.fire;115;11.5", "scguns:item.combat_shotgun.fire;120;12.0", "scguns:item.cowboy.fire;110;11.0", "scguns:item.flamethrower.fire_2;95;9.5", "scguns:item.gauss.fire;130;13.0", "scguns:item.greaser_smg.fire;110;11.0", "scguns:item.gyrojet.fire;115;11.5", "scguns:item.heavy_rifle.fire;120;12.0", "scguns:item.heavier_rifle.fire;125;12.5", "scguns:item.iron_pistol.fire;110;11.0", "scguns:item.iron_rifle.fire;120;12.0", "scguns:item.makeshift_rifle.fire;110;11.0", "scguns:item.plasma.fire;115;11.5", "scguns:item.raygun.fire;110;11.0", "scguns:item.rocket.fire;140;14.0", "scguns:item.rocket_rifle.fire;135;13.5", "scguns:item.rusty_gnat.fire;105;10.5", "scguns:item.scrapper.fire;110;11.0", "scguns:item.sculk.fire;100;10.0", "scguns:item.shock.fire;95;9.5", "scguns:item.shulker.fire;105;10.5", "scguns:item.scorched_sniper.fire;130;13.0", "scguns:item.scorched_rifle.fire;125;12.5", "scguns:item.shock.silenced_fire;45;4.5", "scguns:item.bruiser.silenced_fire;55;5.5", "scguns:item.makeshift_rifle.silenced_fire;50;5.0", "scguns:item.combat_shotgun.silenced_fire;60;6.0", "scguns:item.rusty_gnat.silenced_fire;45;4.5", "scguns:item.shock.fire;155;15.5", "scguns:item.scorched_sniper.fire;190;19.0", "scguns:item.scorched_rifle.fire;185;18.5", "scguns:item.bruiser.fire;175;17.5", "scguns:item.flamethrower.fire_2;155;15.5", "scguns:item.blackpowder.fire;175;17.5", "scguns:item.gyrojet.fire;175;17.5", "scguns:item.boomstick.fire;180;18.0", "scguns:item.brass_shotgun.fire;170;17.0", "scguns:item.brass_revolver.fire;170;17.0", "scguns:item.shulker.fire;165;16.5", "scguns:item.iron_rifle.fire;180;18.0", "scguns:item.combat_shotgun.fire;180;18.0", "scguns:item.beam.fire;160;16.0", "scguns:item.airgun.fire;140;14.0", "scguns:item.heavier_rifle.fire;185;18.5", "scguns:item.iron_pistol.fire;170;17.0", "scguns:item.gauss.fire;190;19.0", "scguns:item.heavy_rifle.fire;180;18.0", "scguns:item.greaser_smg.fire;170;17.0", "scguns:item.plasma.fire;175;17.5", "scguns:item.rusty_gnat.fire;165;16.5", "scguns:item.cowboy.fire;170;17.0", "scguns:item.scrapper.fire;170;17.0", "scguns:item.sculk.fire;160;16.0", "scguns:item.raygun.fire;170;17.0", "scguns:item.rocket_rifle.fire;195;19.5", "scguns:item.makeshift_rifle.cock;10;1.0", "scguns:item.pistol.cock;5;0.5", "scguns:item.flamethrower.reload;10;1.0", "scguns:item.gauss.reload;25;2.5", "scguns:item.pistol.reload;10;1.0", "scguns:item.airgun.fire;80;8.0", "scguns:item.beam.fire;100;10.0", "scguns:item.blackpowder.fire;115;11.5", "scguns:item.boomstick.fire;120;12.0", "scguns:item.brass_pistol.fire;105;10.5", "scguns:item.brass_revolver.fire;110;11.0", "scguns:item.brass_shotgun.fire;110;11.0", "scguns:item.bruiser.fire;115;11.5", "scguns:item.combat_shotgun.fire;120;12.0", "scguns:item.cowboy.fire;110;11.0", "scguns:item.flamethrower.fire_2;95;9.5", "scguns:item.gauss.fire;130;13.0", "scguns:item.greaser_smg.fire;110;11.0", "scguns:item.gyrojet.fire;115;11.5", "scguns:item.heavy_rifle.fire;120;12.0", "scguns:item.heavier_rifle.fire;125;12.5", "scguns:item.iron_pistol.fire;110;11.0", "scguns:item.iron_rifle.fire;120;12.0", "scguns:item.makeshift_rifle.fire;110;11.0", "scguns:item.plasma.fire;115;11.5", "scguns:item.raygun.fire;110;11.0", "scguns:item.rocket.fire;140;14.0", "scguns:item.rocket_rifle.fire;135;13.5", "scguns:item.rusty_gnat.fire;105;10.5", "scguns:item.scrapper.fire;110;11.0", "scguns:item.sculk.fire;100;10.0", "scguns:item.shock.fire;95;9.5", "scguns:item.shulker.fire;105;10.5", "scguns:item.scorched_sniper.fire;130;13.0", "scguns:item.scorched_rifle.fire;125;12.5", "scguns:item.shock.silenced_fire;45;4.5", "scguns:item.bruiser.silenced_fire;55;5.5", "scguns:item.makeshift_rifle.silenced_fire;50;5.0", "scguns:item.combat_shotgun.silenced_fire;60;6.0", "scguns:item.rusty_gnat.silenced_fire;45;4.5", "scguns:item.shock.fire;155;15.5", "scguns:item.scorched_sniper.fire;190;19.0", "scguns:item.scorched_rifle.fire;185;18.5", "scguns:item.bruiser.fire;175;17.5", "scguns:item.flamethrower.fire_2;155;15.5", "scguns:item.blackpowder.fire;175;17.5", "scguns:item.gyrojet.fire;175;17.5", "scguns:item.boomstick.fire;180;18.0", "scguns:item.brass_shotgun.fire;170;17.0", "scguns:item.brass_revolver.fire;170;17.0", "scguns:item.shulker.fire;165;16.5", "scguns:item.iron_rifle.fire;180;18.0", "scguns:item.combat_shotgun.fire;180;18.0", "scguns:item.beam.fire;160;16.0", "scguns:item.airgun.fire;140;14.0", "scguns:item.heavier_rifle.fire;185;18.5", "scguns:item.iron_pistol.fire;170;17.0", "scguns:item.gauss.fire;190;19.0", "scguns:item.heavy_rifle.fire;180;18.0", "scguns:item.greaser_smg.fire;170;17.0", "scguns:item.plasma.fire;175;17.5", "scguns:item.rusty_gnat.fire;165;16.5", "scguns:item.cowboy.fire;170;17.0", "scguns:item.scrapper.fire;170;17.0", "scguns:item.sculk.fire;160;16.0", "scguns:item.raygun.fire;170;17.0", "scguns:item.rocket_rifle.fire;195;19.5"]
+	soundDefaults = ["gcaa:item.g19.fire;160;10", "minecraft:item.crossbow.shoot;16;4", "minecraft:item.crossbow.loading_start;6;2", "minecraft:item.crossbow.loading_middle;6;2", "minecraft:item.crossbow.loading_end;6;2", "minecraft:item.crossbow.quick_charge_1;6;2", "minecraft:item.crossbow.quick_charge_2;6;2", "minecraft:item.crossbow.quick_charge_3;6;2", "minecraft:entity.arrow.shoot;14;4", "minecraft:item.shield.block;12;3", "minecraft:block.lever.click;5;3", "minecraft:block.wooden_trapdoor.open;8;3", "minecraft:block.wooden_trapdoor.close;8;3", "minecraft:block.bamboo_wood_trapdoor.open;10;3", "minecraft:block.bamboo_wood_trapdoor.close;10;3", "minecraft:block.cherry_wood_trapdoor.open;10;3", "minecraft:block.cherry_wood_trapdoor.close;10;3", "minecraft:block.iron_trapdoor.open;15;4", "minecraft:block.iron_trapdoor.close;15;4", "minecraft:block.wooden_door.open;12;4", "minecraft:block.wooden_door.close;12;4", "minecraft:block.bamboo_wood_door.open;15;4", "minecraft:block.bamboo_wood_door.close;15;4", "minecraft:block.cherry_wood_door.open;15;4", "minecraft:block.cherry_wood_door.close;15;4", "minecraft:block.iron_door.open;20;5", "minecraft:block.iron_door.close;20;5", "minecraft:block.fence_gate.open;10;3", "minecraft:block.fence_gate.close;10;3", "minecraft:block.piston.extend;20;4", "minecraft:block.piston.contract;20;4", "minecraft:block.dispenser.dispense;12;4", "minecraft:block.dispenser.launch;12;4", "minecraft:block.anvil.land;25;5", "minecraft:block.anvil.use;25;5", "minecraft:block.anvil.destroy;25;5", "minecraft:block.sand.fall;6;3", "minecraft:block.gravel.fall;6;3", "minecraft:block.grass.break;3;2", "minecraft:block.scaffolding.break;3;2", "tacz:target_block_hit;6;3", "minecraft:entity.boat.paddle_water;8;3", "minecraft:ambient.underwater.enter;4;2", "minecraft:ambient.underwater.exit;4;2", "minecraft:block.chest.open;5;2", "minecraft:block.chest.close;5;2", "minecraft:block.barrel.open;5;2", "minecraft:block.barrel.close;5;2", "minecraft:block.ender_chest.open;6;2", "minecraft:block.ender_chest.close;6;2", "minecraft:block.shulker_box.open;6;2", "minecraft:block.shulker_box.close;6;2", "minecraft:block.bell.use;30;5", "minecraft:block.bell.resonate;15;4", "minecraft:block.furnace.fire_crackle;8;3", "minecraft:entity.generic.explode;50;7", "minecraft:entity.firework_rocket.launch;10;3", "minecraft:entity.firework_rocket.blast;20;5", "minecraft:entity.firework_rocket.large_blast;30;6", "musketmod:musket_fire;155;8", "musketmod:blunderbuss_fire;154;7", "musketmod:pistol_fire;164;5", "cgm:item.shotgun.fire;156;15", "cgm:item.shotgun.silenced_fire;131;13", "cgm:item.shotgun.enchanted_fire;156;15", "cgm:item.shotgun.cock;90;6", "cgm:item.rifle.fire;162;16", "cgm:item.rifle.silenced_fire;137;13", "cgm:item.rifle.enchanted_fire;162;16", "cgm:item.rifle.cock;90;6", "cgm:item.pistol.fire;164;16", "cgm:item.pistol.silenced_fire;139;13", "cgm:item.pistol.enchanted_fire;164;16", "cgm:item.pistol.reload;85;7", "cgm:item.pistol.cock;90;6", "cgm:item.assault_rifle.fire;159;16", "cgm:item.assault_rifle.silenced_fire;134;13", "cgm:item.assault_rifle.enchanted_fire;159;16", "cgm:item.assault_rifle.cock;90;6", "cgm:item.grenade_launcher.fire;172;17", "cgm:item.bazooka.fire;184;17", "cgm:item.mini_gun.fire;180;17", "cgm:item.mini_gun.enchanted_fire;180;17", "cgm:item.machine_pistol.fire;160;16", "cgm:item.machine_pistol.silenced_fire;135;13", "cgm:item.machine_pistol.enchanted_fire;160;16", "cgm:item.heavy_rifle.fire;165;16", "cgm:item.heavy_rifle.silenced_fire;140;13", "cgm:item.heavy_rifle.enchanted_fire;165;16", "cgm:item.heavy_rifle.cock;90;6", "cgm:item.grenade.pin;72;6", "cgm:entity.stun_grenade.explosion;175;18", "cgm:entity.stun_grenade.ring;104;10", "scguns:item.makeshift_rifle.cock;10;1.0", "scguns:item.pistol.cock;5;0.5", "scguns:item.flamethrower.reload;10;1.0", "scguns:item.gauss.reload;25;2.5", "scguns:item.pistol.reload;10;1.0", "scguns:item.airgun.fire;80;8.0", "scguns:item.beam.fire;100;10.0", "scguns:item.blackpowder.fire;115;11.5", "scguns:item.boomstick.fire;120;12.0", "scguns:item.brass_pistol.fire;105;10.5", "scguns:item.brass_revolver.fire;110;11.0", "scguns:item.brass_shotgun.fire;110;11.0", "scguns:item.bruiser.fire;115;11.5", "scguns:item.combat_shotgun.fire;120;12.0", "scguns:item.cowboy.fire;110;11.0", "scguns:item.flamethrower.fire_2;95;9.5", "scguns:item.gauss.fire;130;13.0", "scguns:item.greaser_smg.fire;110;11.0", "scguns:item.gyrojet.fire;115;11.5", "scguns:item.heavy_rifle.fire;120;12.0", "scguns:item.heavier_rifle.fire;125;12.5", "scguns:item.iron_pistol.fire;110;11.0", "scguns:item.iron_rifle.fire;120;12.0", "scguns:item.makeshift_rifle.fire;110;11.0", "scguns:item.plasma.fire;115;11.5", "scguns:item.raygun.fire;110;11.0", "scguns:item.rocket.fire;140;14.0", "scguns:item.rocket_rifle.fire;135;13.5", "scguns:item.rusty_gnat.fire;105;10.5", "scguns:item.scrapper.fire;110;11.0", "scguns:item.sculk.fire;100;10.0", "scguns:item.shock.fire;95;9.5", "scguns:item.shulker.fire;105;10.5", "scguns:item.scorched_sniper.fire;130;13.0", "scguns:item.scorched_rifle.fire;125;12.5", "scguns:item.shock.silenced_fire;45;4.5", "scguns:item.bruiser.silenced_fire;55;5.5", "scguns:item.makeshift_rifle.silenced_fire;50;5.0", "scguns:item.combat_shotgun.silenced_fire;60;6.0", "scguns:item.rusty_gnat.silenced_fire;45;4.5", "scguns:item.shock.fire;155;15.5", "scguns:item.scorched_sniper.fire;190;19.0", "scguns:item.scorched_rifle.fire;185;18.5", "scguns:item.bruiser.fire;175;17.5", "scguns:item.flamethrower.fire_2;155;15.5", "scguns:item.blackpowder.fire;175;17.5", "scguns:item.gyrojet.fire;175;17.5", "scguns:item.boomstick.fire;180;18.0", "scguns:item.brass_shotgun.fire;170;17.0", "scguns:item.brass_revolver.fire;170;17.0", "scguns:item.shulker.fire;165;16.5", "scguns:item.iron_rifle.fire;180;18.0", "scguns:item.combat_shotgun.fire;180;18.0", "scguns:item.beam.fire;160;16.0", "scguns:item.airgun.fire;140;14.0", "scguns:item.heavier_rifle.fire;185;18.5", "scguns:item.iron_pistol.fire;170;17.0", "scguns:item.gauss.fire;190;19.0", "scguns:item.heavy_rifle.fire;180;18.0", "scguns:item.greaser_smg.fire;170;17.0", "scguns:item.plasma.fire;175;17.5", "scguns:item.rusty_gnat.fire;165;16.5", "scguns:item.cowboy.fire;170;17.0", "scguns:item.scrapper.fire;170;17.0", "scguns:item.sculk.fire;160;16.0", "scguns:item.raygun.fire;170;17.0", "scguns:item.rocket_rifle.fire;195;19.5", "scguns:item.makeshift_rifle.cock;10;1.0", "scguns:item.pistol.cock;5;0.5", "scguns:item.flamethrower.reload;10;1.0", "scguns:item.gauss.reload;25;2.5", "scguns:item.pistol.reload;10;1.0", "scguns:item.airgun.fire;80;8.0", "scguns:item.beam.fire;100;10.0", "scguns:item.blackpowder.fire;115;11.5", "scguns:item.boomstick.fire;120;12.0", "scguns:item.brass_pistol.fire;105;10.5", "scguns:item.brass_revolver.fire;110;11.0", "scguns:item.brass_shotgun.fire;110;11.0", "scguns:item.bruiser.fire;115;11.5", "scguns:item.combat_shotgun.fire;120;12.0", "scguns:item.cowboy.fire;110;11.0", "scguns:item.flamethrower.fire_2;95;9.5", "scguns:item.gauss.fire;130;13.0", "scguns:item.greaser_smg.fire;110;11.0", "scguns:item.gyrojet.fire;115;11.5", "scguns:item.heavy_rifle.fire;120;12.0", "scguns:item.heavier_rifle.fire;125;12.5", "scguns:item.iron_pistol.fire;110;11.0", "scguns:item.iron_rifle.fire;120;12.0", "scguns:item.makeshift_rifle.fire;110;11.0", "scguns:item.plasma.fire;115;11.5", "scguns:item.raygun.fire;110;11.0", "scguns:item.rocket.fire;140;14.0", "scguns:item.rocket_rifle.fire;135;13.5", "scguns:item.rusty_gnat.fire;105;10.5", "scguns:item.scrapper.fire;110;11.0", "scguns:item.sculk.fire;100;10.0", "scguns:item.shock.fire;95;9.5", "scguns:item.shulker.fire;105;10.5", "scguns:item.scorched_sniper.fire;130;13.0", "scguns:item.scorched_rifle.fire;125;12.5", "scguns:item.shock.silenced_fire;45;4.5", "scguns:item.bruiser.silenced_fire;55;5.5", "scguns:item.makeshift_rifle.silenced_fire;50;5.0", "scguns:item.combat_shotgun.silenced_fire;60;6.0", "scguns:item.rusty_gnat.silenced_fire;45;4.5", "scguns:item.shock.fire;155;15.5", "scguns:item.scorched_sniper.fire;190;19.0", "scguns:item.scorched_rifle.fire;185;18.5", "scguns:item.bruiser.fire;175;17.5", "scguns:item.flamethrower.fire_2;155;15.5", "scguns:item.blackpowder.fire;175;17.5", "scguns:item.gyrojet.fire;175;17.5", "scguns:item.boomstick.fire;180;18.0", "scguns:item.brass_shotgun.fire;170;17.0", "scguns:item.brass_revolver.fire;170;17.0", "scguns:item.shulker.fire;165;16.5", "scguns:item.iron_rifle.fire;180;18.0", "scguns:item.combat_shotgun.fire;180;18.0", "scguns:item.beam.fire;160;16.0", "scguns:item.airgun.fire;140;14.0", "scguns:item.heavier_rifle.fire;185;18.5", "scguns:item.iron_pistol.fire;170;17.0", "scguns:item.gauss.fire;190;19.0", "scguns:item.heavy_rifle.fire;180;18.0", "scguns:item.greaser_smg.fire;170;17.0", "scguns:item.plasma.fire;175;17.5", "scguns:item.rusty_gnat.fire;165;16.5", "scguns:item.cowboy.fire;170;17.0", "scguns:item.scrapper.fire;170;17.0", "scguns:item.sculk.fire;160;16.0", "scguns:item.raygun.fire;170;17.0", "scguns:item.rocket_rifle.fire;195;19.5", "pointblank:gun_action;15;5"]
 
 #====================================================================
 # Sound Attract Mod - Stealth & Detection Configuration
@@ -123,6 +92,17 @@
 		#Format: "modid:mob_id"
 		#Note: Certain vanilla mobs like the Warden are always excluded for stability and cannot be removed.
 		fovExclusionList = ["minecraft:warden"]
+		#The default horizontal Field of View for all mobs not in the override list.
+		#Represents the width of the vision cone in degrees.
+		#Range: 0.0 ~ 360.0
+		defaultHorizontalFov = 200.0
+		#The default vertical Field of View for all mobs not in the override list.
+		#Represents the height of the vision cone in degrees.
+		#Range: 0.0 ~ 360.0
+		defaultVerticalFov = 135.0
+		#Blocks in this allowlist are treated as see-through for line-of-sight checks (e.g., modded glass).
+		#Format: ['modid:block_id']
+		nonBlockingVisionAllowList = []
 
 	#General Stealth System Settings
 	[sound_attract_main.general_stealth_settings]
@@ -141,13 +121,13 @@
 	#These are modified by all other factors (light, camo, etc.).
 	[sound_attract_main.player_stance_detection_ranges]
 		#Base detection range (in blocks) when a player is standing.
-		#Range: 0.0 ~ 128.0
+		#Range: 0.0 ~ 512.0
 		standingDetectionRangePlayer = 32.0
 		#Base detection range (in blocks) when a player is sneaking (crouching).
-		#Range: 0.0 ~ 128.0
+		#Range: 0.0 ~ 512.0
 		sneakingDetectionRangePlayer = 12.0
 		#Base detection range (in blocks) when a player is crawling (e.g., in a 1-block high gap).
-		#Range: 0.0 ~ 128.0
+		#Range: 0.0 ~ 512.0
 		crawlingDetectionRangePlayer = 4.0
 
 	#How environmental conditions affect stealth.
@@ -298,7 +278,7 @@
 		minStealthDetectionRange = 0.5
 		#The absolute maximum detection range (in blocks). Player cannot be easier to detect than this.
 		#Also used as default range if 'enableStealthMechanics' is false.
-		#Range: 1.0 ~ 256.0
+		#Range: 1.0 ~ 1024.0
 		maxStealthDetectionRange = 64.0
 
 #Tacz Integration Configuration
@@ -332,6 +312,9 @@
 	gunshotDetectionDurationTicks = 60
 	#Tacz attachment VISUAL FLASH reduction. A positive value reduces flash range, a negative value INCREASES it (e.g., for muzzle brakes)., Format: 'modid:item;reduction_amount'
 	taczMuzzleFlashReductions = ["tacz:muzzle_silencer_mirage;100.0", "tacz:muzzle_silencer_vulture;110.0", "tacz:muzzle_silencer_knight_qd;105.0", "tacz:muzzle_silencer_ursus;90.0", "tacz:muzzle_silencer_ptilopsis;90.0", "tacz:muzzle_silencer_phantom_s1;90.0", "tacz:muzzle_brake_cthulhu;-10.0", "tacz:muzzle_brake_pioneer;-10.0", "tacz:muzzle_brake_cyclone_d2;-10.0", "tacz:muzzle_brake_trex;-15.0", "tacz:muzzle_compensator_trident;-5.0"]
+	#Default flash reduction value for Tacz attachments if the attachment id is not in the list.
+	#Range: -300.0 ~ 300.0
+	taczAttachmentFlashReductionDefault = 0.0
 
 #Muffling settings for different block types.
 [muffling]
@@ -370,6 +353,215 @@
 	customLiquidBlocks = []
 	#List of custom air block IDs for sound muffling. Format: 'modid:blockid'. Default: empty list.
 	customAirBlocks = []
+
+#Internal schema version for config migrations. Do not change.
+[internal]
+	#Range: > 0
+	configSchemaVersion = 10
+
+#Mob grouping and squad behavior
+[groups]
+	#Enables smarter behavior for mobs at the edge of their hearing range (e.g. pathing closer to investigate further)
+	edgeMobSmartBehavior = false
+	#How long a sound event remains 'interesting' to a mob, in ticks (20 ticks = 1 second).
+	#Range: 20 ~ 1000000
+	soundLifetimeTicks = 1200
+	#How close a mob needs to get to a sound source to consider it 'reached'.
+	#Range: 1.0 ~ 100.0
+	arrivalDistance = 6.0
+	#After a follower reaches the investigation area near a sound, it will path away from the sound position to spread out and search.
+	#This controls how far (in blocks) it tries to spread out.
+	#Range: 0.0 ~ 256.0
+	followLeaderSpreadOutDistance = 24.0
+	#Base speed multiplier for mobs moving towards a sound.
+	#Range: 0.1 ~ 3.0
+	mobMoveSpeed = 1.15
+	#Maximum number of mobs allowed in a group for group AI behavior. Default: 64
+	#Range: 1 ~ 128
+	maxGroupSize = 64
+	#Radius (in blocks) used to group mobs under a leader for group AI behavior. Default: 64.0
+	#Range: 1.0 ~ 128.0
+	leaderGroupRadius = 64.0
+	#Maximum distance (in blocks) for mobs to consider themselves part of a group for group behaviors. Used in AI such as FollowLeaderGoal.
+	#Range: 1.0 ~ 256.0
+	groupDistance = 128.0
+	#Multiplier for spacing between mob leaders in a group. Default: 1.0
+	#Range: 0.1 ~ 10.0
+	leaderSpacingMultiplier = 1.0
+	#Number of edge sectors for group detection (AI). Default: 4
+	#Range: 1 ~ 64
+	numEdgeSectors = 4
+	#Interval (in ticks) between group AI updates. Default: 200
+	#Range: 1 ~ 20000
+	groupUpdateInterval = 200
+	#Maximum number of group leaders tracked for AI grouping. Default: 16
+	#Range: 1 ~ 64
+	maxLeaders = 16
+	#Maximum number of edge mobs to select per angular sector. Default: 4
+	#Range: 1 ~ 64
+	edgeMobsPerSector = 1
+	#Sprint speed multiplier used when followers rally/advance during RAID and when edge mobs return to the leader.
+	#Range: 1.0 ~ 5.0
+	sprintMultiplier = 1.1
+	#Distance (in blocks) within which an edge mob considers itself 'returned' to its leader.
+	#Range: 0.5 ~ 16.0
+	leaderReturnArrivalDistance = 2.0
+	#Countdown duration (in ticks) before a RAID advances to the target. 20 ticks = 1 second.
+	#Range: 20 ~ 72000
+	raidCountdownTicks = 100
+
+#Performance-tuning options. Adjust these to balance responsiveness and server load.
+[performance]
+	#Delay in ticks before the first mob group computation is run after server startup.
+	#This helps prevent lag on world load by giving the server time to stabilize.
+	#20 ticks = 1 second. Default: 50 (2.5 seconds)
+	#Range: 0 ~ 72000
+	initialGroupComputationDelay = 50
+	#Number of background worker threads used for off-thread computations (e.g., group building).
+	#Increase for large servers; decrease if you observe contention.
+	#Range: 1 ~ 64
+	workerThreads = 2
+	#Soft per-task time budget in milliseconds for worker computations before yielding.
+	#Higher values allow more work per batch but can increase latency to apply results.
+	#Range: 1 ~ 1000
+	workerTaskBudgetMs = 10
+	enableQuantifiedIntegration = true
+	enableSmartBrainLibIntegration = true
+	enableCustomNpcsIntegration = true
+	enableQuantifiedCacheIntegration = true
+	#Range: 0 ~ 65536
+	quantifiedCacheMemoryLimitMB = 256
+	disableQuantifiedCacheOnMemoryPressure = true
+	triggerQuantifiedCacheCleanupOnMemoryPressure = true
+	#Minimum time in ticks between mob scans for new sounds. Higher values can improve performance but reduce responsiveness.
+	#Range: 1 ~ 1000000
+	scanCooldownTicks = 25
+	#How many ticks to add to the base scan cooldown for each active mob.
+	#This directly controls how much the cooldown increases with more mobs.
+	#A higher value means more cooldown per mob, slowing down scans more aggressively.
+	#Example: 0.25 means 100 mobs will add (100 * 0.15) = 15 ticks to the base cooldown.
+	#Range: 0.0 ~ 10.0
+	cooldownTicksPerMob = 0.15
+	#TPS below which scanCooldownTicks is dynamically increased to save performance. Set to 0 to disable.
+	#Range: 0.0 ~ 20.0
+	minTpsForScanCooldown = 15.0
+	#TPS above which scanCooldownTicks is dynamically decreased (down to its minimum defined value). Set to 21 to disable.
+	#Range: 0.0 ~ 21.0
+	maxTpsForScanCooldown = 19.0
+	#Cooldown (in ticks) per mob between async sound scoring submissions when candidates/target are unchanged.
+	#Range: 0 ~ 10000
+	soundScoringSubmitCooldownTicks = 1
+	#Time-to-live (in ticks) for cached async sound scoring results before considered stale.
+	#Range: 1 ~ 10000
+	asyncResultTtlTicks = 10
+	#Enable caching for raycast results to improve performance. Disable if experiencing issues with sound obstruction detection.
+	enableRaycastCache = true
+	#Time-to-live (in ticks) for raycast cache entries before they are considered expired.
+	#Range: 1 ~ 1000000
+	raycastCacheTtlTicks = 200
+	#Maximum number of entries stored in the raycast cache. Oldest entries are evicted when exceeded.
+	#Range: 100 ~ 1000000
+	raycastCacheMaxEntries = 5000
+	enableOptimizedLos = true
+	enableOptimizedLosPairCache = true
+	#Range: 256 ~ 1000000
+	optimizedLosPairCacheMaxEntries = 8192
+	enableOptimizedLosVanillaFallback = true
+	enableLosBatching = true
+	#Range: 1 ~ 1000000
+	losBatchBudgetPerTick = 64
+	#Range: 64 ~ 1000000
+	losBatchQueueMaxSize = 4096
+	enableLivingEntityLosOverride = true
+
+["Enchanced AI Integration"]
+	#Enable mobs running AttractionGoal to break blocks to reach their destination when stuck. Requires EnhancedAI to be installed for block blacklists/rules.
+	enableBlockBreaking = false
+	#Multiplier for the time a mob takes to break a block. E.g., 2.0 means it takes twice as long. Uses EnhancedAI's config value if installed and this is set to -1.
+	#Range: -1.0 ~ 100.0
+	blockBreakingTimeMultiplier = 1.5
+	#If true, mobs will only attempt to break blocks if they are holding a tool (e.g. pickaxe) in their offhand.
+	blockBreakingToolOnly = false
+	#If true, mobs will only break blocks if their tool is the 'proper' tool for that block (e.g., pickaxe for stone).
+	blockBreakingProperToolOnly = false
+	#Enable special AI: mobs with the specified tag can teleport another mob to the sound location.
+	enableTeleportToSound = true
+	#Chance [0..1] for a teleporter mob to attempt the teleport behavior when evaluating goals. If EnhancedAI is installed, its difficulty-based chance is used instead.
+	#Range: 0.0 ~ 1.0
+	teleportChance = 0.35
+	#Cooldown (in ticks) after a teleport action. If EnhancedAI is installed, its value is used instead.
+	#Range: 0 ~ 72000
+	teleportCooldownTicks = 300
+	#EntityType tag used to decide which mobs can perform teleport-to-sound. Defaults to EnhancedAI's tag.
+	teleportCanTeleportTag = "enhancedai:mobs/teleport_to_target/can_teleport"
+	#EntityType tag used to decide which mobs can be teleported. Defaults to EnhancedAI's tag.
+	teleportCanBeTeleportedTag = "enhancedai:mobs/teleport_to_target/can_be_teleported"
+	#Enable special AI: mobs with the specified tag can pick up another mob and throw it toward the sound location.
+	enablePickUpAndThrowToSound = true
+	#Chance [0..1] for a thrower mob to attempt the pick-up-and-throw behavior. If EnhancedAI is installed, its difficulty-based chance is used instead.
+	#Range: 0.0 ~ 1.0
+	pickUpChance = 0.05
+	#Cooldown (in ticks) after a throw action. If EnhancedAI is installed, its value is used instead.
+	#Range: 0 ~ 72000
+	pickUpCooldownTicks = 600
+	#Minimum distance from the sound for the mob to consider picking up a target.
+	#Range: 0 ~ 1024
+	pickUpMinDistanceToPickUp = 5
+	#Max distance to the sound within which the mob will release/throw the picked-up mob.
+	#Range: 0 ~ 1024
+	pickUpMaxDistanceToThrow = 24
+	#Speed modifier applied to the mob while approaching the pick-up target.
+	#Range: 0.0 ~ 10.0
+	pickUpSpeedModifier = 1.25
+	#EntityType tag used to decide which mobs can perform pick-up-and-throw. Defaults to EnhancedAI's tag.
+	pickUpCanPickUpTag = "enhancedai:mobs/pick_up_and_throw/can_pick_up"
+	#EntityType tag used to decide which mobs can be picked up. Defaults to EnhancedAI's tag.
+	pickUpCanBePickedUpTag = "enhancedai:mobs/pick_up_and_throw/can_be_picked_up"
+	#Enable XRAY targeting compat: mobs in the apply_xray tag can detect players through walls up to a configured range.
+	enableXrayTargeting = true
+	#EntityType tag used to decide which mobs can have XRAY detection. Defaults to EnhancedAI's tag.
+	xrayApplyTag = "enhancedai:mobs/targeting/apply_xray"
+	#Require the mob to also be in the Better Nearby Targeting tag to apply XRAY (mirrors EnhancedAI behavior).
+	xrayRequireBetterNearby = true
+	#EntityType tag for Better Nearby Targeting. Used only if xrayRequireBetterNearby is true.
+	xrayBetterNearbyTag = "enhancedai:mobs/targeting/better_nearby_targeting"
+	#Minimum XRAY follow range (blocks) for fallback when EnhancedAI is not present. 0..128
+	#Range: 0 ~ 128
+	xrayMinRange = 16
+	#Maximum XRAY follow range (blocks). 0 disables XRAY fallback.
+	#Range: 0 ~ 128
+	xrayMaxRange = 24
+	#Chance [0..1] for a mob in the XRAY tag to get the XRAY range (fallback when EnhancedAI is not present).
+	#Range: 0.0 ~ 1.0
+	xrayChance = 0.5
+
+#Point Blank Integration Configuration
+[pointblank]
+	#Enable Point Blank gun integration
+	enablePointBlankIntegration = true
+	#Point Blank reload sound range fallback (used when specific gun data is not provided)
+	#Range: 1.0 ~ 128.0
+	pointBlankReloadRange = 9.0
+	#Point Blank reload sound weight fallback (used when specific gun data is not provided)
+	#Range: 0.0 ~ 10.0
+	pointBlankReloadWeight = 1.0
+	#Point Blank shoot sound range fallback (used when specific gun data is not provided)
+	#Range: 1.0 ~ 256.0
+	pointBlankShootRange = 140.0
+	#Point Blank shoot sound weight fallback (used when specific gun data is not provided)
+	#Range: 0.0 ~ 10.0
+	pointBlankShootWeight = 10.0
+	#Point Blank gun shoot ranges (when provided, override fallback). Format: 'modid:item;range' (range in blocks)
+	pointBlankGunShootRanges = ["pointblank:glock17;128.0", "pointblank:glock18;128.0", "pointblank:m9;128.0", "pointblank:m1911a1;128.0", "pointblank:tti_viper;128.0", "pointblank:p30l;128.0", "pointblank:mk23;128.0", "pointblank:deserteagle;140.0", "pointblank:rhino;138.0", "pointblank:m4a1;118.0", "pointblank:m4a1mod1;118.0", "pointblank:star15;90.0", "pointblank:m4sopmodii;118.0", "pointblank:m16a1;90.0", "pointblank:hk416;118.0", "pointblank:scarl;72.0", "pointblank:xm7;118.0", "pointblank:g36c;132.0", "pointblank:g36k;132.0", "pointblank:aug;118.0", "pointblank:g41;118.0", "pointblank:ak74;128.0", "pointblank:ak12;128.0", "pointblank:an94;128.0", "pointblank:ar57;128.0", "pointblank:xm29;128.0", "pointblank:mp5;128.0", "pointblank:mp7;128.0", "pointblank:ro635;119.0", "pointblank:ump45;128.0", "pointblank:vector;90.0", "pointblank:p90;128.0", "pointblank:m950;128.0", "pointblank:tmp;128.0", "pointblank:sl8;128.0", "pointblank:mk14ebr;128.0", "pointblank:uar10;156.0", "pointblank:g3;128.0", "pointblank:wa2000;128.0", "pointblank:xm3;128.0", "pointblank:c14;128.0", "pointblank:l96a1;128.0", "pointblank:ballista;128.0", "pointblank:gm6lynx;128.0", "pointblank:m590;128.0", "pointblank:m870;128.0", "pointblank:spas12;128.0", "pointblank:m1014;128.0", "pointblank:citoricxs;128.0", "pointblank:hs12;128.0", "pointblank:lamg;128.0", "pointblank:mk48;128.0", "pointblank:m249;128.0", "pointblank:m32mgl;128.0", "pointblank:smaw;128.0", "pointblank:at4;128.0", "pointblank:javelin;200.0", "pointblank:m134minigun;156.0", "pointblank:aughbar;128.0", "pointblank:aa12;128.0", "pointblank:ak47;128.0"]
+	#Point Blank attachment sound reduction. Format: 'modid:item;reduction'. Positive reduces range, negative increases.
+	pointBlankAttachmentSoundReductions = ["pointblank:ar_suppressor;40.0", "pointblank:ar_suppressor_tan;40.0", "pointblank:xm7_suppressor;40.0", "pointblank:ak_suppressor;40.0", "pointblank:smg_suppressor;40.0", "pointblank:rf_suppressor;40.0", "pointblank:hp_suppressor;40.0", "pointblank:sg_suppressor;40.0"]
+	#Default sound reduction for Point Blank attachments not listed above.
+	#Range: -300.0 ~ 300.0
+	pointBlankAttachmentReductionDefault = 20.0
+	#Point Blank attachment VISUAL FLASH reduction. Positive reduces flash range, negative increases. Format: 'modid:item;reduction_amount'
+	pointBlankMuzzleFlashReductions = ["pointblank:ar_suppressor;90.0", "pointblank:ar_suppressor_tan;90.0", "pointblank:xm7_suppressor;90.0", "pointblank:ak_suppressor;90.0", "pointblank:smg_suppressor;90.0", "pointblank:rf_suppressor;90.0", "pointblank:hp_suppressor;90.0", "pointblank:sg_suppressor;90.0"]
+
+[profiles]
 	#List of special mob profiles. Each profile is a string with 5 parts separated by ';'.
 	#Format: profileName;mobId;nbtMatcher;soundOverridesString;detectionOverridesString
 	#- profileName: A unique name (e.g., 'AlphaZombie').
@@ -380,4 +572,11 @@
 	#Example: AlphaZombie;minecraft:zombie;{IsAlpha:1b};minecraft:entity.player.hurt:30.0:2.0;standing:50.0,sneaking:25.0
 	#To add more profiles, just add more strings to the list.
 	specialMobProfilesRaw = ["GreedyGoblin;minecraft:piglin;;minecraft:block.chest.open:30.0:2.5,minecraft:entity.player.death:50.0:3.0;standing:40.0,sneaking:20.0,crawling:10.0", "SmartZombie;minecraft:zombie;{IsAlpha:1b};minecraft:entity.player.hurt:30.0:2.0;standing:80.0,sneaking:45.0,crawling:15.0", "InsaneVillager;minecraft:villager;;minecraft:wooden_door.open:25.0:1.5,minecraft:block.barrel.open:20.0:1.0;"]
+	#List of special player profiles. Each string has 3 parts separated by ';'.
+	#Format: profileName;nbtMatcher;detectionOverridesString
+	#- profileName: A unique name (e.g., 'FelineOrigin').
+	#- nbtMatcher: Any compound NBT to match on the player (capabilities included). Use valid SNBT. Keys containing ':' must be quoted (e.g., '{"ForgeCaps":{"origins:origins":{"Origins":{"origins:origin":"origins:feline"}}}}'). Leave empty to match all players.
+	#- detectionOverridesString: Comma-separated 'stanceName:value' (e.g., 'standing:40.0,sneaking:20.0,crawling:10.0'). Valid stances: standing, sneaking, crawling.
+	#Example: FelineOrigin;{"ForgeCaps":{"origins:origins":{"Origins":{"origins:origin":"origins:feline"}}}};standing:24.0,sneaking:10.0,crawling:3.0
+	specialPlayerProfilesRaw = ["FelineOrigin;{\"ForgeCaps\":{\"origins:origins\":{\"Origins\":{\"origins:origin\":\"origins:feline\"}}}};standing:24.0,sneaking:10.0,crawling:3.0", "DinosaurHatched;{\"ForgeCaps\":{\"fossil:player\":{\"HatchedDinosaur\":1b}}};standing:50.0"]
 

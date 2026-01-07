@@ -1421,7 +1421,7 @@
 		#On death, players will drop this percentage of experience instead of max 7 levels. Setting to -1 will disable this.
 		#Due to Minecraft limitations this is incompatible with other mods that change the level scaling (e.g. Allurement's 'Remove level Scaling').
 		#Range: -1.0 ~ 1.0
-		"Dropped experience on death" = 0.0
+		"Dropped experience on death" = 0.5
 		#Players will pick up experience faster
 		"Pick up faster" = true
 
@@ -1532,7 +1532,7 @@
 	#Less invincibility frames and none with arrows.
 	[Combat."Attack invincibility"]
 		#If true less invincibility frames are applied to mobs only if using an item with attack speed modifier
-		"Attack speed based invincibility frames" = true
+		"Attack speed based invincibility frames" = false
 		#If true, a data pack is enabled that makes Arrows and magic damage ignore invincibility frames.
 		"Arrows magic no invinc frames" = true
 

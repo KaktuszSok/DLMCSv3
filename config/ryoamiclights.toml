@@ -110,6 +110,7 @@
 				snowball = true
 				boat = true
 				zoglin = true
+				dragon_fireball = true
 
 			[light_sources.settings.entities.irons_spellbooks]
 				necromancer = true
@@ -368,6 +369,22 @@
 				hell_chant = true
 				fire_blast_trap = true
 				zpiglin_servant = true
+				cyclone = true
+				stray_servant = true
+				berserk_fungus = true
+				blast_fungus = true
+				skeleton_servant = true
+				envioker = true
+				sorcerer = true
+				ripper = true
+				inquillager = true
+				trampler = true
+				piker = true
+				preacher = true
+				tormentor = true
+				haunted_skull_shot = true
+				glacial_wall = true
+				conquillager = true
 
 			[light_sources.settings.entities.cataclysm]
 				void_vortex = true

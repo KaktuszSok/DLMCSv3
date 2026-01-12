@@ -338,7 +338,7 @@
 	#Makes drowned swim speed based off swim speed attribute instead of movement speed.
 	"Enable Swimmers" = true
 	#Prevent players from abusing water or 2 high gaps to bully endermen.
-	"Enable Teleport anti-cheese" = true
+	"Enable Teleport anti-cheese" = false
 	#Gives mobs a chance to negate damage when equipped with a shield. Only entity types in `enhancedai:mobs/can_equip_shield` tag will be equipped a shield.
 	"Enable Shielding" = true
 	#Makes mobs be able to leap over a few blocks. Only entity types in the `enhancedai:mobs/can_parkour` tag can leap.
@@ -351,7 +351,7 @@
 	#Enables a Mobs Properties Randomness data pack that adds even more buffs to mobs.
 	"Enable MPR data pack" = true
 	#Makes mobs teleport other mobs close to the target. Mobs in the `enhancedai:mobs/teleport_to_target/can_be_teleported` tag will be able to be picked up, while mobs in the `enhancedai:mobs/teleport_to_target/can_teleport` tag will be able to pick up other mobs.
-	"Enable Teleport to target" = true
+	"Enable Teleport to target" = false
 	#Makes mobs throw a web at a player, slowing them. Only entity types in the `enhancedai:mobs/throwing_web/can_throw_webs` tag will be affected. Entity types in `enhancedai:mobs/throwing_web/poisonous_webs` will throw poisonous webs and apply poison the same way as when a cave spider attacks an entity.
 	"Enable Throwing web" = true
 	#Adds a new push resistance attribute to mobs. This is added to some vanilla mobs through MPR data pack
@@ -359,9 +359,9 @@
 	#Makes mobs pick up targets to drown them. Only entity types in the enhancedai:mobs/drowning_targets tag are affected by this feature.
 	"Enable Drowning targets" = true
 	#Allows mobs to call reinforcements (like vanilla zombies can, but better) and have leaders that have a high chance to call reinforcements. Only entity types in the `enhancedai:mobs/leaders` tag can jump. PLEASE NOTE that this feature uses a custom attribute (enhancedai:spawn_reinforcements_chance) instead of the vanilla one. This feature has also an MPR condition `enhancedai:is_leader` to check if the mob is a leader.
-	"Enable Leaders" = true
+	"Enable Leaders" = false
 	#Makes mobs be able to move in more ways, like climbing or swim. Only entity types in `enhancedai:mobs/can_sprint` tag are affected by this feature.
-	"Enable Sprint" = true
+	"Enable Sprint" = false
 	#Only entity types in the enhancedai:mobs/air_stealer tag are affected by this feature.
 	"Enable Air steal" = true
 	#Mobs will jump off the ground to emit a shockwave when falling damaging nearby entities. Only entity types in enhancedai:mobs/shockwave/can_use tag are affected by this feature and entity types in the enhancedai:mobs/shockwave/damage_invulnerable tag will not be damaged by the shockwave.
@@ -465,7 +465,7 @@
 	[Mobs."Miner mobs"]
 		#Chance for a mob in the entity type tag enhancedai:can_be_miner to spawn with the miner ability
 		#Range: 0.0 ~ 1.0
-		"Miner chance" = 0.07
+		"Miner chance" = 0.3
 		#Mobs with Miner AI will spawn with a Stone Pickaxe that never drops.
 		"Equip stone pick" = true
 		#Mobs can mine from the bottom of the world to this Y level.

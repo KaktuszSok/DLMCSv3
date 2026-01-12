@@ -1,0 +1,13 @@
+filename = 'caravans-forge-1.20.1-1.4.1.jar'
+name = 'Pillager Caravans'
+side = 'both'
+
+[download]
+hash = '4bc3794b9bde74a84edd80d81725eb1cf8717ee5f00e1b28d52ab0c867e394ed122143df290f3ad7e6775020cd737c161c47d4b23f9607f077fd1afe8d4bb927'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/8jJHxtdz/versions/SARauojw/caravans-forge-1.20.1-1.4.1.jar'
+
+[update.modrinth]
+mod-id = '8jJHxtdz'
+version = 'SARauojw'

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "s s",
+        " S ",
+        "s s"
+    ],
+    "key": {
+        "s": {
+            "tag": "forge:ingots/steel"
+        },
+		"S": {
+            "tag": "forge:storage_blocks/steel"
+        }
+    },
+    "result": {
+        "item": "simpleplanes:propeller"
+    }
+}

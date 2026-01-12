@@ -1,13 +1,13 @@
-filename = 'breezy-1.20.1-1.2.1.jar'
+filename = 'breezy-1.20.1-1.2.2.jar'
 name = 'Breezy'
 side = 'both'
 
 [download]
-hash = '33b11708843535c129fcfcf5697a54d96c779a257229d4e796a55aa9285aff45a06d00b3edc679cd92062c957eef4b790e226bbb1facd644e57a23eae93a9fd4'
+hash = '8f6894cff13b5c0c426fa3db24e06a763263867efe7cfd34c1bab6f755dbf6039571810eaff7acb044c8cc9532f4b9969cc1058369fca4deef882ce11e054cec'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/AiTMEFuN/versions/OdC1sTZl/breezy-1.20.1-1.2.1.jar'
+url = 'https://cdn.modrinth.com/data/AiTMEFuN/versions/2aCNWTmU/breezy-1.20.1-1.2.2.jar'
 
 [update.modrinth]
 mod-id = 'AiTMEFuN'
-version = 'OdC1sTZl'
+version = '2aCNWTmU'

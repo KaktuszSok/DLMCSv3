@@ -1,16 +1,17 @@
-filename = 'forge_soundattract_1.20.1-4.4.0.jar'
-name = 'Sound Attract Mod'
-side = 'both'
+filename = 'forge_soundattract_1.20.1-4.4.3.jar'
+name = 'Sound Attract'
+side = ''
 x-prismlauncher-loaders = [ 'forge' ]
-x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '4.4.3'
 
 [download]
-hash = '0a90f4b0e548aa8a068323b39b92cfb05d997aa2d54b03014f64fadd71cf030e6874957deb5611e6efd631810f4acf02e6645b1a17954a1cb9c26101b1beb805'
+hash = 'e3b33ba4d292111736973ceea7311c83993f1f25b76151129399e4d2fcd02b259f63046ed4a53715c4f14de7a7932237da9001bff2ce74d4210e5cfb9b7653e9'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/zZluixcp/versions/7FlwBrEv/forge_soundattract_1.20.1-4.4.0.jar'
+url = 'https://cdn.modrinth.com/data/zZluixcp/versions/KgDArWq7/forge_soundattract_1.20.1-4.4.3.jar'
 
 [update.modrinth]
 mod-id = 'zZluixcp'
-version = '7FlwBrEv'
+version = 'KgDArWq7'

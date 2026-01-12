@@ -1,16 +1,13 @@
-filename = 'stardew_fishing-3.4-1.20.1.jar'
+filename = 'stardew_fishing-3.5-1.20.1.jar'
 name = 'Stardew Fishing'
 side = 'both'
-x-prismlauncher-loaders = [ 'forge' ]
-x-prismlauncher-mc-versions = [ '1.20.1' ]
-x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'a1fd4d85329b690bad80a145329cef132d3b2d6e2b0e547c051f0403b826aef786e2b960864b297890dc45cff2947f8034f820e282caaefda5dece5912dedd4e'
+hash = '319a01fe1df9acb5102d227ae3a471a651fd9dbb5d40f7e4e7dcecdf8ed69821faf35b0ff6cc1700590adc0e32a4509b628623c93c767e0c7b7e49cf0eeedfd4'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/Rw1Ylmn4/versions/vdFqj31o/stardew_fishing-3.4-1.20.1.jar'
+url = 'https://cdn.modrinth.com/data/Rw1Ylmn4/versions/PMlOw1jn/stardew_fishing-3.5-1.20.1.jar'
 
 [update.modrinth]
 mod-id = 'Rw1Ylmn4'
-version = 'vdFqj31o'
+version = 'PMlOw1jn'

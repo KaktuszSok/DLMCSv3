@@ -1,0 +1,13 @@
+filename = 'TansHugeTrees-1.7.0-Forge-1.20.1-BETA.jar'
+name = "Tan's Huge Trees"
+side = 'both'
+
+[download]
+hash = '779ce8b56eb16a53b88bb0798aa7fcb4eef71bac4a292afcf2db1128a35b172db0677c4036c05a5922f73d5129fadc91a8c1e4a4c05b56bcfa7c93d423bdd5c4'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/WRxnjKgn/versions/R41Cp5W9/TansHugeTrees-1.7.0-Forge-1.20.1-BETA.jar'
+
+[update.modrinth]
+mod-id = 'WRxnjKgn'
+version = 'R41Cp5W9'

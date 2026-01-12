@@ -56,6 +56,17 @@
     "model_variant.locked": false,
     "paygate": true
   },
+  "kaleidoscope_cookery": {
+    "chopping_board": true,
+    "shawarma_spit": true,
+    "recipe_block": true,
+    "millstone": true,
+    "enamel_basin": true
+  },
+  "crockpot": {
+    "birdcage": true,
+    "crock_pot": true
+  },
   "enigmaticgraves": {
     "grave": true
   },

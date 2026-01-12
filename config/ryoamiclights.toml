@@ -110,6 +110,7 @@
 				snowball = true
 				boat = true
 				zoglin = true
+				vex = true
 
 			[light_sources.settings.entities.irons_spellbooks]
 				necromancer = true
@@ -202,6 +203,7 @@
 				geyser = true
 				falling_slab = true
 				wisp = true
+				burnt_forest_spawner = true
 
 			[light_sources.settings.entities.tide]
 				pike = true
@@ -220,6 +222,15 @@
 				ocean_perch = true
 				clayfish = true
 				fishing_bobber = true
+				anglerfish = true
+				glowfish = true
+				cave_eel = true
+				iron_tetra = true
+				crystal_shrimp = true
+				cave_crawler = true
+				lapis_lanternfish = true
+				gilded_minnow = true
+				deep_grouper = true
 
 			[light_sources.settings.entities.swem]
 				swem_horse = true
@@ -369,6 +380,8 @@
 				fire_blast_trap = true
 				zpiglin_servant = true
 				trampler = true
+				crypt_slime = true
+				tropical_slime_servant = true
 
 			[light_sources.settings.entities.cataclysm]
 				void_vortex = true
@@ -395,6 +408,8 @@
 				fluid_spit = true
 				indestructible_item = true
 				ender_slime = true
+				terracube = true
+				thrown_tool = true
 
 			[light_sources.settings.entities.furniture]
 				chair = true
@@ -473,4 +488,30 @@
 
 			[light_sources.settings.entities.adpother]
 				gas = true
+
+			[light_sources.settings.entities.unusualend]
+				undead_enderling = true
+				ender_blob = true
+				enderbulb = true
+				small_enderbulb = true
+				ender_firefly = true
+				block_updater = true
+				dragling = true
+				bolok = true
+				glub = true
+				bluk = true
+				spunkler = true
+				wandering_pearl_projectile = true
+				shiny_grenade_projectile = true
+				leeching_charge_projectile = true
+
+			[light_sources.settings.entities.endergetic]
+				puff_bug = true
+				booflo = true
+				booflo_baby = true
+				booflo_adolescent = true
+				poise_cluster = true
+
+			[light_sources.settings.entities.crockpot]
+				volt_goat = true
 

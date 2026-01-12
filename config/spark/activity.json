@@ -5,89 +5,11 @@
       "name": "KaktuszSok",
       "uniqueId": "edac17ef-c211-4d43-91e2-ecc632c3e376"
     },
-    "time": 1762970662259,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/I468fLqPvz"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "KaktuszSok",
-      "uniqueId": "edac17ef-c211-4d43-91e2-ecc632c3e376"
-    },
-    "time": 1762197252790,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/ex5YcdIHN1"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "KaktuszSok",
-      "uniqueId": "edac17ef-c211-4d43-91e2-ecc632c3e376"
-    },
-    "time": 1762187689261,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/UxKzlnhvfk"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "KaktuszSok",
-      "uniqueId": "edac17ef-c211-4d43-91e2-ecc632c3e376"
-    },
-    "time": 1762186805338,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/zvWo5sqEla"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "KaktuszSok",
-      "uniqueId": "edac17ef-c211-4d43-91e2-ecc632c3e376"
-    },
-    "time": 1762186606696,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/DG28e5G3z4"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "KaktuszSok",
-      "uniqueId": "edac17ef-c211-4d43-91e2-ecc632c3e376"
-    },
     "time": 1762186560904,
     "type": "Profiler",
     "data": {
       "type": "file",
       "value": "C:\\Users\\eevee\\AppData\\Roaming\\PrismLauncher\\instances\\PVP 1.20.1\\.minecraft\\config\\spark\\profile-2025-11-03_17.16.00.sparkprofile"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "KaktuszSok",
-      "uniqueId": "edac17ef-c211-4d43-91e2-ecc632c3e376"
-    },
-    "time": 1762184840927,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/m053kariKe"
     }
   }
 ]

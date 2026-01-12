@@ -1,16 +1,17 @@
-filename = 'goety-2.5.42.0.jar'
+filename = 'goety-2.5.43.4.jar'
 name = 'Goety'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
-x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '2.5.43.4'
 
 [download]
-hash = 'dc458e18967b445df2d642ea58b97a216fb2b0f48ea3679e182ed25f145f16eac67cf0c38fb488b82b4365575c7bb382938e82a81547ebfc639ad495381d3d37'
+hash = '62f9a8b3eab0a0f8f4b24dbff144b11f2cee6997e119360c5799f771961202f6200fb35e815905ea4ab36ec3ed4619760b705d8f4c6b42f656eecc0cf2915db4'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/4ZVIxU8x/versions/Hg9bxPGk/goety-2.5.42.0.jar'
+url = 'https://cdn.modrinth.com/data/4ZVIxU8x/versions/JKySlD77/goety-2.5.43.4.jar'
 
 [update.modrinth]
 mod-id = '4ZVIxU8x'
-version = 'Hg9bxPGk'
+version = 'JKySlD77'

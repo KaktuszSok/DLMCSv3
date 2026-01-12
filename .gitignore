@@ -15,4 +15,8 @@
 # Explicitly ignore specific files in mods
 mods/AmbientSounds_FORGE_v6.1.11_mc1.20.1.jar
 mods/timm-1.0.4.jar
+mods/timm-1.1.0-Forge-1.20.1.jar
 mods/L_Enders_Cataclysm-3.16.jar
+
+# Make sure to ignore .connector folder
+mods/.connector/

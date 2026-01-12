@@ -409,6 +409,8 @@
 	#Countdown duration (in ticks) before a RAID advances to the target. 20 ticks = 1 second.
 	#Range: 20 ~ 72000
 	raidCountdownTicks = 100
+	#Range: 0.0 ~ 1000000.0
+	followLeaderMinSoundWeightToSpreadOut = 10.0
 
 #Performance-tuning options. Adjust these to balance responsiveness and server load.
 [performance]
@@ -473,6 +475,17 @@
 	#Range: 64 ~ 1000000
 	losBatchQueueMaxSize = 4096
 	enableLivingEntityLosOverride = true
+	enableTieredStealthPerformance = true
+	#Range: 0.0 ~ 21.0
+	stealthTierSkipExpensiveChecksTps = 19.0
+	#Range: 0.0 ~ 21.0
+	stealthTierCurrentTargetsOnlyTps = 18.0
+	#Range: 0.0 ~ 21.0
+	stealthTierSharedRangeTps = 17.0
+	#Range: 0.0 ~ 21.0
+	stealthTierVanillaTps = 15.0
+	#Range: 0.0 ~ 256.0
+	stealthShareTargetToNearbyMobsRadius = 16.0
 
 ["Enchanced AI Integration"]
 	#Enable mobs running AttractionGoal to break blocks to reach their destination when stuck. Requires EnhancedAI to be installed for block blacklists/rules.
@@ -579,4 +592,21 @@
 	#- detectionOverridesString: Comma-separated 'stanceName:value' (e.g., 'standing:40.0,sneaking:20.0,crawling:10.0'). Valid stances: standing, sneaking, crawling.
 	#Example: FelineOrigin;{"ForgeCaps":{"origins:origins":{"Origins":{"origins:origin":"origins:feline"}}}};standing:24.0,sneaking:10.0,crawling:3.0
 	specialPlayerProfilesRaw = ["FelineOrigin;{\"ForgeCaps\":{\"origins:origins\":{\"Origins\":{\"origins:origin\":\"origins:feline\"}}}};standing:24.0,sneaking:10.0,crawling:3.0", "DinosaurHatched;{\"ForgeCaps\":{\"fossil:player\":{\"HatchedDinosaur\":1b}}};standing:50.0"]
+
+["Relentless Undead Integration"]
+	#Enable or disable the Relentless Undead climbing mechanics integration. Default: false.
+	enableRelentlessClimbing = false
+	#List of mobs eligible for the climbing goal if Relentless Undead is NOT installed.
+	#If Relentless Undead is installed, its HORDE_TAG (forge:hordes) is used instead.
+	relentlessEligibleMobs = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned"]
+	#If true, zombies will ignore height differences when stacking/climbing.
+	#Used if Relentless Undead is NOT installed or if using Sound Attract's config.
+	zombiesIgnoreHeight = false
+	#If true, zombies can stack on top of each other.
+	#Used if Relentless Undead is NOT installed or if using Sound Attract's config.
+	zombiesCanStack = true
+	#Multiplier for fall damage when using climbing mechanics.
+	#Used if Relentless Undead is NOT installed or if using Sound Attract's config.
+	#Range: 0.0 ~ 10.0
+	zombieFallDamageMultiplier = 0.5
 

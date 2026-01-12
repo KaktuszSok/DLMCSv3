@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "sOs",
+        "BLB",
+        "SCS"
+    ],
+    "key": {
+        "s": {
+            "tag": "forge:ingots/steel"
+        },
+        "O": {
+            "item": "simpleplanes:propeller"
+        },
+        "B": {
+            "item": "minecraft:bucket"
+        },
+        "L": {
+            "item": "createdieselgenerators:diesel_engine"
+        },
+        "C": {
+            "tag": "forge:storage_blocks/copper"
+        },
+		"S": {
+            "tag": "forge:storage_blocks/steel"
+        }
+    },
+    "result": {
+        "item": "simpleplanes:liquid_engine"
+    }
+}

@@ -231,6 +231,10 @@
 				lapis_lanternfish = true
 				gilded_minnow = true
 				deep_grouper = true
+				carp = true
+				red_snapper = true
+				brook_trout = true
+				rainbow_trout = true
 
 			[light_sources.settings.entities.swem]
 				swem_horse = true
@@ -482,6 +486,7 @@
 
 			[light_sources.settings.entities.call_of_yucutan]
 				dart = true
+				mitnal_monkey = true
 
 			[light_sources.settings.entities.car]
 				car = true

@@ -235,6 +235,14 @@
 				red_snapper = true
 				brook_trout = true
 				rainbow_trout = true
+				flounder = true
+				anchovy = true
+				mahi_mahi = true
+				great_white_shark = true
+				slimy_salmon = true
+				crystalline_carp = true
+				shadow_snapper = true
+				swordfish = true
 
 			[light_sources.settings.entities.swem]
 				swem_horse = true
@@ -470,6 +478,7 @@
 			[light_sources.settings.entities.simpleplanes]
 				cargo_plane = true
 				plane = true
+				helicopter = true
 
 			[light_sources.settings.entities.valkyrienskies]
 				ship_mounting_entity = true

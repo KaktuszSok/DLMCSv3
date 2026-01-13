@@ -349,9 +349,9 @@ start_height_offset = 0 <> 0
 rotation = random
 mirrored = random
 ----------------------------------------------------------------------------------------------------
-[] #TannyJung-Main-Pack > #vanilla > giant_grass
+[LOCK] #TannyJung-Main-Pack > #vanilla > giant_grass
 ----------------------------------------------------------------------------------------------------
-world_gen = true
+world_gen = false
 biome = minecraft:sunflower_plains
 ground_block = #minecraft:dirt
 rarity = 10
@@ -364,9 +364,9 @@ start_height_offset = 0 <> 0
 rotation = random
 mirrored = random
 ----------------------------------------------------------------------------------------------------
-[] #TannyJung-Main-Pack > #vanilla > giant_grass_tall
+[LOCK] #TannyJung-Main-Pack > #vanilla > giant_grass_tall
 ----------------------------------------------------------------------------------------------------
-world_gen = true
+world_gen = false
 biome = minecraft:sunflower_plains
 ground_block = #minecraft:dirt
 rarity = 10
@@ -424,9 +424,9 @@ start_height_offset = 0 <> 0
 rotation = random
 mirrored = random
 ----------------------------------------------------------------------------------------------------
-[] #TannyJung-Main-Pack > #vanilla > helios
+[LOCK] #TannyJung-Main-Pack > #vanilla > helios
 ----------------------------------------------------------------------------------------------------
-world_gen = true
+world_gen = false
 biome = minecraft:snowy_plains
 ground_block = #minecraft:dirt
 rarity = 0.001
@@ -799,10 +799,10 @@ start_height_offset = 0 <> 0
 rotation = random
 mirrored = random
 ----------------------------------------------------------------------------------------------------
-[] #TannyJung-Main-Pack > region_unexplored > cloud_harvester
+[LOCK] #TannyJung-Main-Pack > region_unexplored > cloud_harvester
 ----------------------------------------------------------------------------------------------------
 world_gen = true
-biome = regions_unexplored:joshua_desert
+biome = biomesoplenty:lush_desert
 ground_block = #minecraft:sand
 rarity = 1
 min_distance = 200

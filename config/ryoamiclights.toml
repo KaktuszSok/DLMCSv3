@@ -243,6 +243,12 @@
 				crystalline_carp = true
 				shadow_snapper = true
 				swordfish = true
+				abyss_angler = true
+				luminescent_jellyfish = true
+				bedrock_tetra = true
+				smallmouth_bass = true
+				snook = true
+				largemouth_bass = true
 
 			[light_sources.settings.entities.swem]
 				swem_horse = true

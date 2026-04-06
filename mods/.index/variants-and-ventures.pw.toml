@@ -1,17 +1,17 @@
-filename = 'variantsandventures-forge-1.0.22+mc1.20.1.jar'
+filename = 'variantsandventures-forge-1.0.23+mc1.20.1.jar'
 name = 'Variants&Ventures'
-side = ''
+side = 'both'
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20', '1.20', '1.20.1', '1.20.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'forge-1.0.22+mc1.20.1'
+x-prismlauncher-version-number = 'forge-1.0.23+mc1.20.1'
 
 [download]
-hash = '860918fdc3860cf51bb50761579f42f4342a8f18d7eb89c101f0a358f6a7524603b44fa1ca296ed436b27fe7d3c180e4514aab214b4e3c3cb9d4558feadaa13c'
+hash = '2f28f7c9e9b5683635147748013049806fd3b37aadbb7c57a250f29111211bd4bc6890864132678c4448cd588110dd5c82a7351b78013fcb9dd8358fc2e401ae'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/lNDRiXkY/versions/sLz7OrkU/variantsandventures-forge-1.0.22%2Bmc1.20.1.jar'
+url = 'https://cdn.modrinth.com/data/lNDRiXkY/versions/QcQX89BS/variantsandventures-forge-1.0.23%2Bmc1.20.1.jar'
 
 [update.modrinth]
 mod-id = 'lNDRiXkY'
-version = 'sLz7OrkU'
+version = 'QcQX89BS'

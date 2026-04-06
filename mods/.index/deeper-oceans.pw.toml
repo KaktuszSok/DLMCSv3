@@ -1,6 +1,10 @@
 filename = 'deeper-oceans-2.0.0-forge-1.20.1.jar'
 name = 'Deeper Oceans'
-side = 'server'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '2.0.0-forge-1.20.1'
 
 [download]
 hash = 'd2608f2e4e3c7f2863c09669627b6e1c0f0b26a4beefe858098cb69bc0981fdbff365981cc0477ffc9294bbe112942b93232a4b7db72670c86e10bb5d815e4a1'

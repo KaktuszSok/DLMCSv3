@@ -79,6 +79,10 @@
     "leaves": "#iguanatweaksreborn:laurel_leaves"
   },
   {
+    "log": "atmospheric:morado_log",
+    "leaves": "#iguanatweaksreborn:morado_leaves"
+  },
+  {
     "log": "environmental:pine_log",
     "leaves": "environmental:pine_leaves"
   },
@@ -97,5 +101,17 @@
   {
     "log": "caverns_and_chasms:azalea_log",
     "leaves": "#iguanatweaksreborn:azalea_leaves"
+  },
+  {
+    "log": "tconstruct:greenheart_log",
+    "leaves": "tconstruct:earth_slime_leaves"
+  },
+  {
+    "log": "tconstruct:skyroot_log",
+    "leaves": "tconstruct:sky_slime_leaves"
+  },
+  {
+    "log": "tconstruct:enderbark_log",
+    "leaves": "tconstruct:ender_slime_leaves"
   }
 ]

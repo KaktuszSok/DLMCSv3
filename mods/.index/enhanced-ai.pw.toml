@@ -1,16 +1,17 @@
-filename = 'enhancedai-3.3.6.jar'
+filename = 'enhancedai-3.3.6.3.jar'
 name = 'Enhanced AI'
 side = 'both'
 x-prismlauncher-loaders = [ 'forge' ]
-x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '3.3.6.3'
 
 [download]
-hash = 'de212442918b1d8e33640c1d1897367fe5a07079d03f891846e214acf2053b7c02a9c0bd802b6d1986889e153156f923a29b50f96dd4011a51309fe481524691'
+hash = '3251bc5514551afd1e67bf54e268186c58a854b15362974826d24352093dcbcc3764d0f1541aa74e8ed5ce53bafb27647748f0d00abf021261d3969140a23deb'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/TDdoftI1/versions/EtXZ60iI/enhancedai-3.3.6.jar'
+url = 'https://cdn.modrinth.com/data/TDdoftI1/versions/PB1eg5NI/enhancedai-3.3.6.3.jar'
 
 [update.modrinth]
 mod-id = 'TDdoftI1'
-version = 'EtXZ60iI'
+version = 'PB1eg5NI'

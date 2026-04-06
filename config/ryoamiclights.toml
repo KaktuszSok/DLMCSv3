@@ -204,6 +204,7 @@
 				falling_slab = true
 				wisp = true
 				burnt_forest_spawner = true
+				soul_spawner = true
 
 			[light_sources.settings.entities.tide]
 				pike = true
@@ -249,6 +250,18 @@
 				smallmouth_bass = true
 				snook = true
 				largemouth_bass = true
+				manta_ray = true
+				white_crappie = true
+				black_crappie = true
+				inferno_guppy = true
+				ember_koi = true
+				ash_perch = true
+				warped_guppy = true
+				soulscale = true
+				magma_mackerel = true
+				witherfin = true
+				obsidian_pike = true
+				volcano_tuna = true
 
 			[light_sources.settings.entities.swem]
 				swem_horse = true
@@ -400,6 +413,7 @@
 				trampler = true
 				crypt_slime = true
 				tropical_slime_servant = true
+				hostile_black_wolf = true
 
 			[light_sources.settings.entities.cataclysm]
 				void_vortex = true
@@ -443,6 +457,20 @@
 
 			[light_sources.settings.entities.alekiships]
 				cannonball = true
+				vehicle_part = true
+				vehicle_cleat = true
+				compartment_empty = true
+				vehicle_switch_windlass = true
+				vehicle_anchor = true
+				vehicle_mast = true
+				vehicle_switch_sail = true
+				vehicle_collider = true
+
+				[light_sources.settings.entities.alekiships.rowboat]
+					birch = true
+
+				[light_sources.settings.entities.alekiships.sloop]
+					oak = true
 
 			[light_sources.settings.entities.create]
 				stationary_contraption = true
@@ -534,4 +562,13 @@
 
 			[light_sources.settings.entities.crockpot]
 				volt_goat = true
+
+			[light_sources.settings.entities.natures_spirit]
+				ns_boat = true
+
+			[light_sources.settings.entities.botania]
+				mana_burst = true
+
+			[light_sources.settings.entities.projecte]
+				lens_projectile = true
 

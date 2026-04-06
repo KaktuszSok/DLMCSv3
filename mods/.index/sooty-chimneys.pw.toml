@@ -1,13 +1,17 @@
-filename = 'sootychimneys-1.20.1-1.2.4.jar'
+filename = 'sootychimneys-forge-1.20.1-1.3.4.jar'
 name = 'Sooty Chimneys'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.3.4'
 
 [download]
-hash = '4bc02207429542115fd0ed1a0185fe32024a906c80a49ceb1c8bfc1e9b0c003bbdb547dfe8bcd2ab775251c9cc4643eedbcb47a52676b2a7dc4c955c691cf3a6'
+hash = 'ac1406eec837d3de0893db78ea51964d12ec535f4f6c7819ebf30281aa2ef861df5085ef9496398e2f8783c9cd180eb01a750897ac060e3e66c34aba0c8f4ef4'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/b3w1XM9H/versions/sygsmg1N/sootychimneys-1.20.1-1.2.4.jar'
+url = 'https://cdn.modrinth.com/data/b3w1XM9H/versions/cKRji5t2/sootychimneys-forge-1.20.1-1.3.4.jar'
 
 [update.modrinth]
 mod-id = 'b3w1XM9H'
-version = 'sygsmg1N'
+version = 'cKRji5t2'

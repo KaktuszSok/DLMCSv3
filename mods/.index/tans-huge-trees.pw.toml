@@ -1,6 +1,10 @@
 filename = 'TansHugeTrees-1.7.0-Forge-1.20.1-BETA.jar'
 name = "Tan's Huge Trees"
-side = 'both'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = '1.7.0'
 
 [download]
 hash = '779ce8b56eb16a53b88bb0798aa7fcb4eef71bac4a292afcf2db1128a35b172db0677c4036c05a5922f73d5129fadc91a8c1e4a4c05b56bcfa7c93d423bdd5c4'

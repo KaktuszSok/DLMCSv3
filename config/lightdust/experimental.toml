@@ -1,0 +1,22 @@
+
+["Experimental Features"]
+	#Makes the wind look realistic and natural.
+	#Instead of blowing in a straight (boring) line, the wind will swirl, sweep, and create gusts of dust.
+	#[Performance Impact: MODERATE-HIGH] - Uses heavy math to make the wind look good.
+	enableAdvancedWindMath = true
+	#Allows wind to blow dust down tunnels and bounce off obstacles.
+	#[Performance Impact: LOW] - Safe to leave on for most computers.
+	enableWindDeflection = true
+	#If true, dust particles will visually settle and rest when hitting the ground.
+	enableDustSettling = true
+	#If true, non-player entities (mobs/projectiles) will kick up and disturb dust.
+	#[Performance Impact: LOW/MEDIUM] - Hard capped to only track the 6 closest moving entities to save CPU.
+	enableEntityDisturbance = true
+	#How strongly non-player entities push dust when moving through it.
+	#Range: 0.0 ~ 2.0
+	entityPushStrength = 0.05
+	#How often (in ticks) the mod scans for nearby entities.
+	#Higher numbers save CPU but make dust react slower. (4 means it updates 5 times a second)
+	#Range: 1 ~ 20
+	entityScanRate = 4
+

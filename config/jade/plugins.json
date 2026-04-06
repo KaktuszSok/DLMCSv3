@@ -56,19 +56,12 @@
     "model_variant.locked": false,
     "paygate": true
   },
-  "kaleidoscope_cookery": {
-    "chopping_board": true,
-    "shawarma_spit": true,
-    "recipe_block": true,
-    "millstone": true,
-    "enamel_basin": true
+  "projecte": {
+    "emc_provider": true
   },
   "crockpot": {
     "birdcage": true,
     "crock_pot": true
-  },
-  "enigmaticgraves": {
-    "grave": true
   },
   "supplementaries": {
     "hat_stand": true
@@ -87,18 +80,6 @@
     "brewing_stand": true,
     "block": true,
     "note_block": true
-  },
-  "goety": {
-    "block_owner": true,
-    "soul_energy": true,
-    "raider_leader": true,
-    "servant_mode": true,
-    "capture_mode": true,
-    "zombie_villager": true,
-    "villager_profession": true,
-    "train_to": true,
-    "summon_lifespan": true,
-    "trainable": true
   },
   "cookingforblockheads": {
     "fridge": true,

@@ -22,13 +22,13 @@ wip_version = false
 World Generation
 ----------------------------------------------------------------------------------------------------
 
-region_scan_percent = 100
+region_scan_percent = 30
 | Set percent of chunk scan per region, from region pre-location system. One region contains 32x32 chunks, or 1,024 chunks. Lower this can reduce scan time, also lower the chance of all trees.
 | Default is [ 100 ]
 
-multiply_rarity = 1.0
+multiply_rarity = 0.5
 multiply_min_distance = 1.0
-multiply_group_size = 1.0
+multiply_group_size = 0.5
 multiply_waterside_chance = 1.0
 multiply_dead_tree_chance = 1.0
 | These number will be multiplied to all tree config in these types

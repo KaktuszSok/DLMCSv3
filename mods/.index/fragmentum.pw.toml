@@ -1,16 +1,17 @@
-filename = 'fragmentum-forge-1.20.1-1.0.8.jar'
+filename = 'fragmentum-forge-1.20.1-1.1.4.jar'
 name = 'Fragmentum'
 side = 'both'
 x-prismlauncher-loaders = [ 'forge' ]
-x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.1.4'
 
 [download]
-hash = 'aa74770b57b32d67609d65ce99a17396ab09cda1cbb3afc1185c98b41684f1ea199733b267774d62007026db2337b9b5ff153de4143392b8e4774f9c85b4ed71'
+hash = 'abf7964bfc6c9ca116cd4521a7a0729932fc6e7223e35c7b0d1929287396ac3f8e9d80d49cf7d1551b5768367bd53d52db5b017a95ab16289a45007cf0af9568'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/49C5QgTK/versions/Ap8EEMQZ/fragmentum-forge-1.20.1-1.0.8.jar'
+url = 'https://cdn.modrinth.com/data/49C5QgTK/versions/nH6DeFfb/fragmentum-forge-1.20.1-1.1.4.jar'
 
 [update.modrinth]
 mod-id = '49C5QgTK'
-version = 'Ap8EEMQZ'
+version = 'nH6DeFfb'

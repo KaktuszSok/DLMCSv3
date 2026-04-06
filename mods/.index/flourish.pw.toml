@@ -1,6 +1,10 @@
 filename = 'flourish-forge-3.0.0+1.20.1.jar'
 name = 'Flourish'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '3.0.0+1.20.1-forge'
 
 [download]
 hash = '4bd0b5afd48a5e5c37a9aecbf20c9dbb6b9d8fdf4e821ad34c402e7cdc621900e595e3287839507240d5319c37598a3bdfd2e5963d2b0941f9953311d5e1488a'

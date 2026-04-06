@@ -1,0 +1,17 @@
+filename = 'lightdust-1.6.3.jar'
+name = 'Light Dust'
+side = 'client'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.6.3'
+
+[download]
+hash = '6c383c3559af876fe1efbd8eb81005aab9e0d6a7a3242d333f743f0b42cdaad5d0a8a0d06070eb1a948b503ca79bdf50841e567064f759d9971393cc28be357d'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/bc9u3UPM/versions/MlchJOgZ/lightdust-1.6.3.jar'
+
+[update.modrinth]
+mod-id = 'bc9u3UPM'
+version = 'MlchJOgZ'

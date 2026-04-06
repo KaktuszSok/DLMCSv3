@@ -1,6 +1,10 @@
 filename = 'bettercampfires-2.0.0.jar'
 name = 'Better Campfires'
-side = 'both'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'bettercampfires-2.0.0.jar'
 
 [download]
 hash = '67edd242b63be848ea7533c39bba89315286e816'

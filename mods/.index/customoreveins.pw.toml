@@ -1,0 +1,17 @@
+filename = 'customoreveins-1.20-1.0.0-forge.jar'
+name = 'Custom Ore Veins'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20', '1.20.1', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.0.0'
+
+[download]
+hash = 'ac4c42b507af9ab63ce502239ba65a6df40656e4b66b7867e935a3fea661b863c2fa0e48236ab3a7c1a3a4e87bb4c206513ee3ac1c696e47499d0ce1f970910e'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/rMWqXxl3/versions/rgK7T2p5/customoreveins-1.20-1.0.0-forge.jar'
+
+[update.modrinth]
+mod-id = 'rMWqXxl3'
+version = 'rgK7T2p5'

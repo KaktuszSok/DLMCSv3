@@ -1,17 +1,17 @@
-filename = 'mobspropertiesrandomness-5.1.5.0.jar'
+filename = 'mobspropertiesrandomness-5.1.7.2.jar'
 name = 'Mobs Properties Randomness'
-side = ''
+side = 'server'
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '5.1.5.0'
+x-prismlauncher-version-number = '5.1.7.2'
 
 [download]
-hash = 'bac9edff9bd75ded133e0ba025771dd2b30ca5d8bab4aec8a68fc158fbad5e8f83206cc8780f12cfe8367cf6db26429fd34538c4aaa1ff90f568220ea8529c7c'
+hash = '420450d9ff9efc408b0f7baecc37e904288e38de818ad68634e1f5713f4a60fa1b1c41e0752e2738c9f8f3e2feaa7b538f1ab68c87524344b313d9bab5642892'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/iLdm4nHd/versions/uACnR6m5/mobspropertiesrandomness-5.1.5.0.jar'
+url = 'https://cdn.modrinth.com/data/iLdm4nHd/versions/y3e6V74W/mobspropertiesrandomness-5.1.7.2.jar'
 
 [update.modrinth]
 mod-id = 'iLdm4nHd'
-version = 'uACnR6m5'
+version = 'y3e6V74W'

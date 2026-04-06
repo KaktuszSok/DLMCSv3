@@ -1,0 +1,17 @@
+filename = 'playershops-1.2.3-1.20.1.jar'
+name = 'Player Shops'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Player Shops 1.2.3-1.20.1'
+
+[download]
+hash = 'df813011f7916560ba3188a57e8ff8bd4292a1f2'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5107977
+project-id = 897765

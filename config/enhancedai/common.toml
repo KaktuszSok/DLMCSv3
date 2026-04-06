@@ -310,7 +310,7 @@
 [Mobs]
 	"Enable Spawning" = true
 	#Makes mobs ride other mobs. Mobs in the `enhancedai:mobs/riding/can_be_mounted` tag will be able to be mounted, while mobs in the `enhancedai:mobs/riding/can_mount` tag will be able to mount other mobs.
-	"Enable Riding" = true
+	"Enable Riding" = false
 	#Change how mobs target players. Check the config options below for entity type tags.
 	"Enable Targeting" = true
 	#Allows mobs to break vehicles to escape.
@@ -413,14 +413,14 @@
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Max visited nodes multiplier" = 4.0
 
-		#How far away can the mobs see the player. This overrides the vanilla value (16 for most mobs). Setting 'Max' to 0 will leave the follow range as vanilla. Use mods like Mobs Properties Randomness to have more control over the attribute. Only mobs in the entity type tag `enhancedai:mobs/targeting/follow_range_override` will be affected by this override
+		#How far away can the mobs see targets. This overrides the vanilla value (16 for most mobs). Setting 'Max' to 0 will leave the follow range as vanilla. Use mods like Mobs Properties Randomness to have more control over the attribute. Only mobs in the entity type tag `enhancedai:mobs/targeting/follow_range_override` will be affected by this override
 		[Mobs.Targeting."Follow range override"]
 			#Range: 0.0 ~ 128.0
 			Minimum = 24.0
 			#Range: 0.0 ~ 128.0
 			Maximum = 48.0
 
-		#How far away can the mobs see the player even through walls. This only works with 'Better Nearby Targeting' enabled. Setting 'Max' to 0 will make mobs not able to see through walls. Use mods like Mobs Properties Randomness to have more control over the attribute; the attribute name is 'enhancedai:xray_follow_range'. Only mobs in the entity type tag `enhancedai:mobs/targeting/apply_xray` will be affected by this override.
+		#How far away can the mobs see targets even through walls. This only works with 'Better Nearby Targeting' enabled. Setting 'Max' to 0 will make mobs not able to see through walls. Use mods like Mobs Properties Randomness to have more control over the attribute; the attribute name is 'enhancedai:xray_follow_range'. Only mobs in the entity type tag `enhancedai:mobs/targeting/apply_xray` will be affected by this override.
 		[Mobs.Targeting."Xray range override"]
 			#Range: 0.0 ~ 128.0
 			Minimum = 12.0
@@ -748,9 +748,6 @@
 		#Damage per block of fall distance.
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Damage per block" = 1.0
-		#Fall distance multiplied by this
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Knockup strength ratio" = 0.08
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Horizontal base range" = 2.0
 		#Range: 0.0 ~ 1.7976931348623157E308
@@ -759,6 +756,12 @@
 		"Horizontal range per block" = 0.2
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Vertical range per block" = 0.1
+		#If the mob falls for less than these blocks, the shockwave will not happen
+		#Range: > 0
+		"Min fall distance" = 3
+		#Fall distance multiplied by this
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Knock up strength ratio" = 0.08
 
 	#Makes mobs pick up and throw other mobs. Mobs in the `enhancedai:mobs/pick_up_and_throw/can_be_picked_up` tag will be able to be picked up, while mobs in the `enhancedai:mobs/pick_up_and_throw/can_pick_up` tag will be able to pick up other mobs.
 	[Mobs."Pick up and throw"]
@@ -1020,7 +1023,7 @@
 
 [Animals]
 	#Makes animals not tempted by food. Use the entity type tag enhancedai:animal/can_ignore_food_temptation to change animals.
-	"Enable Not tempted animals" = true
+	"Enable Not tempted animals" = false
 	#Make animals fight back or be scared by players. Use the entity type tag enhancedai:animal/scared_attack/can_be_neutral, enhancedai:animal/scared_attack/can_be_hostile, and enhancedai:animal/scared_attack/can_be_scared_by_players to add/remove animals.
 	"Enable Animal scared attack" = true
 	#Make animals panic when one is attacked. Only entity types in `enhancedai:animal/can_panic` tag will be affected by this feature.
@@ -1039,7 +1042,7 @@
 		"Neutral chance" = 0.35
 		#Animals have this percentage chance to be hostile. Hostile animals are also neutral.
 		#Range: 0.0 ~ 1.0
-		"Hostile chance" = 0.1
+		"Hostile chance" = 0.0
 		#Movement speed multiplier when aggroed.
 		#Range: 0.0 ~ 4.0
 		"Speed modifier" = 1.1

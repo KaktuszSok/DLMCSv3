@@ -1,6 +1,10 @@
 filename = 'redeco-1.14.1-forge-1.20.1.jar'
 name = 'Re:Deco'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20', '1.20.1', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.14.1'
 
 [download]
 hash = '3c9124d0900a3dbc302e9f0b4fef849345a8278c095e47927b90a992f812645ce3e46c586691bb4706867689c374c36374b2d0588f2ae75df6bc287ed849af93'

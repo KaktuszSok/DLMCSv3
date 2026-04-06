@@ -2,8 +2,9 @@ filename = 'natures_spirit-2.2.5-1.20.1.jar'
 name = "Nature's Spirit"
 side = 'both'
 x-prismlauncher-loaders = [ 'forge' ]
-x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '2.2.5-1.20.1'
 
 [download]
 hash = '0098deac8cd66f8f388c134a7a44504fc9620d9fa0bfd9c0440b1ade2f95ad2bedb5f88519d779c28725c4d3740a3183223727b185100e4111fd8404ef9c9f40'

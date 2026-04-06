@@ -1,6 +1,10 @@
 filename = 'micles-login-protection-forge-1.20.1-3.1.0.jar'
 name = "Micle's Login Protection"
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '3.1.0'
 
 [download]
 hash = '0b50ddcdf2f681caf9500b5d4a7c4fcc7ecf1e97bd1a5d523c74cb80f473cdc7f6014c9ff60411f2b033e04a3570ac16e2f6603e64706af6c3ca2a1c51420c8e'

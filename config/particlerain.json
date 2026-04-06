@@ -37,7 +37,7 @@
       "presetParticleId": "minecraft:flame",
       "usePresetParticle": false,
       "id": "rain",
-      "enabled": true,
+      "enabled": false,
       "density": 1.0,
       "weather": "DURING_WEATHER",
       "precipitation": [
@@ -115,7 +115,7 @@
       "presetParticleId": "minecraft:flame",
       "usePresetParticle": false,
       "id": "dust",
-      "enabled": true,
+      "enabled": false,
       "density": 0.8,
       "weather": "DURING_WEATHER",
       "precipitation": [
@@ -192,7 +192,7 @@
       "presetParticleId": "minecraft:flame",
       "usePresetParticle": false,
       "id": "snow_haze",
-      "enabled": true,
+      "enabled": false,
       "density": 0.2,
       "weather": "DURING_WEATHER",
       "precipitation": [
@@ -269,7 +269,7 @@
       "presetParticleId": "minecraft:rain",
       "usePresetParticle": true,
       "id": "splatter",
-      "enabled": true,
+      "enabled": false,
       "density": 1.0,
       "weather": "DURING_WEATHER",
       "precipitation": [
@@ -351,7 +351,7 @@
       "presetParticleId": "minecraft:smoke",
       "usePresetParticle": true,
       "id": "smoke",
-      "enabled": true,
+      "enabled": false,
       "density": 1.0,
       "weather": "DURING_WEATHER",
       "precipitation": [
@@ -436,7 +436,7 @@
       "presetParticleId": "particlerain:shrub",
       "usePresetParticle": true,
       "id": "shrub",
-      "enabled": true,
+      "enabled": false,
       "density": 0.002,
       "weather": "DURING_WEATHER",
       "precipitation": [
@@ -521,7 +521,7 @@
       "presetParticleId": "particlerain:mist",
       "usePresetParticle": true,
       "id": "mist",
-      "enabled": true,
+      "enabled": false,
       "density": 0.1,
       "weather": "ALWAYS",
       "precipitation": [

@@ -1,6 +1,10 @@
 filename = 'tradingplus-1.0.0-forge-1.20.1.jar'
 name = 'TradingPlus+'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.0.0'
 
 [download]
 hash = 'acbd8645da2105ecdc5c419537d7bf3c7165f99c9cf4abd72010e9a27285b44edf17ab608bf704e779fdb4833e132905831be9ea9ae81f0f4f0960771b0f957f'

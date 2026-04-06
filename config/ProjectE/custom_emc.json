@@ -1,0 +1,16 @@
+{
+  "entries": [
+    {
+      "item": "minecraft:emerald",
+      "emc": 4096
+    },
+    {
+      "item": "spelunkery:rough_emerald",
+      "emc": 4096
+    },
+    {
+      "item": "spelunkery:rough_diamond",
+      "emc": 8192
+    }
+  ]
+}

@@ -1,6 +1,10 @@
 filename = 'blossom-forge-1.20.1-1.0.7.jar'
 name = 'Blossom'
 side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20', '1.20.1', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Forge-1.20.1-1.0.7'
 
 [download]
 hash = 'fb6b149a858601aa3db8ae8d68e46be78a43484a6ae7620cde53d7fed842e5f19f5ea56dec1930d03ca17a57eb94c6e998432262957e60455d9eabe5f9f42767'

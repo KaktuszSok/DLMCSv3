@@ -809,7 +809,7 @@
 		#Makes redstone components require redstone in their recipe (e.g. Levers, pressure plates, etc).
 		"Actual redstone components" = true
 		#If true a data pack will be enabled that makes furnaces require copper. Copper ingots can be obtained from raw copper on campfires.
-		"Copper furnace" = true
+		"Copper furnace" = false
 		#If true a data pack will be enabled that disables villages and pillagers outpost generation.
 		"Disable long noses structures" = true
 		#If true a data pack will be enabled that changes fishing Loot.

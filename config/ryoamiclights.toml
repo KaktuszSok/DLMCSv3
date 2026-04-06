@@ -572,3 +572,6 @@
 			[light_sources.settings.entities.projecte]
 				lens_projectile = true
 
+			[light_sources.settings.entities.faunify]
+				rolypoly = true
+

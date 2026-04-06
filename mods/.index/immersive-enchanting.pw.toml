@@ -1,0 +1,17 @@
+filename = 'immersiveenchanting-4.0.3-forge-1.20.1.jar'
+name = 'Immersive Enchanting'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '4.0.3'
+
+[download]
+hash = '5764ddd0fca916222461778aecd402e5a88afe58696556776d5df91aaf64b5616e92eff64c16b998dc468d7eba7331d3bb36b82dc77048aaac692015ffbb3a4e'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/DfWQAvS4/versions/SjCaXjxN/immersiveenchanting-4.0.3-forge-1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'DfWQAvS4'
+version = 'SjCaXjxN'

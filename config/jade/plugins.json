@@ -59,6 +59,10 @@
   "projecte": {
     "emc_provider": true
   },
+  "item-descriptions": {
+    "block_descriptions": true,
+    "entity_descriptions": true
+  },
   "crockpot": {
     "birdcage": true,
     "crock_pot": true

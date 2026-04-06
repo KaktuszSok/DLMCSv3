@@ -1,0 +1,17 @@
+filename = 'fieldguide-forge-1.20.1-1.6.8.jar'
+name = 'Field Guide'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = '1.6.8-1.20.1-forge'
+
+[download]
+hash = '81542a6005077743a45cba8b5e5d5c13570159cfb915870e4aea1c35214968a3e4b18b866b9f1973ab90d356e9ca1e2b301851ac0e974550f956b9f1b0701285'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/72RRCWM6/versions/xY7K4JFR/fieldguide-forge-1.20.1-1.6.8.jar'
+
+[update.modrinth]
+mod-id = '72RRCWM6'
+version = 'xY7K4JFR'

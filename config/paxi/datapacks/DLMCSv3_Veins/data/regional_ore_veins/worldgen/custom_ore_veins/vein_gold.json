@@ -17,7 +17,7 @@
           "max_exclusive": 99,
           "when_in_range": {
             "type": "minecraft:noise",
-            "noise": "regional_ore_veins:ore_veininess_uncommon",
+            "noise": "regional_ore_veins:ore_veininess_rare",
             "xz_scale": 1.1,
             "y_scale": 1.1
           },
@@ -78,8 +78,8 @@
     "gap": {
         "min_value": -0.2
     },
-    "min_ore_chance": 0.05,
-    "max_ore_chance": 0.7,
+    "min_ore_chance": 0.2,
+    "max_ore_chance": 0.35,
     "ore": "deepslate_gold_ore",
     "raw_ore": "raw_gold_block",
     "stone": "create:ochrum"

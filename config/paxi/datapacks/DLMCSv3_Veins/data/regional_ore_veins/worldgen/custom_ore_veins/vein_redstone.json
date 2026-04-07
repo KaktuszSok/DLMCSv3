@@ -17,7 +17,7 @@
           "max_exclusive": 99,
           "when_in_range": {
             "type": "minecraft:noise",
-            "noise": "regional_ore_veins:ore_veininess_common",
+            "noise": "regional_ore_veins:ore_veininess_uncommon",
             "xz_scale": 1.0,
             "y_scale": 1.0
           },
@@ -76,7 +76,7 @@
       }
     },
 	"min_ore_chance": 0.1,
-    "max_ore_chance": 0.5,
+    "max_ore_chance": 0.4,
     "ore": "deepslate_redstone_ore",
 	"raw_ore": "spelunkery:rough_cinnabar_block",
     "stone": "create:crimsite"

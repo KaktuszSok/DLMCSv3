@@ -23,6 +23,26 @@
     {
       "item": "natures_spirit:pink_sand",
       "emc": 1
+    },
+    {
+      "item": "yungscavebiomes:ancient_sand",
+      "emc": 1
+    },
+    {
+      "item": "spelunkery:salt",
+      "emc": 18
+    },
+    {
+      "item": "spelunkery:rock_salt",
+      "emc": 36
+    },
+    {
+      "item": "croptopia:butter",
+      "emc": 0
+    },
+    {
+      "item": "croptopia:cheese",
+      "emc": 0
     }
   ]
 }

@@ -262,6 +262,8 @@
 				witherfin = true
 				obsidian_pike = true
 				volcano_tuna = true
+				blazing_swordfish = true
+				crimson_fangjaw = true
 
 			[light_sources.settings.entities.swem]
 				swem_horse = true
@@ -591,8 +593,36 @@
 				millipede_head = true
 				millipede_body = true
 				millipede_tail = true
+				lacewing = true
+				leafinsect = true
+				ladybug = true
+				beefly = true
+				dragonfly = true
+				stickbug = true
+				grasshopper = true
 
 			[light_sources.settings.entities.beansbackpacks]
 				backpack = true
 				winged_backpack = true
+
+			[light_sources.settings.entities.illagerinvasion]
+				provoker = true
+				basher = true
+				sorcerer = true
+				archivist = true
+				inquisitor = true
+				marauder = true
+				invoker = true
+				alchemist = true
+				firecaller = true
+				necromancer = true
+				surrendered = true
+				hatchet = true
+				skull_bolt = true
+				flying_magma = true
+				invoker_fangs = true
+
+			[light_sources.settings.entities.yungscavebiomes]
+				sand_snapper = true
+				ice_cube = true
 

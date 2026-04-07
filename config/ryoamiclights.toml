@@ -571,7 +571,24 @@
 
 			[light_sources.settings.entities.projecte]
 				lens_projectile = true
+				lava_projectile = true
+				homing_arrow = true
 
 			[light_sources.settings.entities.faunify]
 				rolypoly = true
+				fennec = true
+				silkmoth = true
+				weevil = true
+				leafsheep = true
+				weasel = true
+				hedgehog = true
+				chinchilla = true
+				ringtailcat = true
+				opossum = true
+				mouse = true
+				beetle = true
+
+			[light_sources.settings.entities.beansbackpacks]
+				backpack = true
+				winged_backpack = true
 

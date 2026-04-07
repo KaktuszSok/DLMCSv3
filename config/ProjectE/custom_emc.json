@@ -2,15 +2,27 @@
   "entries": [
     {
       "item": "minecraft:emerald",
-      "emc": 4096
+      "emc": 1024
     },
     {
       "item": "spelunkery:rough_emerald",
-      "emc": 4096
+      "emc": 0
     },
     {
       "item": "spelunkery:rough_diamond",
-      "emc": 8192
+      "emc": 0
+    },
+    {
+      "item": "spelunkery:rough_diamond_shard",
+      "emc": 0
+    },
+    {
+      "item": "spelunkery:rough_emerald_shard",
+      "emc": 0
+    },
+    {
+      "item": "natures_spirit:pink_sand",
+      "emc": 1
     }
   ]
 }

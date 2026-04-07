@@ -587,6 +587,10 @@
 				opossum = true
 				mouse = true
 				beetle = true
+				mantis = true
+				millipede_head = true
+				millipede_body = true
+				millipede_tail = true
 
 			[light_sources.settings.entities.beansbackpacks]
 				backpack = true

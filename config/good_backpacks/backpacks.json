@@ -1,0 +1,212 @@
+{
+  "backpacks": [
+    {
+      "name": "small_backpack",
+      "rowWidth": 3,
+      "numberOfRows": 1,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_leather",
+      "model": "small"
+    },
+    {
+      "name": "backpack",
+      "rowWidth": 9,
+      "numberOfRows": 1,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_leather",
+      "model": "default"
+    },
+    {
+      "name": "plated_backpack",
+      "rowWidth": 6,
+      "numberOfRows": 2,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_iron",
+      "model": "default"
+    },
+    {
+      "name": "gilded_backpack",
+      "rowWidth": 5,
+      "numberOfRows": 3,
+      "isFireImmune": false,
+      "PiglinLikes": true,
+      "openSound": "minecraft:item.armor.equip_gold",
+      "model": "default"
+    },
+    {
+      "name": "bejeweled_backpack",
+      "rowWidth": 7,
+      "numberOfRows": 3,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_diamond",
+      "model": "default"
+    },
+    {
+      "name": "netherite_backpack",
+      "rowWidth": 9,
+      "numberOfRows": 3,
+      "isFireImmune": true,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_netherite",
+      "model": "default"
+    },
+    {
+      "name": "backpack_red",
+      "rowWidth": 9,
+      "numberOfRows": 1,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_leather",
+      "model": "default"
+    },
+    {
+      "name": "backpack_orange",
+      "rowWidth": 9,
+      "numberOfRows": 1,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_leather",
+      "model": "default"
+    },
+    {
+      "name": "backpack_yellow",
+      "rowWidth": 9,
+      "numberOfRows": 1,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_leather",
+      "model": "default"
+    },
+    {
+      "name": "backpack_lime",
+      "rowWidth": 9,
+      "numberOfRows": 1,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_leather",
+      "model": "default"
+    },
+    {
+      "name": "backpack_green",
+      "rowWidth": 9,
+      "numberOfRows": 1,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_leather",
+      "model": "default"
+    },
+    {
+      "name": "backpack_cyan",
+      "rowWidth": 9,
+      "numberOfRows": 1,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_leather",
+      "model": "default"
+    },
+    {
+      "name": "backpack_light_blue",
+      "rowWidth": 9,
+      "numberOfRows": 1,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_leather",
+      "model": "default"
+    },
+    {
+      "name": "backpack_blue",
+      "rowWidth": 9,
+      "numberOfRows": 1,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_leather",
+      "model": "default"
+    },
+    {
+      "name": "backpack_purple",
+      "rowWidth": 9,
+      "numberOfRows": 1,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_leather",
+      "model": "default"
+    },
+    {
+      "name": "backpack_magenta",
+      "rowWidth": 9,
+      "numberOfRows": 1,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_leather",
+      "model": "default"
+    },
+    {
+      "name": "backpack_pink",
+      "rowWidth": 9,
+      "numberOfRows": 1,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_leather",
+      "model": "default"
+    },
+    {
+      "name": "backpack_brown",
+      "rowWidth": 9,
+      "numberOfRows": 1,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_leather",
+      "model": "default"
+    },
+    {
+      "name": "backpack_black",
+      "rowWidth": 9,
+      "numberOfRows": 1,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_leather",
+      "model": "default"
+    },
+    {
+      "name": "backpack_gray",
+      "rowWidth": 9,
+      "numberOfRows": 1,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_leather",
+      "model": "default"
+    },
+    {
+      "name": "backpack_light_gray",
+      "rowWidth": 9,
+      "numberOfRows": 1,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_leather",
+      "model": "default"
+    },
+    {
+      "name": "backpack_white",
+      "rowWidth": 9,
+      "numberOfRows": 1,
+      "isFireImmune": false,
+      "PiglinLikes": false,
+      "openSound": "minecraft:item.armor.equip_leather",
+      "model": "default"
+    }
+  ],
+  // Creates a creative tab with mod backpacks in the creative menu
+  "creativeTab": true,
+  // Adds backpacks to the tools & utilities tab in the creative menu
+  "instrumentTab": true,
+  // Allows equipping backpacks in the chestplate armor slot
+  // Note: If both 'chestplate' and 'own_slot' are true, 'chestplate' will be automatically disabled
+  "chestplate": false,
+  // Creates a dedicated backpack slot in the player's inventory
+  // This slot can also be used with armor stands
+  "own_slot": true
+}

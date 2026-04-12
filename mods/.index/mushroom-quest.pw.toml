@@ -1,0 +1,17 @@
+filename = 'MushroomQuest-Forge-1.20.1-v4.3.1.jar'
+name = 'Mushroom Quest'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '4.3.1'
+
+[download]
+hash = '0580edb66d2a2103d83601b73589190bef6b2285e2818f85a90f24e3b8c414816b4106db22954ab53291f18d9119f98b0e8d5655e2b95fe1a0aaf6378279c2c6'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/OjcK2Epc/versions/OmU5TK1B/MushroomQuest-Forge-1.20.1-v4.3.1.jar'
+
+[update.modrinth]
+mod-id = 'OjcK2Epc'
+version = 'OmU5TK1B'

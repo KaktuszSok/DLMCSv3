@@ -626,3 +626,19 @@
 				sand_snapper = true
 				ice_cube = true
 
+			[light_sources.settings.entities.iceandfire]
+				hippogryph = true
+				dragon_multipart = true
+				lightning_dragon = true
+				fire_dragon = true
+				troll = true
+				amphithere = true
+				hippocampus = true
+				pixie = true
+				sea_serpent = true
+
+			[light_sources.settings.entities.mushroomquest]
+				brown_amanita_fungling = true
+				red_amanita_fungling = true
+				yellow_amanita_fungling = true
+

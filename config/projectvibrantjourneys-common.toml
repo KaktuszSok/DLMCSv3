@@ -7,15 +7,15 @@
 	#Enable generation of fallen leaves
 	enableFallenLeaves = true
 	#Enable generation of bones
-	enableBones = true
+	enableBones = false
 	#Enable generation of charred bones
-	enableCharredBones = true
+	enableCharredBones = false
 	#Enable generation of ice chunks
 	enableIceChunks = true
 	#Enable generation of pinecones
-	enablePinecones = true
+	enablePinecones = false
 	#Enable generation of seashells
-	enableSeashells = true
+	enableSeashells = false
 	#Enable generation of fallen trees
 	enableFallenTrees = true
 	#Enable generation of sea oats

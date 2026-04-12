@@ -43,6 +43,34 @@
     {
       "item": "croptopia:cheese",
       "emc": 0
+    },
+    {
+      "item": "minecraft:prismarine",
+      "emc": 128
+    },
+    {
+      "item": "minecraft:dark_prismarine",
+      "emc": 256
+    },
+    {
+      "item": "philipsruins:frozen_prismarine",
+      "emc": 144
+    },
+    {
+      "item": "philipsruins:frozen_dark_prismarine",
+      "emc": 288
+    },
+    {
+      "item": "philipsruins:frozen_prismarine_bricks",
+      "emc": 288
+    },
+    {
+      "item": "minecraft:charcoal",
+      "emc": 32
+    },
+    {
+      "item": "spelunkery:charcoal_lump",
+      "emc": 4
     }
   ]
 }

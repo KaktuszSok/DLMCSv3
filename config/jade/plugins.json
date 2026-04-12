@@ -51,11 +51,6 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "lightmanscurrency": {
-    "model_variant": true,
-    "model_variant.locked": false,
-    "paygate": true
-  },
   "projecte": {
     "emc_provider": true
   },
@@ -84,6 +79,15 @@
     "brewing_stand": true,
     "block": true,
     "note_block": true
+  },
+  "apotheosis": {
+    "adventure": true,
+    "ench": true,
+    "spawner": true
+  },
+  "iceandfire": {
+    "multipart": true,
+    "dragon": true
   },
   "cookingforblockheads": {
     "fridge": true,

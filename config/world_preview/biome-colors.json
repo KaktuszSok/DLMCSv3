@@ -1,8 +1,482 @@
 {
-  "blueprint:original_source_marker": {
-    "r": 68,
-    "g": 57,
-    "b": 153,
+  "natures_spirit:woody_highlands": {
+    "r": 250,
+    "g": 4,
+    "b": 222,
+    "cave": false
+  },
+  "natures_spirit:golden_wilds": {
+    "r": 24,
+    "g": 140,
+    "b": 81,
+    "cave": false
+  },
+  "natures_spirit:bamboo_wetlands": {
+    "r": 150,
+    "g": 173,
+    "b": 58,
+    "cave": false
+  },
+  "natures_spirit:dusty_slopes": {
+    "r": 14,
+    "g": 38,
+    "b": 109,
+    "cave": false
+  },
+  "natures_spirit:cypress_fields": {
+    "r": 107,
+    "g": 52,
+    "b": 234,
+    "cave": false
+  },
+  "pyrellium:blackstone_springs": {
+    "r": 214,
+    "g": 59,
+    "b": 141,
+    "cave": false
+  },
+  "natures_spirit:windswept_sugi_forest": {
+    "r": 200,
+    "g": 15,
+    "b": 128,
+    "cave": false
+  },
+  "natures_spirit:sparse_tropical_woods": {
+    "r": 166,
+    "g": 218,
+    "b": 187,
+    "cave": false
+  },
+  "natures_spirit:lavender_fields": {
+    "r": 199,
+    "g": 17,
+    "b": 198,
+    "cave": false
+  },
+  "natures_spirit:alpine_highlands": {
+    "r": 117,
+    "g": 38,
+    "b": 174,
+    "cave": false
+  },
+  "natures_spirit:scorched_dunes": {
+    "r": 123,
+    "g": 150,
+    "b": 12,
+    "cave": false
+  },
+  "natures_spirit:blooming_sugi_forest": {
+    "r": 157,
+    "g": 210,
+    "b": 236,
+    "cave": false
+  },
+  "natures_spirit:shrubland": {
+    "r": 109,
+    "g": 6,
+    "b": 134,
+    "cave": false
+  },
+  "pyrellium:monolith_plains": {
+    "r": 148,
+    "g": 5,
+    "b": 142,
+    "cave": false
+  },
+  "natures_spirit:sleeted_slopes": {
+    "r": 109,
+    "g": 10,
+    "b": 192,
+    "cave": false
+  },
+  "natures_spirit:flowering_shrubland": {
+    "r": 173,
+    "g": 243,
+    "b": 146,
+    "cave": false
+  },
+  "pyrellium:mushroom_wastes": {
+    "r": 85,
+    "g": 84,
+    "b": 247,
+    "cave": false
+  },
+  "natures_spirit:prairie": {
+    "r": 247,
+    "g": 7,
+    "b": 254,
+    "cave": false
+  },
+  "natures_spirit:tropical_woods": {
+    "r": 139,
+    "g": 215,
+    "b": 65,
+    "cave": false
+  },
+  "natures_spirit:heather_fields": {
+    "r": 184,
+    "g": 208,
+    "b": 96,
+    "cave": false
+  },
+  "pyrellium:quartz_caverns": {
+    "r": 238,
+    "g": 151,
+    "b": 116,
+    "cave": false
+  },
+  "goodending:oak_hammock_forest": {
+    "r": 180,
+    "g": 101,
+    "b": 189,
+    "cave": false
+  },
+  "natures_spirit:oak_savanna": {
+    "r": 216,
+    "g": 188,
+    "b": 90,
+    "cave": false
+  },
+  "hybrid_beta:temperate_rainforest": {
+    "r": 199,
+    "g": 140,
+    "b": 252,
+    "cave": false
+  },
+  "hybrid_beta:autumnal_forest": {
+    "r": 138,
+    "g": 131,
+    "b": 120,
+    "cave": false
+  },
+  "natures_spirit:tropical_basin": {
+    "r": 78,
+    "g": 92,
+    "b": 227,
+    "cave": false
+  },
+  "pyrellium:infested_valley": {
+    "r": 233,
+    "g": 249,
+    "b": 26,
+    "cave": false
+  },
+  "natures_spirit:tropical_shores": {
+    "r": 209,
+    "g": 118,
+    "b": 205,
+    "cave": false
+  },
+  "natures_spirit:lively_dunes": {
+    "r": 123,
+    "g": 29,
+    "b": 255,
+    "cave": false
+  },
+  "hybrid_beta:rainforest": {
+    "r": 250,
+    "g": 221,
+    "b": 105,
+    "cave": false
+  },
+  "natures_spirit:cedar_thicket": {
+    "r": 221,
+    "g": 201,
+    "b": 21,
+    "cave": false
+  },
+  "natures_spirit:white_cliffs": {
+    "r": 189,
+    "g": 243,
+    "b": 165,
+    "cave": false
+  },
+  "profundis:floral_lush_caves": {
+    "r": 173,
+    "g": 228,
+    "b": 0,
+    "cave": false
+  },
+  "natures_spirit:sugi_forest": {
+    "r": 101,
+    "g": 101,
+    "b": 229,
+    "cave": false
+  },
+  "natures_spirit:chaparral": {
+    "r": 58,
+    "g": 215,
+    "b": 188,
+    "cave": false
+  },
+  "natures_spirit:alpine_clearings": {
+    "r": 201,
+    "g": 129,
+    "b": 151,
+    "cave": false
+  },
+  "natures_spirit:arid_highlands": {
+    "r": 250,
+    "g": 209,
+    "b": 255,
+    "cave": false
+  },
+  "natures_spirit:shrubby_highlands": {
+    "r": 205,
+    "g": 97,
+    "b": 214,
+    "cave": false
+  },
+  "natures_spirit:aspen_forest": {
+    "r": 52,
+    "g": 37,
+    "b": 35,
+    "cave": false
+  },
+  "pyrellium:ghostly_woods": {
+    "r": 133,
+    "g": 142,
+    "b": 181,
+    "cave": false
+  },
+  "profundis:amethyst_caves": {
+    "r": 209,
+    "g": 124,
+    "b": 35,
+    "cave": false
+  },
+  "profundis:dirt_caves": {
+    "r": 210,
+    "g": 104,
+    "b": 212,
+    "cave": false
+  },
+  "natures_spirit:fir_forest": {
+    "r": 202,
+    "g": 204,
+    "b": 67,
+    "cave": false
+  },
+  "natures_spirit:drylands": {
+    "r": 108,
+    "g": 131,
+    "b": 122,
+    "cave": false
+  },
+  "natures_spirit:red_peaks": {
+    "r": 147,
+    "g": 103,
+    "b": 27,
+    "cave": false
+  },
+  "hybrid_beta:seasonal_forest": {
+    "r": 138,
+    "g": 14,
+    "b": 180,
+    "cave": false
+  },
+  "natures_spirit:wooded_drylands": {
+    "r": 45,
+    "g": 68,
+    "b": 44,
+    "cave": false
+  },
+  "natures_spirit:snowy_fir_forest": {
+    "r": 213,
+    "g": 51,
+    "b": 41,
+    "cave": false
+  },
+  "profundis:arid_caves": {
+    "r": 57,
+    "g": 6,
+    "b": 202,
+    "cave": false
+  },
+  "profundis:molten_caves": {
+    "r": 131,
+    "g": 4,
+    "b": 169,
+    "cave": false
+  },
+  "natures_spirit:wisteria_forest": {
+    "r": 94,
+    "g": 79,
+    "b": 186,
+    "cave": false
+  },
+  "natures_spirit:tundra": {
+    "r": 67,
+    "g": 132,
+    "b": 13,
+    "cave": false
+  },
+  "gardens_of_the_dead:whistling_woods": {
+    "r": 25,
+    "g": 16,
+    "b": 30,
+    "cave": false
+  },
+  "pyrellium:crystal_forest": {
+    "r": 176,
+    "g": 157,
+    "b": 49,
+    "cave": false
+  },
+  "natures_spirit:floral_ridges": {
+    "r": 88,
+    "g": 233,
+    "b": 241,
+    "cave": false
+  },
+  "natures_spirit:snowy_redwood_forest": {
+    "r": 239,
+    "g": 18,
+    "b": 65,
+    "cave": false
+  },
+  "natures_spirit:marigold_meadows": {
+    "r": 160,
+    "g": 197,
+    "b": 134,
+    "cave": false
+  },
+  "natures_spirit:coniferous_covert": {
+    "r": 141,
+    "g": 3,
+    "b": 7,
+    "cave": false
+  },
+  "pyrellium:frostburn_valley": {
+    "r": 235,
+    "g": 237,
+    "b": 90,
+    "cave": false
+  },
+  "natures_spirit:maple_woodlands": {
+    "r": 149,
+    "g": 152,
+    "b": 2,
+    "cave": false
+  },
+  "natures_spirit:carnation_fields": {
+    "r": 147,
+    "g": 185,
+    "b": 151,
+    "cave": false
+  },
+  "natures_spirit:blooming_dunes": {
+    "r": 33,
+    "g": 170,
+    "b": 165,
+    "cave": false
+  },
+  "yungscavebiomes:frosted_caves": {
+    "r": 42,
+    "g": 250,
+    "b": 211,
+    "cave": true
+  },
+  "terrablender:deferred_placeholder": {
+    "r": 250,
+    "g": 240,
+    "b": 234,
+    "cave": false
+  },
+  "natures_spirit:snowcapped_red_peaks": {
+    "r": 7,
+    "g": 12,
+    "b": 31,
+    "cave": false
+  },
+  "natures_spirit:xeric_plains": {
+    "r": 251,
+    "g": 53,
+    "b": 158,
+    "cave": false
+  },
+  "natures_spirit:blooming_highlands": {
+    "r": 6,
+    "g": 24,
+    "b": 76,
+    "cave": false
+  },
+  "profundis:sparse_lush_caves": {
+    "r": 187,
+    "g": 245,
+    "b": 73,
+    "cave": false
+  },
+  "natures_spirit:stratified_desert": {
+    "r": 215,
+    "g": 190,
+    "b": 52,
+    "cave": false
+  },
+  "goodending:marshy_swamp": {
+    "r": 197,
+    "g": 192,
+    "b": 127,
+    "cave": false
+  },
+  "natures_spirit:arid_savanna": {
+    "r": 22,
+    "g": 167,
+    "b": 227,
+    "cave": false
+  },
+  "yungscavebiomes:lost_caves": {
+    "r": 150,
+    "g": 166,
+    "b": 94,
+    "cave": true
+  },
+  "pyrellium:burning_grove": {
+    "r": 248,
+    "g": 142,
+    "b": 235,
+    "cave": false
+  },
+  "profundis:mushroom_caves": {
+    "r": 71,
+    "g": 128,
+    "b": 207,
+    "cave": false
+  },
+  "profundis:black_caves": {
+    "r": 12,
+    "g": 150,
+    "b": 129,
+    "cave": false
+  },
+  "profundis:frozen_caves": {
+    "r": 153,
+    "g": 189,
+    "b": 70,
+    "cave": false
+  },
+  "natures_spirit:boreal_taiga": {
+    "r": 222,
+    "g": 69,
+    "b": 127,
+    "cave": false
+  },
+  "natures_spirit:marsh": {
+    "r": 192,
+    "g": 33,
+    "b": 236,
+    "cave": false
+  },
+  "natures_spirit:redwood_forest": {
+    "r": 43,
+    "g": 216,
+    "b": 215,
+    "cave": false
+  },
+  "gardens_of_the_dead:soulblight_forest": {
+    "r": 21,
+    "g": 65,
+    "b": 114,
     "cave": false
   }
 }
